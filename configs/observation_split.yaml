@@ -1,0 +1,8 @@
+extends: base.yaml
+experiment:
+  name: observation_split
+  description: "OBSERVATION-WISE — NOT SOURCE-INDEPENDENT"
+evaluation:
+  mode: observation
+  test_size: 0.2
+  seeds: [42, 43, 44, 45, 46]

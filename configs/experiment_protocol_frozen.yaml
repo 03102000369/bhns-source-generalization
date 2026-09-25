@@ -1,0 +1,248 @@
+aggregation: mean log-odds; clip probabilities to [1e-7,1-1e-7]
+class_mapping:
+  BH: 0
+  NS: 1
+dataset_sha256: 9526c3327502907fa50655a5749b206ba1eda903f16fb45fa13e2665d06fb7f8
+experiment:
+  model: prior_logistic_forest
+  name: core-source-generalization
+  scientific_runs_enabled: true
+features:
+  PM: optional unavailable
+  primary: "43 recorded 5\u201325 keV detector-space rates"
+  secondary: same 43 rates + 43 archive statistical errors on identical cohort
+frozen_at: '2026-09-22T11:27:45.786004+00:00'
+inner_split: 20 percent stratified physical-source validation from outer training
+  only
+learning_curve:
+  C: 1.0
+  model: logistic
+  outer: fixed primary grouped test sources
+  seeds:
+  - 200
+  - 201
+  - 202
+  - 203
+  - 204
+  training_sources_per_class:
+  - 2
+  - 3
+  - 5
+  tuning: none; fixed diagnostic model; equal numbers of BH/NS training sources
+limits:
+- No claim of exact reference replication
+- Detector response/epoch and deadtime remain possible confounders
+- Archive formal errors exclude background and calibration systematics
+- No provisional sources enter the primary cohort
+model_selection:
+  forest_max_depth:
+  - 4
+  - null
+  forest_min_samples_leaf: 3
+  forest_trees: 100
+  logistic_C:
+  - 0.01
+  - 0.1
+  - 1.0
+  - 10.0
+  metric: source_balanced_accuracy
+  refit: fresh preprocessing and chosen model on complete outer training
+  tie_break: first candidate
+other_metrics:
+- balanced_accuracy
+- MCC
+- F1
+- precision
+- recall
+- PR_AUC_average_precision
+- Brier
+- accuracy
+outer_splits:
+- 5-fold stratified observation OOF
+- 5-fold stratified physical-source OOF
+- LOSO
+positive_class: NS
+preprocessing:
+  PCA: null
+  feature_selection: null
+  imputation: null
+  standardize: true
+primary_comparison: paired observation OOF minus grouped OOF metric on the identical
+  sources and observations; source-overlap-associated inflation
+primary_metric: source-level AUROC
+primary_models:
+- prior
+- logistic
+- forest
+prior_definition: fixed uninformed p_NS=0.5; threshold tie assigned NS; avoids pooling
+  fold-dependent empirical priors
+randomization:
+  folds: regenerated with fixed seed 42 stratifying randomized source labels; observation
+    and grouped designs
+  model: forest
+  parameters:
+    max_depth: null
+  seeds:
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+  - 108
+  - 109
+  - 110
+  - 111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
+  - 121
+  - 122
+  - 123
+  - 124
+  - 125
+  - 126
+  - 127
+  - 128
+  - 129
+  - 130
+  - 131
+  - 132
+  - 133
+  - 134
+  - 135
+  - 136
+  - 137
+  - 138
+  - 139
+  - 140
+  - 141
+  - 142
+  - 143
+  - 144
+  - 145
+  - 146
+  - 147
+  - 148
+  - 149
+  tuning: none; fixed diagnostic model
+  unit: physical_source
+reconstruction_config_sha256: ab3ac0af75e2a79c3b0b06f7324d6de1683e6c8ae165940be7f2596f32a6cef0
+robustness:
+- observation-weighted training
+- PCA 95 percent variance
+- spectra+errors identical cohort
+- remove most observed source (lexical tie break)
+- remove observations above 1000 count/s/PCU and sources left with fewer than four
+  observations
+- grouped split seeds 43 and 44
+- fixed logistic C=0.01 and C=10
+seed: 42
+source_cohort:
+- compact_object_class: NS
+  source_id: 4u_1608_522
+  source_name: 4U 1608-522
+- compact_object_class: NS
+  source_id: 4u_0614_09
+  source_name: 4U 0614+09
+- compact_object_class: NS
+  source_id: 4u_1728_34
+  source_name: 4U 1728-34
+- compact_object_class: NS
+  source_id: ks_1731_260
+  source_name: KS 1731-260
+- compact_object_class: BH
+  source_id: gx_339_4
+  source_name: GX 339-4
+- compact_object_class: NS
+  source_id: cyg_x_2
+  source_name: Cyg X-2
+- compact_object_class: NS
+  source_id: 4u_1735_444
+  source_name: 4U 1735-444
+- compact_object_class: NS
+  source_id: 4u_1702_429
+  source_name: 4U 1702-429
+- compact_object_class: NS
+  source_id: slx_1735_269
+  source_name: SLX 1735-269
+- compact_object_class: NS
+  source_id: aql_x_1
+  source_name: Aql X-1
+- compact_object_class: BH
+  source_id: gs_1354_64
+  source_name: GS 1354-64
+- compact_object_class: NS
+  source_id: 4u_1636_536
+  source_name: 4U 1636-536
+- compact_object_class: BH
+  source_id: xte_j1550_564
+  source_name: XTE J1550-564
+- compact_object_class: NS
+  source_id: ser_x_1
+  source_name: Ser X-1
+- compact_object_class: NS
+  source_id: mxb_1658_298
+  source_name: MXB 1658-298
+- compact_object_class: BH
+  source_id: xte_j1859_226
+  source_name: XTE J1859+226
+- compact_object_class: BH
+  source_id: xte_j1118_480
+  source_name: XTE J1118+480
+- compact_object_class: NS
+  source_id: sax_j1750_8_2900
+  source_name: SAX J1750.8-2900
+- compact_object_class: NS
+  source_id: 4u_1705_44
+  source_name: 4U 1705-44
+- compact_object_class: NS
+  source_id: 4u_1746_37
+  source_name: 4U 1746-37
+- compact_object_class: NS
+  source_id: sax_j1808_4_3658
+  source_name: SAX J1808.4-3658
+- compact_object_class: BH
+  source_id: 4u_1543_475
+  source_name: 4U 1543-475
+- compact_object_class: BH
+  source_id: v4641_sgr
+  source_name: V4641 Sgr
+- compact_object_class: NS
+  source_id: 1a_1744_361
+  source_name: 1A 1744-361
+- compact_object_class: NS
+  source_id: 4u_1254_69
+  source_name: 4U 1254-69
+- compact_object_class: NS
+  source_id: igr_j00291_5934
+  source_name: IGR J00291+5934
+- compact_object_class: NS
+  source_id: hete_j1900_1_2455
+  source_name: HETE J1900.1-2455
+- compact_object_class: NS
+  source_id: sax_j1810_8_2609
+  source_name: SAX J1810.8-2609
+- compact_object_class: NS
+  source_id: sax_j1806_5_2215
+  source_name: SAX J1806.5-2215
+source_exclusions_file: data/reference/reference_source_roster.csv
+source_exclusions_sha256: 0877b4b26ce2b7a608c60b9af804f37a4bcff07cab9e40a932c0da93d0ed3211
+source_identification: exploratory 3-fold observation-stratified-by-source random
+  forest, 100 trees
+source_weighting: equal_source_training_total_weight
+threshold: 0.5
+uncertainty:
+  level: 0.95
+  method: class-stratified percentile bootstrap
+  qualification: conditional on selected cohort; training not rerun inside bootstrap
+  repetitions: 2000
+  unit: physical_source

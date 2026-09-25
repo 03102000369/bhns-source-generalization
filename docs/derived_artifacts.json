@@ -1,0 +1,476 @@
+{
+  "data/manifests/primary_split_definitions.json": {
+    "operation": "Extract existing split_definition and logistic fit_audit.inner_fold; verify outer definitions equal for all three primary models",
+    "source_files": [
+      {
+        "path": "results/runs/primary_prior_observation/observation-00.json",
+        "sha256": "b901ab2c56043b826a45a60162a19d9feb1b2a8a1e12a5aaaa0ce3ef65ff9ea2"
+      },
+      {
+        "path": "results/runs/primary_forest_observation/observation-00.json",
+        "sha256": "7aac61c94fafd9ebc87aa52fc7efd09e1c250ab4936cfbc6d925e31ef19a7e0b"
+      },
+      {
+        "path": "results/runs/primary_logistic_observation/observation-00.json",
+        "sha256": "13a6d1e768289904676da621db2b5bd3f51360ffa5d4514ea968c7c3f6e2c25e"
+      },
+      {
+        "path": "results/runs/primary_prior_observation/observation-01.json",
+        "sha256": "6a230b9ddafa37c009dd99c06893d41d0c94dab90073067529301d1d08944579"
+      },
+      {
+        "path": "results/runs/primary_forest_observation/observation-01.json",
+        "sha256": "f16eef759a872db4d00a5cab366f5bbbe9b5938922a8081f31857c285fca6bd8"
+      },
+      {
+        "path": "results/runs/primary_logistic_observation/observation-01.json",
+        "sha256": "642103fe6e54ba67f8cb29ea03d8fc9dc2a6b90f4d6b2a1b9129b1c8c6f017ea"
+      },
+      {
+        "path": "results/runs/primary_prior_observation/observation-02.json",
+        "sha256": "4e8143dd0cbb5204b04265d3e1d3700e4411cabb2e26a0d377133518b36f8fdd"
+      },
+      {
+        "path": "results/runs/primary_forest_observation/observation-02.json",
+        "sha256": "abbcc24c0976c820da7a9fb5139eaba628f24869d73de643a99a455db35a1d99"
+      },
+      {
+        "path": "results/runs/primary_logistic_observation/observation-02.json",
+        "sha256": "85e2fbbd443e25883742b5c2c856e9b41c63f2c1c9eb7ae66700a00941000bd4"
+      },
+      {
+        "path": "results/runs/primary_prior_observation/observation-03.json",
+        "sha256": "dd6d0b430709a1d8df5429e45b49586eae6ac28beff7dffac134fa69fa2006ce"
+      },
+      {
+        "path": "results/runs/primary_forest_observation/observation-03.json",
+        "sha256": "2d78ced5779ccdb10f0a2cb415d744c45c2520b02d87511d30faef4744d4cbad"
+      },
+      {
+        "path": "results/runs/primary_logistic_observation/observation-03.json",
+        "sha256": "36c37c933e5c0a13aa625438b16fdd0588be9e890f2caa0c1a8313c94b6c141e"
+      },
+      {
+        "path": "results/runs/primary_prior_observation/observation-04.json",
+        "sha256": "187f35d48073ab4467997bcef726007f7b14f06e8a5663894e14c19647eae860"
+      },
+      {
+        "path": "results/runs/primary_forest_observation/observation-04.json",
+        "sha256": "fbc78b7b0749946381ad8222a2e7121d8845f5e9ffe9b4cf59500d651da50baf"
+      },
+      {
+        "path": "results/runs/primary_logistic_observation/observation-04.json",
+        "sha256": "c74323525c5ce2d03c99db15489146ae0f887dbfbd4d1207432d7f8e4a9d77a6"
+      },
+      {
+        "path": "results/runs/primary_prior_grouped/grouped-00.json",
+        "sha256": "fbadca88b272ae15c3ddaaf481c3651db80684259704de7791d4ca49ecf051e4"
+      },
+      {
+        "path": "results/runs/primary_forest_grouped/grouped-00.json",
+        "sha256": "8b8aeb6cadd80ddb1a6ed777c43fde26bd9c3e4dbeb02d09fc54a5c1755d4b5a"
+      },
+      {
+        "path": "results/runs/primary_logistic_grouped/grouped-00.json",
+        "sha256": "b3f21976362784a4593d12f596defaf932adcb287206c41c11f42e43ff0cc349"
+      },
+      {
+        "path": "results/runs/primary_prior_grouped/grouped-01.json",
+        "sha256": "6389c34b0084f85b517194c2010782b674ca5faf0ea7a072d4cd12be8bda543d"
+      },
+      {
+        "path": "results/runs/primary_forest_grouped/grouped-01.json",
+        "sha256": "a2d1ee6ba1d892ac9d46c84dfd2ce847c3d4b681690543c1c7aa289bbff3a686"
+      },
+      {
+        "path": "results/runs/primary_logistic_grouped/grouped-01.json",
+        "sha256": "566d5df0317902c55036cecc4857b5b61fc993cf2306705dd9da33b943731d8a"
+      },
+      {
+        "path": "results/runs/primary_prior_grouped/grouped-02.json",
+        "sha256": "85f65c49355e4de46261951c9b7302065241e069f55f1d4e2c693969e572687a"
+      },
+      {
+        "path": "results/runs/primary_forest_grouped/grouped-02.json",
+        "sha256": "3a3895cd69f328591bab9f8d2e3685e3cbc845f8dac929272a940fd1b5a8dee7"
+      },
+      {
+        "path": "results/runs/primary_logistic_grouped/grouped-02.json",
+        "sha256": "1f1d8feff77f86a57d52bb3c0d7d4109b1385f4e9c6b295bc8df91ddb509b233"
+      },
+      {
+        "path": "results/runs/primary_prior_grouped/grouped-03.json",
+        "sha256": "94b7d1f517258fb3391824de436abb4da7d63735eab77c4823dacf2af8842395"
+      },
+      {
+        "path": "results/runs/primary_forest_grouped/grouped-03.json",
+        "sha256": "87b8da1856673f0fe1a14143c3a43c87739345970f8087358ac6cc69d86b4370"
+      },
+      {
+        "path": "results/runs/primary_logistic_grouped/grouped-03.json",
+        "sha256": "6e1c73b5e341278436e4ce61c168db359617b39c03506126ebfb98b134d29f10"
+      },
+      {
+        "path": "results/runs/primary_prior_grouped/grouped-04.json",
+        "sha256": "22d3235529c1aeeeb017040eacce543e7644ed0addaff21c83051fd15d69f64e"
+      },
+      {
+        "path": "results/runs/primary_forest_grouped/grouped-04.json",
+        "sha256": "2814657e734a8201aade5a8b26f8d960cec40abc52ab821b2a49a5c5be7b72ff"
+      },
+      {
+        "path": "results/runs/primary_logistic_grouped/grouped-04.json",
+        "sha256": "ce1af11e6dd52deabd0c168382e20c69d3c9468160767c33a5bc157dfaa44974"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-000.json",
+        "sha256": "f254bb33914738f40bf05f79b39431d4672eaa8a3bcc12786dbfd20f79612791"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-000.json",
+        "sha256": "fa5a15fd544199d6c73d2f069126a5b2949a2cefc77047de085ac4b2123db59a"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-000.json",
+        "sha256": "c2fa38b62dc858d64fff24adb368c57670672c85e45eca12b59a7f858b6963e8"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-001.json",
+        "sha256": "293ec0324d88e93fb81767293ea35d0df3f83a86a510b94198d085a00ce3ed1e"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-001.json",
+        "sha256": "b50bd0ae95862eafa89b42a2ca08db4a02c2cfe70965538fede5a3282b195d81"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-001.json",
+        "sha256": "f05178d0f58e6851211605b40a4e49b24384ba3313ede046739b9c9cf4170839"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-002.json",
+        "sha256": "5030431095ff2998fbf1009f651f09337fba17a6f26e2c4d7d2a53955f683a81"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-002.json",
+        "sha256": "f1b29a14b095bf46cf2a337916fada50b9b4eaac93847a0bee843b6d9968badf"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-002.json",
+        "sha256": "b9f4cd38a00b1eb2941229d5bfd13659aa30a34b83541bb79e21725b54a6dfbe"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-003.json",
+        "sha256": "617c82c870737615d8430a53188fc6dcc5173bb727d9940d34fb73a68a93137e"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-003.json",
+        "sha256": "bd487ab91f2422bf644717f9b2692267a465f549119a3c7235225bcc761dbd9e"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-003.json",
+        "sha256": "794899914bca168e9c16a1e55f9941ba6ad8dce184aca2b73ef6e9f160953d31"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-004.json",
+        "sha256": "e786c1ed84b9ed8bb1a97af2955bcd6cac60e13e0768ab420bab5c88ecc08520"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-004.json",
+        "sha256": "d58c2bf58a088be8436e566744f1916a2e3d98f06fe62663044b359c2998e163"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-004.json",
+        "sha256": "9a54bff4610c85d09d3691cad57d4104fff0257ce0db3deab86a6e666dbaa6e5"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-005.json",
+        "sha256": "8322b18de118dc05821676a855ff804c82b473ed7d4e562c6212e2a1df723407"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-005.json",
+        "sha256": "85bdee1629f0bc6b9489753d57a5024a641156172d86d32f31af6a7c41df214f"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-005.json",
+        "sha256": "082989ef2da86016d6f217e65367e60e1821df76b96e6041357ce5887c116516"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-006.json",
+        "sha256": "2fcc46d70cf8f5f08dc73c72d5c2da6501d59a90dd8afe5547f05e2b101c8cd2"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-006.json",
+        "sha256": "cf52e82d340bc4536b9970bc91025f1870250d94c7eb35530f80be0d9bc6a86f"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-006.json",
+        "sha256": "55f495830dafad6e18a7668fcd54e0af4027b2c8f8203b724e0547aeffa9ad8b"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-007.json",
+        "sha256": "17f394067e18404b7493b18bf9e1bfd95e68f100f3db202576dd759b11033006"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-007.json",
+        "sha256": "e8eeaf0a52e8df9aa861e6b72e9093e32b53833229e52b0ad77e571907b589c2"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-007.json",
+        "sha256": "9a90cb4fa92462ae5ddc6c73a7e5ca18a1e64737c39b2ccf6830e3290b359b7f"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-008.json",
+        "sha256": "d410eb119b65e02b2bf169737a96c9e2f32819c99ef533e225f33f7578f1c0ba"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-008.json",
+        "sha256": "bea2a63503bc550d02b447707b0c63ed0cff06c8e6b9059b255db1b6c576a7dd"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-008.json",
+        "sha256": "c875f7891f33dcdf25af4b3f7003459d8147d9d28c31bb720e4561d79ecfac4b"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-009.json",
+        "sha256": "690ad9b3d1514eeaa38d6d5a3d0e32544498279c9b56788a1cd694722db64718"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-009.json",
+        "sha256": "1d799151ca517f1211e72633875fac90374a11d144357a9dda471f074fc35276"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-009.json",
+        "sha256": "5f3fd4731734bf0ec9dcd7b701497154cc8dcb44c7908370147a8cef7cb1f748"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-010.json",
+        "sha256": "9fa57056bf0ad331504bff0e9238ee950eabae9c4f6f06283ca0dbfbf2163348"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-010.json",
+        "sha256": "07433cbe71cb7b6aa419998e89e358007dc45d7ba6f67957b8bceb91a8c1c42b"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-010.json",
+        "sha256": "cb536eb519eb77cffafbd510dd4409d8470551c969cd5fa818b0b9053b674013"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-011.json",
+        "sha256": "ecfa971ecd02d01b59e310625224f7833eb3704aceb276bc83460265ddd7b038"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-011.json",
+        "sha256": "69e8b6eeb449d6d0455a9513efa5f3145a1b23b7cbd207275a854071ef8de48d"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-011.json",
+        "sha256": "9d33badc0fc86147a4f34aab13d31a8a9fc8975a714ae53b6383530e36c29c8a"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-012.json",
+        "sha256": "c953679404b1979896a1cc43a26601f473c97a7ff0cb7b72cd228d7b88c83479"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-012.json",
+        "sha256": "c7d11156466b6f728855d695374feb760bf5faeb67e05cb01fa66668f10b2c52"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-012.json",
+        "sha256": "31c05a4729f89604e9ccc8b66ec3d04f6f133f328877791de2963506aad3b899"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-013.json",
+        "sha256": "86e9c39a7f03753c73c876f5f50d408678c4492a095ae5d7730eadd59a3e2f01"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-013.json",
+        "sha256": "60b5a6a7b33fb5ed015f95a3128af3e9769af5e769cc9ec7aa0c4a511196da3a"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-013.json",
+        "sha256": "f0719a7707448d605a09758bc47216817ddf3723d5dca9b74aa73cff2ea877fe"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-014.json",
+        "sha256": "9ae1a581a7c3e716a02b31140ff0db8396545754896bf66055e3ce32caebfe16"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-014.json",
+        "sha256": "7742039346be24b740188ba38e4c17f53a4c7f3c87c4de3c4df38259e5966708"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-014.json",
+        "sha256": "83a6a021b3ce23888ec3e07c5ca01cd634d7601381221043906203a90e6e676f"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-015.json",
+        "sha256": "5a548689d9f6583cf1a76c5708bc1d2bc56146b44c0e8c874293f1517a5804b3"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-015.json",
+        "sha256": "dc343a7b1941852420dd7545fe38a088efc9650083c6d13e96e3539f0235570e"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-015.json",
+        "sha256": "4da6451c5c1e54d2d25ce57b0fd55c26cd8dc265816a448d8b047cff560a3968"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-016.json",
+        "sha256": "2fa550655206572be73e6a42b0685a5d01200ea064e1487c912c79b636d19dcd"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-016.json",
+        "sha256": "772d8d9d8b670e2a25b51e816bbf942020f31d588d1ea10973b889870090dd38"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-016.json",
+        "sha256": "2ebb5623ec9dfd21a1083bf43e6708d0f0ec0169d1fee47488057f717748039a"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-017.json",
+        "sha256": "5ca6899ffb882c4956c3495062ced239146659bc816be8b89704376a405c538d"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-017.json",
+        "sha256": "6ec008f7ee87889a977ca79de7ce24345be459073e695ed4d40278e6c8a18ebc"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-017.json",
+        "sha256": "79ca43e9081fdf0b7f7ea2add9ecb45081bf018c885775ed1f49826a1be769c4"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-018.json",
+        "sha256": "60d08a62645d7daa4d0bfbe9904d159a1ca2f9e8f29fb14593b096f282240287"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-018.json",
+        "sha256": "c9c023cf4cc2dd34062d1c08b6ff0c82a95a0a023757ee6e9930c0fb702f3c3d"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-018.json",
+        "sha256": "a15d3ed21d3e7c2ca9ea62986d8f97ea1cfcbabbf0db77bd500d552ddf4fc0fe"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-019.json",
+        "sha256": "cdc44eaf99f68780e415c6e8a84b09ad06d1c29b2b9d09fd70213fd983edf473"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-019.json",
+        "sha256": "f370c12cc049f9cc251d31aff643c5cad59645f06f1d5bada5f65adfe866667c"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-019.json",
+        "sha256": "49c9d08795fa5f658e31afcba81de7c9b3ae1903b7d114675bc17f395a31b0b3"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-020.json",
+        "sha256": "3611e070f78b80ae864508f3255994dc140d11a5b90567f4bf4e40c1e145ba7f"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-020.json",
+        "sha256": "055e37dcd7f8ecf4d43fd205b24a94d8828420b9feb917fefe25644102b21a34"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-020.json",
+        "sha256": "7302c41f3af04c3a5df2d7f6003fd7aedda5fae726ad4e538c39869cf75cfbd3"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-021.json",
+        "sha256": "94749cc46f2683facb68dc5fd6266bf5d1dcd82d37d9a57b126e67d878f632f4"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-021.json",
+        "sha256": "d97e980685b4ab31254ef0ee5ea8902709b3006d061d1838ef9250142c5bbdf3"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-021.json",
+        "sha256": "5c30aaeb175566b8a6fc7c720f6beebcbe1975ea6362a6ee6c1f69ee459c24a9"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-022.json",
+        "sha256": "22011bb2e41c073840e54d3d9b0b6d40fdeef1968d687fc89ebe18f4ed5b297d"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-022.json",
+        "sha256": "3fcd9366a5b9205fcba49f3e8a76d084d184aefa21513accb174d55cf63276f4"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-022.json",
+        "sha256": "593105e775ad6151fe2ec52a695519301a9f48695783a7d922ea4d67644f764a"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-023.json",
+        "sha256": "04ec379ed74ce2f46e507d67433692cca53b74710b827b5df80d71efac2fd544"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-023.json",
+        "sha256": "7fbb8a8981fbd7ea0380d0f788612d1c929ccac57e61656d6a8436d0a7cb0946"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-023.json",
+        "sha256": "88e253901294e5eaa992c7d74e8f357c253bbfb9cfa6378578114fa39f39cfbc"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-024.json",
+        "sha256": "678ed12ce597c2f981d4cab12f07cc9dd37d34fb99e7c7224a4bacd29c431a20"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-024.json",
+        "sha256": "40331f2b9f9a43583f3696ec04395b932e79d6696d9447c0ab5dccb17178977d"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-024.json",
+        "sha256": "54ced4323b844a03004f84f7ca26c3e889ef51cd968096e6a8b1177d2613f43d"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-025.json",
+        "sha256": "e72015a8c20f04d9c535565a343b41530a23d764bce883badd1f5615c7fa8a08"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-025.json",
+        "sha256": "3d600afb58eb815aebb8021af2ab9191f55b1b25a266b8df4898629fd12fee2e"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-025.json",
+        "sha256": "2a83e7fd03da7b9638260751d122ca6b6897ad8a510e4708bd371f342025a5fc"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-026.json",
+        "sha256": "07495a3512e2a77e182efcb1947d92a41235da4c700e9d1e4d0b28265ecd664d"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-026.json",
+        "sha256": "4a33c87d620ea3e0a10eac4c296f5d587b4e6fa40a3953bc751ddbc89b2e8cb3"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-026.json",
+        "sha256": "b3821962332ccfc764ac5de0a6f881e018cc6a582b2aa55020e135dd16d9b149"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-027.json",
+        "sha256": "a24a4d06b3e931d5f445f1c328e933bbf5b339abd32474badb98a79fea9284c3"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-027.json",
+        "sha256": "83c4570c58b84644e9c83b0649be9fc512fceb0d088627c3ea50561a7e1680ea"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-027.json",
+        "sha256": "1cbbe97c5de7c8ea98739a4e5ec9d095e2f43ccd6adae7fbbba22752a2354175"
+      },
+      {
+        "path": "results/runs/primary_prior_loso/loso-028.json",
+        "sha256": "8edea915f10f4afe888d5688b905a7494f9cc814ef6e2c51949b8f15e4d229c1"
+      },
+      {
+        "path": "results/runs/primary_forest_loso/loso-028.json",
+        "sha256": "1588c5558852a97f5a722f6584648cde7ce39c1eef8f39c39218049fc6d510e0"
+      },
+      {
+        "path": "results/runs/primary_logistic_loso/loso-028.json",
+        "sha256": "126e09a5424c989b5c401841f0bd3e4aea739d766e1620bab2c4230659983ea5"
+      }
+    ],
+    "sha256": "4fcb80f82586a131fb3e6778e52bdaf1690f87d9f4a632b0771d490d451e2f2a"
+  }
+}

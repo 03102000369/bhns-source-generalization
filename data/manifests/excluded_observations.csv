@@ -1,0 +1,172 @@
+rxte_obsid,source_id,canonical_source,stage,exclusion_reason
+00013-05-01-00,cyg_x_2,Cyg X-2,processing,Missing retrieved source product
+20085-01-01-02,ks_1731_260,KS 1731-260,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+20431-01-01-00,gs_1354_64,GS 1354-64,processing,Missing retrieved source product
+20431-01-02-00,gs_1354_64,GS 1354-64,processing,Missing retrieved source product
+20431-01-02-03,gs_1354_64,GS 1354-64,processing,Missing retrieved source product
+30401-01-05-00,gs_1354_64,GS 1354-64,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+30411-01-02-04,sax_j1808_4_3658,SAX J1808.4-3658,processing,Missing retrieved source product
+40124-01-15-01,xte_j1859_226,XTE J1859+226,processing,Missing retrieved source product
+40124-01-16-00,xte_j1859_226,XTE J1859+226,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+40124-01-51-02,xte_j1859_226,XTE J1859+226,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+40124-01-54-00,xte_j1859_226,XTE J1859+226,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+40124-01-66-01,xte_j1859_226,XTE J1859+226,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+40414-01-17-00,mxb_1658_298,MXB 1658-298,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+50025-01-01-03,4u_1702_429,4U 1702-429,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+50029-35-01-01,ser_x_1,Ser X-1,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+50031-02-03-09,ks_1731_260,KS 1731-260,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+50135-01-28-00,xte_j1550_564,XTE J1550-564,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+50401-01-05-00,xte_j1859_226,XTE J1859+226,processing,Missing retrieved source product
+50407-01-04-00,xte_j1118_480,XTE J1118+480,processing,Missing retrieved source product
+50407-01-05-04,xte_j1118_480,XTE J1118+480,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+50407-01-13-01,xte_j1118_480,XTE J1118+480,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+60034-01-01-00,slx_1735_269,SLX 1735-269,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+60034-01-02-00,slx_1735_269,SLX 1735-269,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+60428-01-20-00,xte_j1550_564,XTE J1550-564,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+70110-01-36-00,gx_339_4,GX 339-4,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+70124-02-50-00,4u_1543_475,4U 1543-475,processing,Missing retrieved source product
+70132-01-01-03,4u_1543_475,4U 1543-475,processing,Missing retrieved source product
+70132-01-03-00,4u_1543_475,4U 1543-475,processing,Missing retrieved source product
+80037-01-07-04,4u_0614_09,4U 0614+09,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+80083-01-03-03,sax_j1808_4_3658,SAX J1808.4-3658,processing,Missing retrieved source product
+80431-01-01-00,1a_1744_361,1A 1744-361,processing,Missing retrieved source product
+90111-01-02-07,xte_j1118_480,XTE J1118+480,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+90111-01-04-01,xte_j1118_480,XTE J1118+480,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+90408-01-05-02,4u_1608_522,4U 1608-522,processing,Missing retrieved source product
+91025-01-01-02,4u_1735_444,4U 1735-444,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+91405-01-10-02,4u_1608_522,4U 1608-522,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+92039-01-07-02,cyg_x_2,Cyg X-2,processing,Missing retrieved source product
+93093-01-01-03,sax_j1810_8_2609,SAX J1810.8-2609,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+94331-07-01-03,gx_339_4,GX 339-4,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+95087-01-61-10,4u_1636_536,4U 1636-536,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+95338-04-01-01,4u_1702_429,4U 1702-429,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+95345-01-02-01,cyg_x_2,Cyg X-2,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+95345-01-18-00,cyg_x_2,Cyg X-2,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+95401-01-03-10,igr_j00291_5934,IGR J00291+5934,processing,Missing retrieved source product
+95409-01-26-07,gx_339_4,GX 339-4,processing,Missing retrieved source product
+95416-01-01-03,1a_1744_361,1A 1744-361,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+96030-01-45-00,hete_j1900_1_2455,HETE J1900.1-2455,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+96423-01-05-00,4u_1608_522,4U 1608-522,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+96429-01-03-02,slx_1735_269,SLX 1735-269,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+96429-01-05-02,slx_1735_269,SLX 1735-269,processing,Selected PCUs not continuously on in sampled GTIs; re-extraction required
+30411-01-11-02,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+40035-01-02-01,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+40035-05-08-00,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+40124-01-65-00,xte_j1859_226,XTE J1859+226,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+40401-01-90-01,xte_j1550_564,XTE J1550-564,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+40414-01-10-00,mxb_1658_298,MXB 1658-298,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+40414-01-11-00,mxb_1658_298,MXB 1658-298,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+50031-02-04-03,ks_1731_260,KS 1731-260,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+50031-02-04-05,ks_1731_260,KS 1731-260,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+50031-02-04-07,ks_1731_260,KS 1731-260,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+50031-02-04-10,ks_1731_260,KS 1731-260,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+50135-01-22-00,xte_j1550_564,XTE J1550-564,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+50401-01-02-00,xte_j1859_226,XTE J1859+226,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+50401-01-06-01,xte_j1859_226,XTE J1859+226,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+50407-01-17-00,xte_j1118_480,XTE J1118+480,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+60048-04-04-00,mxb_1658_298,MXB 1658-298,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+60052-01-03-01,4u_1608_522,4U 1608-522,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+60054-02-05-02,aql_x_1,Aql X-1,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+60083-03-01-00,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+60083-03-06-00,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+60419-01-02-00,mxb_1658_298,MXB 1658-298,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+60419-01-04-00,mxb_1658_298,MXB 1658-298,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+60705-01-01-00,gx_339_4,GX 339-4,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+60705-01-01-10,gx_339_4,GX 339-4,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+60705-01-44-00,gx_339_4,GX 339-4,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-04-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-13-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-19-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-22-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-25-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-29-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-32-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-36-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-39-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-43-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-46-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-52-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70124-02-57-00,4u_1543_475,4U 1543-475,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+70422-01-02-00,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-03-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-03-01,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-04-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-04-01,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-05-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-05-01,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-06-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-06-03,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-07-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-07-01,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-08-01,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-09-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-09-01,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80054-08-10-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80102-04-12-00,gx_339_4,GX 339-4,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80406-01-10-03,4u_1608_522,4U 1608-522,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80412-01-02-00,xte_j1550_564,XTE J1550-564,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80421-01-01-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80421-01-01-01,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+80421-01-01-02,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90107-01-01-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90107-01-01-01,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90107-01-02-01,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90107-01-03-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90107-01-03-01,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90108-03-01-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90108-03-02-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90108-03-03-00,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90111-01-03-07,xte_j1118_480,XTE J1118+480,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90111-01-04-02,xte_j1118_480,XTE J1118+480,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90111-01-06-01,xte_j1118_480,XTE J1118+480,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+90425-01-03-04,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+91050-05-05-00,1a_1744_361,1A 1744-361,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+91105-04-27-00,gx_339_4,GX 339-4,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+91105-04-70-00,gx_339_4,GX 339-4,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+91414-01-05-00,aql_x_1,Aql X-1,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+91418-01-06-03,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+91422-01-01-02,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+91422-01-01-03,v4641_sgr,V4641 Sgr,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+92049-01-61-00,hete_j1900_1_2455,HETE J1900.1-2455,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+92420-01-03-00,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+92427-01-01-00,xte_j1118_480,XTE J1118+480,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93013-07-12-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93013-07-22-02,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93027-01-03-05,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93027-01-05-01,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93027-01-06-06,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93089-20-01-00,ks_1731_260,KS 1731-260,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93155-01-10-00,1a_1744_361,1A 1744-361,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93155-01-10-02,1a_1744_361,1A 1744-361,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93412-01-01-00,mxb_1658_298,MXB 1658-298,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93417-01-09-00,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93417-01-14-01,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93424-01-01-00,gs_1354_64,GS 1354-64,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93435-01-05-01,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93435-01-12-01,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+93435-01-29-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+94408-01-03-01,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+94408-01-11-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+94408-01-18-01,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+94408-01-26-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+94408-01-33-01,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+94408-01-41-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+94408-01-49-01,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+95401-01-11-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+95401-01-25-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+95401-01-40-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+95401-01-55-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+95401-01-70-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+95401-01-86-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+95407-01-01-00,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+95407-01-10-00,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+96027-01-03-13,sax_j1808_4_3658,SAX J1808.4-3658,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+96401-01-06-10,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+96401-01-12-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+96401-01-28-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+96401-01-43-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+96401-01-58-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+96401-01-74-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+96401-01-89-00,igr_j00291_5934,IGR J00291+5934,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+96409-01-14-00,gx_339_4,GX 339-4,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU
+96440-01-10-05,aql_x_1,Aql X-1,quality_or_source_sufficiency,net_5_25_keV_recorded_rate_not_greater_than_5_count_s_PCU

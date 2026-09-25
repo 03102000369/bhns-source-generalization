@@ -1,0 +1,46 @@
+{
+  "caches_and_environment": {
+    "files": 36119,
+    "size_bytes": 1079713986
+  },
+  "calibration": {
+    "files": 1816,
+    "size_bytes": 2873918270
+  },
+  "historical_or_detailed_reports": {
+    "files": 4839,
+    "size_bytes": 148907230
+  },
+  "intermediate_products": {
+    "files": 4032,
+    "size_bytes": 8436055700
+  },
+  "literature_PDFs_only": {
+    "files": 47,
+    "size_bytes": 45552970
+  },
+  "literature_and_retrieved_evidence": {
+    "files": 95,
+    "size_bytes": 5191515
+  },
+  "local_troubleshooting": {
+    "files": 33,
+    "size_bytes": 14108204
+  },
+  "obsolete_or_duplicate_manuscript": {
+    "files": 557,
+    "size_bytes": 82629087
+  },
+  "optional_or_unselected": {
+    "files": 15987,
+    "size_bytes": 6406247605
+  },
+  "raw_nustar": {
+    "files": 68,
+    "size_bytes": 621926259
+  },
+  "raw_rxte": {
+    "files": 34313,
+    "size_bytes": 1343703834
+  }
+}

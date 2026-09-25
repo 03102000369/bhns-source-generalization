@@ -1,0 +1,15 @@
+source_id,reason,observations
+4u_1543_475,ZERO_GOOD_EXPOSURE: predeclared conservative GTI rejects this observation,4
+cyg_x_2,ZERO_GOOD_EXPOSURE: predeclared conservative GTI rejects this observation,1
+gro_j1655_40,HEASOFT_NET_RATE_NOT_ABOVE_5,2
+gro_j1655_40,ZERO_GOOD_EXPOSURE: predeclared conservative GTI rejects this observation,4
+grs_1915_105,ZERO_GOOD_EXPOSURE: predeclared conservative GTI rejects this observation,4
+gx_339_4,ZERO_GOOD_EXPOSURE: predeclared conservative GTI rejects this observation,1
+igr_j00291_5934,HEASOFT_NET_RATE_NOT_ABOVE_5,1
+sax_j1808_4_3658,HEASOFT_NET_RATE_NOT_ABOVE_5,1
+sax_j1810_8_2609,HEASOFT_NET_RATE_NOT_ABOVE_5,1
+v404_cyg,HEASOFT_NET_RATE_NOT_ABOVE_5,4
+v404_cyg,Original archive inputs incomplete,2
+xte_j1118_480,HEASOFT_NET_RATE_NOT_ABOVE_5,1
+xte_j1550_564,ZERO_GOOD_EXPOSURE: predeclared conservative GTI rejects this observation,5
+xte_j1859_226,ZERO_GOOD_EXPOSURE: predeclared conservative GTI rejects this observation,3

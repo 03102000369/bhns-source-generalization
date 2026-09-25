@@ -1,0 +1,62 @@
+{
+  "frozen_utc": "2026-09-22T15:22:46.944530+00:00",
+  "candidate_universe": "22 NS systems in frozen expanded HEASoft cohort; target the 20 without admissible hard support",
+  "ordered_target_sources": [
+    "igr_j00291_5934",
+    "sax_j1808_4_3658",
+    "ks_1731_260",
+    "4u_0614_09",
+    "4u_1728_34",
+    "4u_1702_429",
+    "4u_1705_44",
+    "4u_1636_536",
+    "hete_j1900_1_2455",
+    "aql_x_1",
+    "slx_1735_269",
+    "1a_1744_361",
+    "sax_j1750_8_2900",
+    "mxb_1658_298",
+    "sax_j1806_5_2215",
+    "4u_1735_444",
+    "4u_1254_69",
+    "4u_1746_37",
+    "cyg_x_2",
+    "ser_x_1"
+  ],
+  "high_priority_sources": [
+    "igr_j00291_5934",
+    "sax_j1808_4_3658",
+    "ks_1731_260",
+    "4u_0614_09",
+    "4u_1728_34",
+    "4u_1702_429",
+    "4u_1705_44",
+    "4u_1636_536",
+    "hete_j1900_1_2455",
+    "aql_x_1",
+    "slx_1735_269",
+    "1a_1744_361"
+  ],
+  "selection_basis": "prior literature dossiers and availability of processed observations; no classifier scores consulted",
+  "primary_support": "Count only matching frozen expanded-cohort observations after evidence validation; archival-only gains reported separately",
+  "search_bound": "One targeted discovery query for each of 20 targets; at most 12 focused follow-up queries, at most 24 newly retrieved primary manuscripts, plus re-screening retained relevant manuscripts. Complete all high-priority screens and document exact temporal/ObsID/GTI linkage. No further source expansion or new reduction in this bounded stage.",
+  "source_expansion": "Existing cohort is priority 1. The reference roster is inspected for context, but no unverified identities or new source/provenance reduction is added in this bounded round.",
+  "evidence": [
+    "DIRECT",
+    "STRONG"
+  ],
+  "excluded": [
+    "PROVISIONAL",
+    "UNRESOLVED",
+    "CONFLICTED",
+    "MIXED_OR_TRANSITION"
+  ],
+  "minimum_independent_sources_per_class": 5,
+  "common_mapping": "Reuse existing HARD_DOMINATED definition: explicit source-specific published hard/Comptonized spectral interpretation; native island never sufficient alone.",
+  "date_matching": "Whole frozen ObsID time span within published interval; 120-second conservative boundary guard. Partial or ambiguous GTI matches excluded.",
+  "branch_A": "Freeze new inclusion/mapping/protocol before any ML fit; original simple models and source-isolated nested evaluation.",
+  "branch_B": "No classifier; formally close available-evidence state control and complete manuscript drafts.",
+  "proxy_warning": "Do not infer physical state from previous proxy values or classifier predictions.",
+  "candidate_priority_sha256": "9bae4bd0b1289b2b39c6d312c8965dfa8f3b548d559e02e040dec9408823ec0e",
+  "previous_mapping_sha256": "ad33e70ac571ee9711512572f0980cbde34e77341354c8f4bae933361f4345bf"
+}

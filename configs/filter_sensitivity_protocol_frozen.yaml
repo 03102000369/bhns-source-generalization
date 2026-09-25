@@ -1,0 +1,359 @@
+stage: FILTER_RELAXATION_SENSITIVITY_EXTENSION
+frozen_at_utc: '2026-09-23T02:44:49.431734+00:00'
+scientific_objective: Independent physical-source diversity, not higher AUROC
+scope: Existing frozen selected/archive/independently reduced products only; no change
+  of target or observation-selection caps; no mixed representations
+secure_source_universe:
+- source_id: 1a_1744_361
+  canonical_source: 1A 1744-361
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: 4u_0614_09
+  canonical_source: 4U 0614+09
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: ALIAS_VERIFIED
+- source_id: 4u_1254_69
+  canonical_source: 4U 1254-69
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: ALIAS_VERIFIED
+- source_id: 4u_1543_475
+  canonical_source: 4U 1543-475
+  class_label: BH
+  classification_reference: https://arxiv.org/abs/1510.08869
+  identity_status: ALIAS_VERIFIED
+- source_id: 4u_1608_522
+  canonical_source: 4U 1608-522
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: ALIAS_VERIFIED
+- source_id: 4u_1636_536
+  canonical_source: 4U 1636-536
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: ALIAS_VERIFIED
+- source_id: 4u_1702_429
+  canonical_source: 4U 1702-429
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: 4u_1705_44
+  canonical_source: 4U 1705-44
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: 4u_1728_34
+  canonical_source: 4U 1728-34
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: 4u_1735_444
+  canonical_source: 4U 1735-444
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: ALIAS_VERIFIED
+- source_id: 4u_1746_37
+  canonical_source: 4U 1746-37
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: ALIAS_VERIFIED
+- source_id: aql_x_1
+  canonical_source: Aql X-1
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: ALIAS_VERIFIED
+- source_id: cyg_x_2
+  canonical_source: Cyg X-2
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: gro_j1655_40
+  canonical_source: GRO J1655-40
+  class_label: BH
+  classification_reference: https://www.nature.com/articles/378157a0
+  identity_status: VERIFIED_EXPANSION
+- source_id: grs_1915_105
+  canonical_source: GRS 1915+105
+  class_label: BH
+  classification_reference: https://arxiv.org/abs/1304.1808
+  identity_status: VERIFIED_EXPANSION
+- source_id: gs_1354_64
+  canonical_source: GS 1354-64
+  class_label: BH
+  classification_reference: https://arxiv.org/abs/1510.08869
+  identity_status: VERIFIED
+- source_id: gx_339_4
+  canonical_source: GX 339-4
+  class_label: BH
+  classification_reference: https://arxiv.org/abs/1510.08869
+  identity_status: ALIAS_VERIFIED
+- source_id: hete_j1900_1_2455
+  canonical_source: HETE J1900.1-2455
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: igr_j00291_5934
+  canonical_source: IGR J00291+5934
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: igr_j17379_3747
+  canonical_source: IGR J17379-3747
+  class_label: NS
+  classification_reference: https://arxiv.org/abs/1807.08574v2
+  identity_status: VERIFIED
+- source_id: ks_1731_260
+  canonical_source: KS 1731-260
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: mxb_1658_298
+  canonical_source: MXB 1658-298
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: sax_j1750_8_2900
+  canonical_source: SAX J1750.8-2900
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: sax_j1806_5_2215
+  canonical_source: SAX J1806.5-2215
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: sax_j1808_4_3658
+  canonical_source: SAX J1808.4-3658
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: sax_j1810_8_2609
+  canonical_source: SAX J1810.8-2609
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: ser_x_1
+  canonical_source: Ser X-1
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: slx_1735_269
+  canonical_source: SLX 1735-269
+  class_label: NS
+  classification_reference: https://burst.sci.monash.edu/sources
+  identity_status: VERIFIED
+- source_id: v404_cyg
+  canonical_source: V404 Cyg
+  class_label: BH
+  classification_reference: https://academic.oup.com/mnras/article/394/3/1440/1069184
+  identity_status: VERIFIED_EXPANSION
+- source_id: v4641_sgr
+  canonical_source: V4641 Sgr
+  class_label: BH
+  classification_reference: https://arxiv.org/abs/1510.08869
+  identity_status: ALIAS_VERIFIED
+- source_id: xte_j1118_480
+  canonical_source: XTE J1118+480
+  class_label: BH
+  classification_reference: https://arxiv.org/abs/1510.08869
+  identity_status: VERIFIED
+- source_id: xte_j1550_564
+  canonical_source: XTE J1550-564
+  class_label: BH
+  classification_reference: https://arxiv.org/abs/1510.08869
+  identity_status: VERIFIED
+- source_id: xte_j1859_226
+  canonical_source: XTE J1859+226
+  class_label: BH
+  classification_reference: https://arxiv.org/abs/1510.08869
+  identity_status: VERIFIED
+integrity_filters: Unchanged secure labels, canonical aliases, exact ObsID/position
+  mapping, valid PHA/background/response, positive exposure, original screening and
+  detector definitions
+excluded_integrity_cases:
+- XTE J1908/4U1907 attribution conflict
+- IGR J17379 unresolved pointing
+- candidate/probable/likely BH labels
+- ambiguous cluster attribution
+cohort_definitions:
+  PRIMARY_MINOBS_4:
+    branch: ARCHIVE
+    minimum_observations: 4
+    net_rate_greater_than: 5.0
+    background_rule: no universal fraction cap; valid modeled background required
+  PRIMARY_MINOBS_3:
+    branch: ARCHIVE
+    minimum_observations: 3
+    net_rate_greater_than: 5.0
+    background_rule: no universal fraction cap; valid modeled background required
+  PRIMARY_MINOBS_2:
+    branch: ARCHIVE
+    minimum_observations: 2
+    net_rate_greater_than: 5.0
+    background_rule: no universal fraction cap; valid modeled background required
+  STRICT_PRIMARY_STYLE:
+    branch: HEASOFT
+    minimum_observations: 4
+    net_rate_greater_than: 5.0
+    background_rule: no universal fraction cap; valid modeled background required
+  MINOBS_3:
+    branch: HEASOFT
+    minimum_observations: 3
+    net_rate_greater_than: 5.0
+    background_rule: no universal fraction cap; valid modeled background required
+  MINOBS_2:
+    branch: HEASOFT
+    minimum_observations: 2
+    net_rate_greater_than: 5.0
+    background_rule: no universal fraction cap; valid modeled background required
+  QUALITY_RELAXED:
+    branch: HEASOFT
+    minimum_observations: 4
+    net_rate_greater_than: 4.0
+    background_rule: unchanged >5 rows; new 4--5 rows <=0.60 with declared quality
+      guards
+  EXPANDED_SECURE_RELAXED:
+    branch: HEASOFT
+    minimum_observations: 2
+    net_rate_greater_than: 4.0
+    background_rule: unchanged >5 rows; new 4--5 rows <=0.60 with declared quality
+      guards
+  PRIMARY_29:
+    branch: ARCHIVE
+    minimum_observations: 4
+    net_rate_greater_than: 5.0
+    background_rule: no universal fraction cap; valid modeled background required
+    alias_of: PRIMARY_MINOBS_4
+  EXPANDED_SOURCE:
+    branch: HEASOFT
+    minimum_observations: 2
+    net_rate_greater_than: 5.0
+    background_rule: no universal fraction cap; valid modeled background required
+    alias_of: MINOBS_2
+  HEASOFT_VALIDATION:
+    branch: HEASOFT
+    minimum_observations: 2
+    net_rate_greater_than: 5.0
+    background_rule: no universal fraction cap; valid modeled background required
+main_ladder:
+- STRICT_PRIMARY_STYLE
+- MINOBS_3
+- MINOBS_2
+- EXPANDED_SECURE_RELAXED
+auxiliary_quality_only: 'QUALITY_RELAXED: same strict >=4 sources rule; only declared
+  low-rate addition changes'
+principal_cohort: EXPANDED_SECURE_RELAXED
+new_low_rate_guards:
+  maximum_background_fraction: 0.6
+  maximum_fractional_band_error: 0.05
+  maximum_median_fractional_bin_error: 0.35
+  maximum_negative_bin_fraction: 0.1
+  minimum_new_row_exposure: 256.0
+minimum_sources_per_class: 5
+minimum1: NOT_RUN; no unique eligible-source gain
+background_policy: No universal baseline fraction limit to relax. Additional guards
+  apply only to newly admitted low-rate rows; never weaken background-product validity.
+exposure_policy: Original positive exposure and GTIs unchanged; new low-rate rows
+  additionally >=256 seconds
+detector_policy: Primary archive selected detector support unchanged; HEASoft PCU2
+  top xenon layer and deadtime correction unchanged
+features: 43 original detector-space rates; no errors added as model inputs; no imputation,
+  PCA or new architecture
+models:
+  logistic:
+    C:
+    - 0.01
+    - 0.1
+    - 1.0
+    - 10.0
+    solver: liblinear
+    max_iter: 3000
+  forest:
+    n_estimators: 100
+    max_depth:
+    - 4
+    - null
+    min_samples_leaf: 3
+    n_jobs: 2
+outer_splits:
+- 5-fold stratified physical-source grouped CV
+- LOSO
+inner_split: 20% stratified physical-source validation inside outer training; first
+  candidate wins ties; source balanced accuracy tuning
+preprocessing: Training-only StandardScaler at inner and outer refit; unchanged fit_fold
+  implementation
+weighting: Equal total training weight per source
+aggregation: Mean log odds; clip [1e-7,1-1e-7]
+positive_class: NS
+threshold: 0.5
+random_seed: 42
+metrics:
+- AUROC
+- balanced_accuracy
+- MCC
+- F1
+- precision
+- recall
+- PR_AUC
+- Brier
+- accuracy
+uncertainty:
+  method: class-stratified percentile physical-source bootstrap
+  draws: 2000
+  seed: 42
+  level: 0.95
+  qualification: Conditional on selected sources/fitted predictions; no refitting
+    inside bootstrap
+performance_policy: Fit each unique branch/row-ordered spectral cohort once per model/split;
+  exact duplicate cohort aliases reuse those outputs. No observation-wise fits. No
+  postperformance rule/row/source changes.
+state_policy: Reuse only existing DIRECT/STRONG evidence; original STATE_EXTENSION_CLOSED_INFEASIBLE
+  and five-per-class gate unchanged; no state classifier
+verdict_policy: If no independent source is added beyond frozen EXPANDED_SOURCE, RELAXATION_NO_BENEFIT
+  for the source-diversity objective regardless of AUROC. Counterfactual >=4 recovery
+  reported separately.
+publication_policy: No manuscript edits; scope recommendation follows source-diversity
+  value and quality, not metric direction
+input_sha256:
+  configs/experiment_protocol_frozen.yaml: 0c7dd4d36ac055ab8f708f9ebb2763dd4a341c6b9a5967ddaa1f9d3347f43334
+  configs/validation_heasoft_protocol.yaml: e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd
+  configs/reconstruction.yaml: ab3ac0af75e2a79c3b0b06f7324d6de1683e6c8ae165940be7f2596f32a6cef0
+  data/reference/reference_source_roster.csv: 0877b4b26ce2b7a608c60b9af804f37a4bcff07cab9e40a932c0da93d0ed3211
+  data/manifests/source_aliases.csv: 172d547ce410659ff6f068ee82a8a187775657885541057b5a1a02be5aee64e2
+  results/validation_heasoft/bh_expansion_evidence.json: f2de03eda733badf9c27fac9bcb5a2e4fa5dff136e43899cb0610066e5a657e1
+  data/filter_sensitivity/secure_source_universe.csv: a00628e0fe7623de0f456477bc3ba7ecec35edbc85fc51d61a79ee899a8a0325
+  data/filter_sensitivity/archive_valid_products.csv: de6efa7876417163fd38cebd97c1b1a08c7d38f5eb6ca2e3d4b8680a5447ec44
+  data/filter_sensitivity/heasoft_valid_products.csv: 7d0b3240329a11a6d9938f9ee5e8c54affa433642cbab91a4deaf7046ebd66f5
+  data/filter_sensitivity/label_blind_quality.csv: 01399b069475ec248cef9f8d81fe0b5e38a55412266d563b5e4b274590e4a41a
+  data/filter_sensitivity/input_product_hashes.json: 2431d1762580f66840ae1435721c8e715f42439f38a3f7868f04cb435e9fe74b
+  reports/filter_sensitivity/count_rate_quality_audit.md: 3357659a859db834a6b3bd058b7f058f8b40addd9d1f1d1ef67e5966be253a26
+  reports/filter_sensitivity/bh_exclusion_audit.md: becf04a8871dfeba9027350ab1bcfdc8e532e6516c7b574167af4ed7b1e95e27
+  results/filter_sensitivity/cohort_ladder.csv: 533fa725173b2e628f7d12c13830eb92a5288596fac5a9ed05116b316229df35
+  results/filter_sensitivity/source_gain_summary.csv: c30e224e455dbf910911274e02a9d18a1842ba8d80d1fa5b8066bb51f6099dbb
+cohort_sha256:
+  data/filter_sensitivity/primary_minobs_4.csv: 16721ec861ac9553588774ac169211cc264a0f7caa3339380e309015af447693
+  data/filter_sensitivity/primary_minobs_3.csv: 16721ec861ac9553588774ac169211cc264a0f7caa3339380e309015af447693
+  data/filter_sensitivity/primary_minobs_2.csv: 16721ec861ac9553588774ac169211cc264a0f7caa3339380e309015af447693
+  data/filter_sensitivity/strict_primary_style.csv: b1008e7392e63d3fa7fd54d182c5942ad7997f74d024f7d4f112d3d53b1f2a48
+  data/filter_sensitivity/minobs_3.csv: e0422b9e10e5b20fbe0bfa5c3e0aff73c9a5f7faab55ebeb5c074c37a4f852b1
+  data/filter_sensitivity/minobs_2.csv: e6ddd83e9967bc4f28dd76cd7bad453191e4928fc9410276452b8ac6f88d33e2
+  data/filter_sensitivity/quality_relaxed.csv: 59892df3ce7e6343648bcd13ab0920336e801cd3689c35d7223bdd150bf7d6a2
+  data/filter_sensitivity/expanded_secure_relaxed.csv: 7ee419c2800a903d5c5e56a33c1e2847bd51f42e832fac0a90a6188a1cef69a5
+  data/filter_sensitivity/primary_29.csv: 16721ec861ac9553588774ac169211cc264a0f7caa3339380e309015af447693
+  data/filter_sensitivity/expanded_source.csv: e6ddd83e9967bc4f28dd76cd7bad453191e4928fc9410276452b8ac6f88d33e2
+  data/filter_sensitivity/heasoft_validation.csv: e7a34c19445fee66bb06f23caba80064b781eb76c555eb7a4d31661b655e8977
+implementation_sha256:
+  reports/filter_sensitivity/code/prepare.py: 1e0e5e262e724465b830eee71dd1f9b97e39391c36b3e0db9be3234974c36170
+  reports/filter_sensitivity/code/common.py: fadb1ac2e09792ea71dbb3a94d0c9fbf8ed9104ea2b11be906c9fed39859671d
+  reports/filter_sensitivity/code/run_models.py: 83b405d5d7a017bc3e172c52fa570bb8b945d2914c42f0349aca571fb7b7c7c8
+  src/bhns/experiments/core.py: 98931f423348bb9fcd5df613e22fc0c53b9197d642f2eb3ec140b3c3de21e03a
+  src/bhns/experiments/instrument_validation.py: ae191000fc84297445e6505486bab601f41af3560c1cc17e1abc06020ecc6193
+  src/bhns/experiments/source_balancing.py: 63dc1db7ce0d31d6cae8c79279b491fb603cdff67e0f2f967eea02677061d5fa
+  src/bhns/evaluation/splits.py: 3146592689c8e0cc55d7d028a886905f0bd69b410eeb7ba5a8181ee9829cd3df
+  src/bhns/evaluation/grouped_cv.py: 49672618bf1eb655ddb8323154182935430ac306c5e5ebc163ed28631bd0104e
+  src/bhns/evaluation/loso.py: 63313d862af4034bbe00d894b4b26260f83afe5f63e79b68b65dd9aee29b07ef
+  src/bhns/evaluation/aggregation.py: 191dd92e868f0780b6970efebf0df36e734044761ae0ae39131bbeb2de40a1ff
+  src/bhns/evaluation/bootstrap.py: 8a839646953e751dab31003492d6a79a917c49791f4cb1e1a561f2eb450bf932
+  src/bhns/evaluation/metrics.py: 08c4a820ed4c6100d8a1c95f29c29f42397db25069a6b18fc5b9f7ef1a3a462b

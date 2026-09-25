@@ -1,0 +1,7 @@
+variable,BH_source_median,NS_source_median,BH_minus_NS_source_mean,source_label_permutation_p,unit,interpretation
+observation_year,2000.498288843258,2005.045516769336,-4.03848324844239,0.0043991201759648,source median; within-source fraction for epoch5,exploratory association; unadjusted multiple comparisons; not causal
+exposure,2255.99999999974,2851.999999999835,-238.9610389612144,0.6952609478104379,source median; within-source fraction for epoch5,exploratory association; unadjusted multiple comparisons; not causal
+num_selected_pcus,2.0,1.0,1.3116883116883118,0.0085982803439312,source median; within-source fraction for epoch5,exploratory association; unadjusted multiple comparisons; not causal
+net_count_rate,63.97915797296641,62.46541136961699,30.889819813131027,0.6664667066586683,source median; within-source fraction for epoch5,exploratory association; unadjusted multiple comparisons; not causal
+background_fraction,0.1296106409496963,0.1359994578054851,-0.0264035196194558,0.5190961807638472,source median; within-source fraction for epoch5,exploratory association; unadjusted multiple comparisons; not causal
+epoch5_fraction,0.6818181818181818,0.8936678614097968,-0.3251279153671109,0.0077984403119376,source median; within-source fraction for epoch5,exploratory association; unadjusted multiple comparisons; not causal

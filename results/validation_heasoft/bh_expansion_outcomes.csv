@@ -1,0 +1,4 @@
+candidate,verified_archive_ObsIDs,selected,usable,included,classification_evidence,position_evidence,exclusion_reasons
+GRO J1655-40,593,8,2,True,https://www.nature.com/articles/378157a0,https://chandra.harvard.edu/photo/2025/j1655/index.html,HEASOFT_NET_RATE_NOT_ABOVE_5; ZERO_GOOD_EXPOSURE: predeclared conservative GTI rejects this observation
+GRS 1915+105,1584,8,4,True,https://arxiv.org/abs/1304.1808,https://arxiv.org/abs/1510.08869,ZERO_GOOD_EXPOSURE: predeclared conservative GTI rejects this observation
+V404 Cyg,6,6,0,False,https://academic.oup.com/mnras/article/394/3/1440/1069184,https://arxiv.org/abs/1510.08869,HEASOFT_NET_RATE_NOT_ABOVE_5; Original archive inputs incomplete

@@ -1,0 +1,7 @@
+# Phase-I MNRAS manuscript
+
+`main.tex`, `references.bib`, `main.pdf`, the six main figure PDFs, `supplement/supplement.tex` and supporting files are copied from the canonical reviewed Phase-I package. Scientific text and values are unchanged. Phase II remains a separate future paper. The later local future-work review copy was not silently substituted.
+
+Compile from the release root with `bash manuscript/build.sh`. It works in `build/manuscript/` and leaves tracked files untouched. A TeX installation must provide pdfLaTeX, BibTeX, newtxtext/newtxmath, fontenc, fix-cm, graphicx, amsmath, booktabs, longtable, xurl, microtype, balance, natbib, hyperref and etoolbox. The official MNRAS 3.2 class and style are included with their original notices. Supplement compilation uses the manuscript directory as working directory because its figure references start with `supplement/`.
+
+The standalone supplement retains its linked machine-readable tables and evidence index. Some values duplicate operational files in data/results so the unchanged supplement can stand alone; no second manuscript version is included. Original workspace paths in its evidence index are historical references, not all present files. Read `AUTHOR_TODOS.md`: author names/order, affiliations, funding, disclosures, license and public archive/DOI metadata are still author decisions. The presence of a compiled PDF is not a claim of submission or acceptance.

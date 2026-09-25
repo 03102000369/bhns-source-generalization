@@ -1,0 +1,102 @@
+{
+  "version": "STATE_VALIDATION_V1",
+  "frozen_utc": "2026-09-22T14:49:22.451136+00:00",
+  "eligible_cohort": "frozen EXPANDED_SOURCE (213 observations; 9 BH,22 NS)",
+  "evidence_levels": [
+    "DIRECT",
+    "STRONG"
+  ],
+  "exclusions": [
+    "PROVISIONAL",
+    "UNRESOLVED",
+    "CONFLICTED",
+    "ambiguous or mixed pointings"
+  ],
+  "taxonomy": "publication-specific native labels; evidence-specific observable regime mappings only",
+  "mapping_sha256": "ad33e70ac571ee9711512572f0980cbde34e77341354c8f4bae933361f4345bf",
+  "minimum_physical_sources_per_class_per_regime": 5,
+  "matching": {
+    "variables": [
+      "evidence_specific_common_regime"
+    ],
+    "tolerance": "exact category plus admissible evidence",
+    "priority": [
+      "independent sources",
+      "state distribution",
+      "detector support",
+      "observations"
+    ],
+    "status": "INFEASIBLE_DUE_TO_SOURCE_COUNT",
+    "continuous_matching": "not performed; no empirically tuned caliper or test-source-derived support"
+  },
+  "primary_analysis": {
+    "name": "STATE_MATCHED_V1",
+    "status": "NOT_RUN",
+    "reason": "No shared justified regime with five physical sources per class; new data/new protocol required before matching"
+  },
+  "secondary_proxy_diagnostic": {
+    "enabled": true,
+    "confirmatory": false,
+    "cohort": "all expanded observations with positive finite three-band totals",
+    "features": [
+      "log_hardness_mid_soft",
+      "log_hardness_high_mid",
+      "log_intensity"
+    ],
+    "objective": "Measure class separation carried by coarse spectral-regime coordinates; not physical-state adjustment or a causal mediation analysis",
+    "comparator": "Reuse frozen EXPANDED_SOURCE full 43-bin predictions on identical ObsIDs and sources; paired bootstrap proxy minus full"
+  },
+  "models": {
+    "logistic": {
+      "solver": "liblinear",
+      "C": [
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ]
+    },
+    "forest": {
+      "n_estimators": 100,
+      "min_samples_leaf": 3,
+      "max_depth": [
+        4,
+        null
+      ]
+    }
+  },
+  "splits": [
+    "5-fold source-stratified grouped",
+    "leave-one-physical-source-out"
+  ],
+  "inner": "20% stratified physical-source holdout within outer training; choose source BA; first candidate wins ties",
+  "preprocessing": "StandardScaler fitted only to inner training during selection and outer training during refit; no imputation, PCA, feature selection or resampling",
+  "weighting": "existing mean-one inverse-observation-count weights: equal total mass per training source; class mass remains proportional to training source counts; no class weighting",
+  "aggregation": "mean clipped log odds across observations per held-out source; NS positive",
+  "metrics": [
+    "AUROC",
+    "balanced_accuracy",
+    "MCC",
+    "F1",
+    "PR_AUC",
+    "Brier"
+  ],
+  "threshold": 0.5,
+  "threshold_recalibration": "none",
+  "calibration": "descriptive source reliability in 5 fixed equal-width bins; Brier; prediction probability distributions; no threshold optimization",
+  "uncertainty": "2000 class-stratified physical-source percentile bootstrap draws; conditional on fitted predictions, does not refit models or capture all training variability",
+  "seed": 42,
+  "permutations": {
+    "planned_if_matched_feasible": 50,
+    "unit": "physical source",
+    "compare": [
+      "observation-wise",
+      "source-grouped"
+    ],
+    "status": "NOT_RUN_NO_MATCHED_COHORT"
+  },
+  "cross_state": "INFEASIBLE_DUE_TO_SOURCE_COUNT",
+  "within_source": "Descriptive native-state score summaries; no observation-level significance tests",
+  "interpretation": "No arbitrary success threshold. Assess effect size and uncertainty only for a credible matched design. With current source scarcity, physical-state verdict must remain STATE_INCONCLUSIVE regardless of proxy AUROC.",
+  "prior_information": "Primary and HEASoft results were already known; no state-stage model performance has been computed before this freeze."
+}

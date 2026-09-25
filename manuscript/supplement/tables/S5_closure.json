@@ -1,0 +1,50 @@
+{
+  "branch": "B",
+  "feasibility": "FAIL",
+  "state_question": "STATE_CONTROL_NOT_FEASIBLE_WITH_AVAILABLE_EVIDENCE",
+  "verdict": "STATE_EXTENSION_CLOSED_INFEASIBLE",
+  "publication_readiness": "D",
+  "decided_utc": "2026-09-22T15:58:00.738257+00:00",
+  "candidate_universe": 22,
+  "targets_searched": 20,
+  "discovery_and_followup_queries": 32,
+  "processed_target_obsids": 154,
+  "papers_screened": 34,
+  "new_native_DIRECT": 7,
+  "new_native_STRONG": 0,
+  "new_common_regime_observations": 4,
+  "new_common_regime_sources": 2,
+  "ml_runs": 0,
+  "cohort_created": false,
+  "minimum_sources_per_class": 5,
+  "regimes": [
+    {
+      "common_regime": "HARD_DOMINATED",
+      "BH_sources": 6,
+      "BH_observations": 19,
+      "BH_DIRECT_sources": 2,
+      "BH_STRONG_sources": 4,
+      "NS_sources": 4,
+      "NS_observations": 10,
+      "NS_DIRECT_sources": 3,
+      "NS_STRONG_sources": 2,
+      "PASS": false
+    },
+    {
+      "common_regime": "SOFT_DOMINATED",
+      "BH_sources": 2,
+      "BH_observations": 2,
+      "BH_DIRECT_sources": 0,
+      "BH_STRONG_sources": 2,
+      "NS_sources": 1,
+      "NS_observations": 2,
+      "NS_DIRECT_sources": 0,
+      "NS_STRONG_sources": 1,
+      "PASS": false
+    }
+  ],
+  "mapping_sha256": "4cd5fa777179ba89037562fc030c8827251232eb27d8668c44381d98c610b768",
+  "extension_sha256": "47aa0d65aedb86b566ed87defaa3cd9372b618cef218fa4410988d7121f8306b",
+  "merged_sha256": "87afab97167463057ee8b886c53587a41cad4e8da878c5f9e75a2378f83e2604",
+  "search_plan_sha256": "b88f5925bd954f00f6e2adaf4834aa382f188674420cb35646e7f0955136753f"
+}

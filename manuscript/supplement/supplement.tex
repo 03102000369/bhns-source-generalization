@@ -1,0 +1,184 @@
+% Official MNRAS class, unmodified. Scientific prose converted from reviewed Markdown.
+\PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+\RequirePackage{fix-cm}
+\pdfminorversion=5
+\documentclass[fleqn,usenatbib]{mnras}
+\usepackage{newtxtext,newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,amsmath,booktabs,longtable}
+\usepackage{xurl}
+\usepackage{microtype,balance}
+\raggedbottom
+% Avoid duplicate anchors with the class caption definition and current hyperref.
+\makeatletter
+\patchcmd{\caption}{\refstepcounter}{\H@refstepcounter}{}{\PackageError{bhns}{Caption compatibility patch failed}{Check hyperref compatibility.}}
+% The official BST purifies undated labels to nd[a-d]; display readable n.d. citations.
+\apptocmd{\NAT@parse}{%
+\ifdefstring{\NAT@date}{nda}{\def\NAT@date{n.d.a}}{}%
+\ifdefstring{\NAT@date}{ndb}{\def\NAT@date{n.d.b}}{}%
+\ifdefstring{\NAT@date}{ndc}{\def\NAT@date{n.d.c}}{}%
+\ifdefstring{\NAT@date}{ndd}{\def\NAT@date{n.d.d}}{}%
+}{}{\PackageError{bhns}{Undated citation patch failed}{Check natbib compatibility.}}
+\makeatother
+\DeclareRobustCommand{\VAN}[3]{#2}
+\let\VANthebibliography\thebibliography
+\def\thebibliography{\DeclareRobustCommand{\VAN}[3]{##3}\VANthebibliography}
+\newcommand{\AuthorTODO}[1]{\textbf{TODO: #1}}
+\hypersetup{hidelinks,pdftitle={Black-Hole and Neutron-Star Classification Beyond Known Sources},pdfauthor={Author information pending}}
+
+\title[Supporting information]{Supporting information: Black-Hole and Neutron-Star Classification Beyond Known Sources: An RXTE/PCA Evaluation}
+\author[Author information pending]{\AuthorTODO{author names and affiliations}}
+\date{Author review copy}
+\pubyear{2026}
+\begin{document}\label{firstpage}\pagerange{\pageref{firstpage}--\pageref{lastpage}}\maketitle
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+
+This supplement accompanies the integrated manuscript. Its machine-readable evidence index records the original and packaged SHA-256 for every accompanying table and evidence file. Most copies are byte-identical; machine-specific path prefixes are normalized in the remaining copies. Numerical fields are unchanged. The accompanying table README describes the files and columns. These materials describe completed experiments. They do not contain a newly trained model or a state-matched result.
+
+\section{Source census, observation provenance and cohort definitions}
+
+Tables S1 comprise the full reference roster, source registry, reviewed aliases, label-provenance records, selected ObsIDs, exclusions and cohort census. The catalogue and central identity evidence is given by \citet{CorralSantana2016,Galloway2020,Orosz2001,Sanna2018}. The reference roster includes rejected and unresolved entries; it is not the final admitted sample. The canonical source identifier is the grouping key. A different catalogue string does not create a new physical system.
+
+The primary reconstruction required four usable observations per source, whereas the later independently processed cohorts required two. This corrects a generalization in the protected historical Methods draft, not a dataset or protocol. The primary cohort has 687 observations (122 BH and 565 NS) from 29 sources (7 BH and 22 NS). The independently processed original-source cohort has 207 observations; the expanded sample has 213, with 9 BH and 22 NS systems. These counts are copied in \href{tables/S1_cohort_census.csv}{S1\_cohort\_census.csv}.
+
+Full per-observation lineage remains in the frozen project's \path{data/provenance/rxte_processing/}, \path{data/raw/rxte/} acquisition manifests and independent reduction \path{processing.json} records. The frozen project's protected manifest is the comprehensive index of preserved scientific files; download URLs and raw checksums are in the original acquisition records. Large raw and native-array products are not duplicated into this small manuscript review bundle. Their planned deposition/retrieval is specified in the availability document. A local dossier is evidence documentation, not a claim that every source has an independently complete physical-state history.
+
+\section{Complete performance, sensitivity and fingerprint results}
+
+\href{tables/S2_primary_metrics.csv}{Table S2 primary metrics} includes prior, logistic and forest results for each split, with AUROC, BA, MCC, F1, precision, recall, average precision, Brier score and accuracy plus available intervals. ``PR\_AUC'' is average precision. The prior uses a fixed NS probability and a tie-to-NS threshold; it is not the fold-dependent empirical prevalence. All headline rows represent physical sources, not observations.
+
+\href{tables/S2_primary_paired_differences.csv}{Paired split differences} resample identical sources across observation-wise and grouped predictions. The \href{tables/S2_primary_robustness.csv}{robustness table} retains observation-weighted training, training-only principal-component sensitivity, spectra-plus-errors, removal of the most observed source, the high-rate restriction, alternative grouped seeds and fixed logistic settings. These are sensitivity analyses, not multiple independent validations or a model-selection tournament. The \href{tables/S2_learning_curve.csv}{learning-curve table} is an exploratory fixed-model diagnostic; increasing training-source count in this small sample does not establish an asymptotic population learning curve.
+
+The randomization tables retain every tested label permutation, including low and high grouped outcomes. Label counts are preserved at the source level. The identification-prediction file permits direct calculation of the mean per-source identity accuracy without treating prolific sources as independent replicates. It is not a BH/NS confusion table.
+
+\section{Source-level predictions and fit audit}
+
+\href{tables/S3_primary_LOSO.csv}{Primary LOSO scores} and the complete grouped/LOSO source summaries for \texttt{HEASOFT\_\allowbreak VALIDATION}, \texttt{HEASOFT\_\allowbreak MATCHED}, \texttt{EXPANDED\_\allowbreak SOURCE} and \texttt{PRIMARY\_\allowbreak SAME\_\allowbreak OBSIDS} are supplied for both classifiers. Tables preserve all sources, including errors and scores near the fixed threshold. Their \path{p_NS} field is mean-log-odds pooled; \path{mean_probability} is a different arithmetic summary and must not be substituted when recalculating headline metrics.
+
+The original run folders contain observation predictions and \path{fit_audits.json}, including outer membership, inner membership, fitted feature columns and scaler/model provenance. These files are bound by the protected manifest. Per-source probability ranges summarize variation between observations, not confidence intervals for an underlying calibrated class probability. The main Figure 5 intentionally plots no invented source-level error bars.
+
+\section{Independent processing, detector support and confounders}
+
+\href{tables/S4_all_validation_metrics_tidy.csv}{Complete validation metrics} transcribes every available metric and interval from the immutable validation and diagnostic JSONs. Its rows retain the original run/tag and source hash. \href{tables/S4_paired_processing_effects.csv}{Paired processing effects} subtract stored original-product metrics from stored HEASoft metrics on identical ObsIDs and attach the existing paired intervals. No new bootstrap is run. The full JSON structures are also supplied, with any machine-specific path prefixes normalized, so extraction can be audited.
+
+Metadata-only, normalized-shape and background-fraction cuts are distinct controls. Common support uses epoch and PCU-count strata plus exposure, rate and background bounds; the \href{tables/S4_residual_imbalance.csv}{residual imbalance table} documents why the word ``matched'' does not mean exact distributional equality. Epoch and PCU composition tables must be read with the source counts: a source can span epochs, so counts across epochs are not independent systems to be summed.
+
+The \href{tables/S4_epoch_holdout.csv}{epoch table} preserves infeasible epochs alongside the feasible case. That case has only two BH and two NS test systems: AUROC is unity for both models, but BA is 0.5 and MCC is zero, with all sources assigned NS. Its degenerate conditional AUROC interval is not an estimate of negligible uncertainty in future sources. Failure annotations and coefficient-stability outputs are descriptive; they do not identify a physical cause of an error.
+
+\section{State evidence, extension and proxies}
+
+The original and merged state catalogues are supplied separately. The merged file preserves original fields and extension provenance. DIRECT native-state evidence is not automatically DIRECT common-regime evidence. Only full-observation support and an explicit source-specific spectral interpretation admit a shared regime; provisional, unresolved, conflicting and partial-overlap evidence remains outside the gate.
+
+Twenty copied target dossiers record the bounded NS extension. For IGR J00291+5934, exact early-pointing assignments and spectral support admit the designated hard observations \citep{Linares2007,Falanga2005}. For SAX J1808.4$-$3658, native island evidence is supplemented by the source-specific supported interval for the relevant outburst \citep{Bult2015,Ibragimov2009}. Other native-only assignments are retained without an automatic cross-class conversion. Burst occurrences alone do not label persistent spectral state.
+
+The final \href{tables/S5_final_regime_counts.csv}{regime table} reports 6 BH/4 NS systems in the hard-dominated regime and 2 BH/1 NS in the soft-dominated regime. The \href{tables/S5_closure.json}{closure record} retains the five-systems-per-class requirement, infeasible branch, and zero model runs. There is no state-matched metric table with inferred or placeholder performance values.
+
+\href{tables/S5_proxy_metrics.csv}{Proxy metrics} and \href{tables/S5_proxy_full_paired.csv}{paired proxy-minus-full differences} describe the separate three-coordinate diagnostic on the expanded sample. \newpage The proxies are fixed detector-space log hardness ratios and log intensity. They do not supply native states. Zero-crossing paired AUROC intervals do not establish equivalence, complete mediation by state, or absence of information in the finer spectrum.
+
+Native-state and within-source summaries are explicitly descriptive and have source-dependent coverage. The retained reliability figure (Fig. S1) and \href{tables/S5_reliability.csv}{reliability data} do not establish deployment calibration. The same physical system may contribute to multiple native-state categories; those category counts are not interchangeable with independent-source totals.
+
+\section{Software, integrity and reproducibility}
+
+Frozen primary, HEASoft, state and extension plans are copied with recorded environment snapshots. The environment correction distinguishes calibration files from directory entries while preserving the original snapshot. The manuscript uses local stage-wise protocol freezing, not external registration of the entire project.
+
+The scientific test suite passed 278 tests during manuscript assembly (see the frozen project test log). These tests verify implementation properties and fixtures; passing them is not a new external validation. No scientific fit was executed during assembly. The numerical ledger records displayed rounding alongside exact source selectors and hashes. Scientific outcomes come from frozen tables/JSONs, method definitions from frozen protocols/code, and identifiers/citation years are not treated as estimated measurements.
+
+The project reproduction commands distinguish safe verification and manuscript rendering from optional isolated historical reruns. Some historical ``audit'' scripts write reports, so their names alone do not establish read-only behaviour. Clean-host raw reduction and public deposition remain release tasks rather than completed claims. Central weaknesses -- small source counts, state infeasibility, conditional uncertainty and mission specificity -- are stated in the main paper as well as here.
+
+\begin{figure*}\centering
+\includegraphics[width=\textwidth]{supplement/figures/figure_S1_calibration.pdf}
+\caption{Retained source-level reliability diagnostic from the completed state investigation. The plotted points and reference lines are unchanged from the frozen figure. These descriptive diagnostics do not establish deployment calibration. The same physical system may contribute to multiple native-state categories; category counts must not be interpreted as independent-source totals.}\label{fig:calibration}
+\par\smallskip\begin{minipage}{\textwidth}\footnotesize\textbf{Alt text:} Upper panels compare mean predicted neutron-star scores with observed neutron-star fractions and diagonal calibration references for logistic regression and the forest. Lower panels show source-score distributions by true class and the fixed classification threshold.\end{minipage}
+\end{figure*}
+\clearpage\onecolumn
+\section*{Guide to the accompanying machine-readable material}
+The table files and evidence dossiers are supplied alongside this PDF in the supporting-material archive. Filenames beginning S1--S6 correspond to Sections S1--S6 above. Table sets retain the numbering of the reviewed manuscript; the source roster below is an extract of set S1, and the reliability figure is Fig. S1. No fitting or resampling was performed to prepare this material. The raw-data acquisition manifests, observation-level fit audits and complete software history remain in the frozen project and require an author-approved public release; their local existence does not establish public availability.
+
+
+\begin{longtable}{llrr}\caption{Complete expanded-cohort source roster from the frozen logistic LOSO summary (table set S1). The observation counts refer to the expanded independently processed sample.}\label{tab:roster}\\\toprule Source identifier & Source name & Class & Observations \\\midrule\endfirsthead\toprule Source identifier & Source name & Class & Observations \\\midrule\endhead
+
+1a\_1744\_361 & 1A 1744-361 & NS & 8 \\
+
+4u\_0614\_09 & 4U 0614+09 & NS & 8 \\
+
+4u\_1254\_69 & 4U 1254-69 & NS & 8 \\
+
+4u\_1543\_475 & 4U 1543-475 & BH & 4 \\
+
+4u\_1608\_522 & 4U 1608-522 & NS & 8 \\
+
+4u\_1636\_536 & 4U 1636-536 & NS & 8 \\
+
+4u\_1702\_429 & 4U 1702-429 & NS & 8 \\
+
+4u\_1705\_44 & 4U 1705-44 & NS & 8 \\
+
+4u\_1728\_34 & 4U 1728-34 & NS & 8 \\
+
+4u\_1735\_444 & 4U 1735-444 & NS & 8 \\
+
+4u\_1746\_37 & 4U 1746-37 & NS & 8 \\
+
+aql\_x\_1 & Aql X-1 & NS & 8 \\
+
+cyg\_x\_2 & Cyg X-2 & NS & 7 \\
+
+gro\_j1655\_40 & GRO J1655-40 & BH & 2 \\
+
+grs\_1915\_105 & GRS 1915+105 & BH & 4 \\
+
+gs\_1354\_64 & GS 1354-64 & BH & 7 \\
+
+gx\_339\_4 & GX 339-4 & BH & 7 \\
+
+hete\_j1900\_1\_2455 & HETE J1900.1-2455 & NS & 8 \\
+
+igr\_j00291\_5934 & IGR J00291+5934 & NS & 4 \\
+
+ks\_1731\_260 & KS 1731-260 & NS & 8 \\
+
+mxb\_1658\_298 & MXB 1658-298 & NS & 8 \\
+
+sax\_j1750\_8\_2900 & SAX J1750.8-2900 & NS & 8 \\
+
+sax\_j1806\_5\_2215 & SAX J1806.5-2215 & NS & 8 \\
+
+sax\_j1808\_4\_3658 & SAX J1808.4-3658 & NS & 7 \\
+
+sax\_j1810\_8\_2609 & SAX J1810.8-2609 & NS & 7 \\
+
+ser\_x\_1 & Ser X-1 & NS & 8 \\
+
+slx\_1735\_269 & SLX 1735-269 & NS & 8 \\
+
+v4641\_sgr & V4641 Sgr & BH & 5 \\
+
+xte\_j1118\_480 & XTE J1118+480 & BH & 7 \\
+
+xte\_j1550\_564 & XTE J1550-564 & BH & 3 \\
+
+xte\_j1859\_226 & XTE J1859+226 & BH & 5 \\
+
+\bottomrule\end{longtable}
+
+\subsection*{File groups and interpretation}
+
+\noindent\textbf{S1}: Reference roster, aliases, label evidence, selected and excluded observations, and cohort counts.\par\smallskip
+
+\noindent\textbf{S2}: Complete primary metrics, paired split effects, sensitivity results, learning curves, randomization and identification predictions.\par\smallskip
+
+\noindent\textbf{S3}: Complete per-source primary LOSO and independent-processing grouped/LOSO summaries for both classifiers.\par\smallskip
+
+\noindent\textbf{S4}: Independent-processing metrics, paired effects, detector/epoch composition, residual imbalance, randomization and diagnostics.\par\smallskip
+
+\noindent\textbf{S5}: Original and merged state catalogues, all target dossiers, closure, feasibility, proxies, paired effects and reliability data.\par\smallskip
+
+\noindent\textbf{S6}: Frozen protocols, mapping/search plans and recorded software/processing environments.\par\smallskip
+
+\noindent\textbf{Column documentation:} The accompanying \path{tables/README.md} lists every CSV schema, purpose, and common field definitions. The \path{tables/evidence_index.csv} records original and packaged hashes. Original and packaged hash differences denote path-prefix normalization only. Full-precision numerical strings, row order and scientific annotations are preserved. Public deposition and release licences remain author actions.
+
+\bibliographystyle{mnras}\bibliography{references}
+\label{lastpage}\end{document}

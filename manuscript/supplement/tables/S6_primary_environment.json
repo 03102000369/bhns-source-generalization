@@ -1,0 +1,36 @@
+{
+  "import_checks": {
+    "joblib": "PASS",
+    "matplotlib": "PASS",
+    "numpy": "PASS",
+    "pandas": "PASS",
+    "pytest": "PASS",
+    "scipy": "PASS",
+    "sklearn": "PASS",
+    "torch": "PASS",
+    "tqdm": "PASS",
+    "yaml": "PASS"
+  },
+  "optional_packages": {
+    "astropy": "8.0.1",
+    "astropy-iers-data": "0.2026.9.21.0.56.25",
+    "h5py": null,
+    "pyarrow": null,
+    "pyerfa": "2.0.1.5"
+  },
+  "packages": {
+    "PyYAML": "6.0.3",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "pytest": "9.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.0",
+    "tqdm": "4.70.1"
+  },
+  "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.12",
+  "status": "PASS"
+}

@@ -1,0 +1,43 @@
+{
+  "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "tools": {
+    "xspec": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/xspec",
+    "fversion": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/fversion",
+    "pcaprepobsid": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/pcaprepobsid",
+    "xtefilt": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/xtefilt",
+    "xteprefilter": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/xteprefilter",
+    "pcaprepfile1": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/pcaprepfile1",
+    "pcaprepfile2": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/pcaprepfile2",
+    "pcadeadcalc1": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/pcadeadcalc1",
+    "pcadeadcalc2": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/pcadeadcalc2",
+    "pcabackest": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/pcabackest",
+    "pcaextspect2": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/pcaextspect2",
+    "pcarsp": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/pcarsp",
+    "pcarmf": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/pcarmf",
+    "maketime": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/maketime",
+    "quzcif": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft/bin/quzcif"
+  },
+  "environment": {
+    "HEADAS": "/Users/youhanwanigasuriya/miniconda3/envs/bhns-heasoft/heasoft",
+    "CALDB": "/Users/youhanwanigasuriya/.local/share/bhns/caldb",
+    "CALDBCONFIG": "/Users/youhanwanigasuriya/.local/share/bhns/caldb/software/tools/caldb.config",
+    "CALDBALIAS": "/Users/youhanwanigasuriya/.local/share/bhns/caldb/software/tools/alias_config.fits"
+  },
+  "versions": {
+    "HEASoft": {
+      "exit_code": 0,
+      "output": "02Sep2026_V6.37.1\n"
+    },
+    "XSPEC": {
+      "exit_code": 0,
+      "output": "\n\t\tXSPEC version: 13.0.1\n\tBuild Date/Time: Tue Sep 22 18:06:30 2026\n\nCreating a $HOME/.xspec directory for you\nXSPEC>exit\n XSPEC: quit\n"
+    }
+  },
+  "caldb": {
+    "root": "/Users/youhanwanigasuriya/.local/share/bhns/caldb",
+    "release": "20230501",
+    "index_sha256": "afd550e422de1bf3c6d18b55a5a271d6b72aa65a64770c2f8a34ce25bd7fbc66",
+    "calibration_files": 241
+  }
+}

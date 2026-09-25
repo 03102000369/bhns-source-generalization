@@ -1,0 +1,8 @@
+gain_epoch,class_label,observations,sources
+1,NS,1,1
+3,BH,25,3
+3,NS,47,10
+4,BH,36,3
+4,NS,32,9
+5,BH,61,5
+5,NS,485,22

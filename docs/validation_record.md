@@ -1,0 +1,11 @@
+# Release validation record
+
+Phase-I lightweight suite: **221 passed, 1 deselected**. The deselected test is the explicitly marked full-workspace historical integrity test, requiring omitted intermediates. Tests ran under Python 3.13 using the existing scientific test environment, with `PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 PYTHONDONTWRITEBYTECODE=1 python -m pytest -q -p no:cacheprovider --basetemp=build/tests --junitxml=build/pytest-main.xml`. No scientific model rerun occurred.
+
+`python scripts/verify_release.py`: payload hashes, provenance map, primary cohort and state conclusion PASS. Frozen fold definitions and recovered primary point metrics are checked by tests. `python scripts/reproduce_tables.py`: nine main comparison rows rebuilt. `python scripts/render_journal_figures.py`: six figures rebuilt from frozen summaries. Package wheel built and installed into an isolated local target without dependency installation; this is not a fresh dependency-environment test.
+
+`bash manuscript/build.sh`: main 11 pages and supplement 5 pages compiled. Zero undefined citations/references and zero overfull boxes in final logs. Every page was rendered with Poppler and compared with the frozen PDFs; 10/11 main and 4/5 supplement pages are pixel-identical at 700-pixel scale. The only text/render differences are the automatic first-page preprint date (22 to 24 September 2026), with no content change. First pages visually inspected. Archived PDFs remain byte-identical to the originals.
+
+CITATION.cff is checked against the official CFF 1.2.0 schema; its explicit TODO author entry remains a publication-metadata limitation. No author identity, DOI or release date was fabricated. The lightweight GitHub Actions workflow is prepared but has not run remotely because no remote was pushed.
+
+Original-tree safety: no original file was added, removed or destructively moved; all 10,148 protected original hashes pass. Six copied provenance files had sub-microsecond mtime rounding changes during coordinated iCloud reads (18–107 ns), with unchanged sizes, modes and copied-source hashes. Those filesystem timestamp adjustments were not restored by writing to the originals. No scientific original bytes were edited.

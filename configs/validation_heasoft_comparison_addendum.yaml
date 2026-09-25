@@ -1,0 +1,9 @@
+parent_protocol_sha256: e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd
+declared_before_HEASOFT_model_performance: true
+reason: Separate observation/source composition changes from detector treatment in the requested primary-versus-validation comparison
+additional_cohort: PRIMARY_SAME_OBSIDS
+selection: Read-only primary rows whose ObsIDs occur in the admitted HEASOFT_VALIDATION cohort
+models: [logistic, forest]
+splits: [grouped, loso]
+all_other_settings: unchanged from frozen validation protocol
+interpretation: Paired source comparisons conditional on the identical admitted ObsIDs; a sensitivity result stored only in validation outputs

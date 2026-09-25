@@ -1,0 +1,42 @@
+seed: 42
+data:
+  observation_table: data/processed/observations.csv
+  source_manifest: data/manifests/source_manifest.csv
+  label_provenance: data/manifests/label_provenance.csv
+  dataset_provenance: data/manifests/dataset_provenance.yaml
+  feature_representation: SM
+  observation_manifest: data/manifests/observation_manifest.csv
+  source_registry: data/manifests/source_registry.csv
+  source_aliases: data/manifests/source_aliases.csv
+  product_provenance: data/provenance/observation_provenance.csv
+  external_sources: data/provenance/external_sources.csv
+  energy_grids: data/manifests/energy_grids.json
+  pm_definitions: data/manifests/pm_feature_definitions.json
+  n_spectral_bins: 43
+  energy_min_keV: 5.0
+  energy_max_keV: 25.0
+  allow_missing_features: false
+  expected_counts: {sources: 61, BH: 27, NS: 34, observations: 14885}
+classes: {BH: 0, NS: 1}
+training:
+  epochs: 200
+  batch_size: 64
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 20
+preprocessing:
+  imputation: null
+  standardize: true
+  pca_components: null
+evaluation:
+  primary_unit: source
+  probability_aggregation: mean_log_odds
+  log_odds_epsilon: 1.0e-7
+  bootstrap_repetitions: 2000
+  bootstrap_unit: source
+  validation_fraction: 0.2
+  inner_split: source_disjoint
+experiment:
+  name: foundation
+  model: null
+  scientific_runs_enabled: false

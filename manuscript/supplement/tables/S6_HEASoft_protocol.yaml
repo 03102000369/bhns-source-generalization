@@ -1,0 +1,68 @@
+stage: INDEPENDENT_VALIDATION_SENSITIVITY
+name: HEASOFT_CALDB_VALIDATION_V1
+primary_dataset_sha256: 9526c3327502907fa50655a5749b206ba1eda903f16fb45fa13e2665d06fb7f8
+primary_immutable: true
+source_inclusion: Verified primary identities; new systems require dynamical BH evidence, reviewed aliases and independent position within 0.05 degrees
+raw_observation_selection:
+  cohort: PRIMARY_29 usable observations
+  maximum_per_source: 8
+  method: evenly spaced chronological ranks including endpoints; selected before validation performance
+expanded_selection:
+  maximum_new_BH_sources: 3
+  priority: secure previously omitted reference-roster systems, then secure catalogue systems with RXTE observations
+  maximum_observations_per_source: 8
+minimum_observations_per_source: 2
+minimum_sources_per_class: 5
+heasoft:
+  version: 6.37.1
+  caldb: XTE PCA release 20230501; calibration bytes and index hashed before reduction
+  workflow: pcaprepobsid then maketime then pcaextspect2
+  detector: PCU2 only
+  layers: top xenon layer 1
+  background: pcabackest via pcaprepobsid modelfile=CALDB; save resolved model histories
+  response: pcaextspect2 integrated pcarsp, exposure-weighted time, same detector/layer
+  deadtime: pcadeadcalc1/2 preparation and pcaextspect2 default correction; no manual rate correction
+  gti: ELV > 10 AND OFFSET < 0.02 AND PCU2_ON AND ELECTRON2 < 0.1
+  early_mission_addition: TIME_SINCE_SAA > 30 OR TIME_SINCE_SAA < 0 for epochs 1/2 only; units minutes per NASA recipe
+  gti_reference: https://heasarc.gsfc.nasa.gov/docs/xte/recipes2/Screening.html
+  quality: positive exposure, finite source/background/errors/response, verified identity and PCU2, net 5-25keV rate >5 count/s/PCU
+  representation: HEASOFT_CALDB_RATE43_V1; 43 equal intervals 5-25 keV, native EBOUNDS fractional overlap with covariance
+  exposure_convention: pcaextspect2 exposure already accounts for contributing live PCUs; never divide again by PCU count
+cohorts:
+  PRIMARY_29_DIAGNOSTIC: read-only primary spectra plus separately extracted metadata
+  HEASOFT_VALIDATION: independently reduced preselected primary ObsIDs meeting quality criteria
+  DETECTOR_MATCHED: PRIMARY_29 common-support restriction; explicitly not independent reduction
+  HEASOFT_MATCHED: apply same common-support policy to HEASOFT_VALIDATION when sufficient
+  EXPANDED_SOURCE: independently reduced validation plus new secure sources, if available
+matching:
+  strata: [gain_epoch, selected_pcus]
+  minimum_distinct_sources_per_class_per_stratum: 2
+  exposure_seconds: [256, 16384]
+  net_rate_count_s_PCU: [5, 1000]
+  maximum_background_fraction: 0.5
+  minimum_observations_per_source: 2
+  claim: common-support restriction, not exact distributional balance; report residual imbalance
+background_sensitivities: [0.25, 0.5]
+metadata_only:
+  numeric_features: [observation_year, log_exposure, num_selected_pcus, pcu0_selected, pcu1_selected, pcu2_selected, pcu3_selected, pcu4_selected, native_channels_used, native_min_keV, native_max_keV, gain_epoch_1, gain_epoch_2, gain_epoch_3, gain_epoch_4, gain_epoch_5]
+  excluded: [source_id, obs_id, target_name, class_label, source_count_rate, background_count_rate, net_count_rate, background_fraction, response_identifier, grid_identifier]
+  note: background fraction is audited descriptively but excluded from strict metadata-only classifier because it derives from count amplitudes
+models:
+  logistic: {C: [0.01, 0.1, 1.0, 10.0], solver: liblinear, max_iter: 3000}
+  forest: {n_estimators: 100, max_depth: [4, null], min_samples_leaf: 3}
+splits: [5-fold stratified physical-source grouped CV, LOSO]
+inner: 20 percent source-disjoint stratified validation within outer training; first candidate wins ties; refit fresh scaler on complete outer training
+preprocessing: training-only standardization; no learned feature selection; no imputation unless recorded separate amendment
+weighting: equal total training weight per source
+aggregation: mean log odds, clip probabilities to [1e-7, 1-1e-7]
+positive_class: NS
+threshold: 0.5
+metrics: [AUROC, balanced_accuracy, MCC, F1, PR_AUC_average_precision, Brier]
+uncertainty: 2000 class-stratified physical-source bootstrap draws; conditional on fitted predictions
+seed: 42
+shape_sensitivity: divide each 43-bin net spectrum by its positive summed 5-25 keV net rate, retain negative bins; grouped logistic and forest; no unfolding
+epoch_holdout: For each epoch, test sources with >=2 observations there; training uses other epochs and excludes every test source; require >=2 test sources/class and >=5 training sources/class; otherwise infeasible
+source_randomization: HEASOFT_VALIDATION only; 10 source-label permutations, seeds 300-309, fixed forest depth null; observation-wise and grouped folds regenerated under randomized source labels
+interpretability: standardized logistic coefficients across grouped/LOSO folds; aggregate 5-10/10-15/15-20/20-25 keV; forest impurity importance descriptive only; no causal or mechanism claims
+failure_states: assign published physical states only with explicit date/ObsID support; otherwise unknown, no clustering-derived state labels
+success: assess independent reduction, above-chance transfer, metadata predictability, matched performance and source composition; no desired-AUROC threshold

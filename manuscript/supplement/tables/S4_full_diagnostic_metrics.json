@@ -1,0 +1,722 @@
+[
+  {
+    "tag": "metadata_logistic",
+    "model": "logistic",
+    "split": "grouped",
+    "observations": 687,
+    "sources": 29,
+    "BH_sources": 7,
+    "NS_sources": 22,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "20e9ae7330c38381090e14d84b1303268d9d01a0f591840920d5af42465be706",
+    "metrics": {
+      "AUROC": 0.7012987012987012,
+      "balanced_accuracy": 0.5,
+      "MCC": 0.0,
+      "F1": 0.8627450980392157,
+      "precision": 0.7586206896551724,
+      "recall": 1.0,
+      "PR_AUC": 0.8482051667880544,
+      "Brier": 0.1757213713494154,
+      "accuracy": 0.7586206896551724
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.4350649350649351,
+        "upper": 0.922077922077922
+      },
+      "balanced_accuracy": {
+        "lower": 0.5,
+        "upper": 0.5
+      },
+      "MCC": {
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "F1": {
+        "lower": 0.8627450980392157,
+        "upper": 0.8627450980392157
+      },
+      "precision": {
+        "lower": 0.7586206896551724,
+        "upper": 0.7586206896551724
+      },
+      "recall": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.7275147245804978,
+        "upper": 0.9765288012606819
+      },
+      "Brier": {
+        "lower": 0.1521019823913461,
+        "upper": 0.20275807194639123
+      },
+      "accuracy": {
+        "lower": 0.7586206896551724,
+        "upper": 0.7586206896551724
+      }
+    }
+  },
+  {
+    "tag": "matched_logistic_grouped",
+    "model": "logistic",
+    "split": "grouped",
+    "observations": 598,
+    "sources": 29,
+    "BH_sources": 7,
+    "NS_sources": 22,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "4c34b0b57ed7a0f9f806a959392d21323e4bcdd71f273902a671be5fe584f77b",
+    "metrics": {
+      "AUROC": 0.9675324675324676,
+      "balanced_accuracy": 0.9058441558441559,
+      "MCC": 0.8116883116883117,
+      "F1": 0.9545454545454546,
+      "precision": 0.9545454545454546,
+      "recall": 0.9545454545454546,
+      "PR_AUC": 0.9891280257777031,
+      "Brier": 0.08281083140423104,
+      "accuracy": 0.9310344827586207
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.8831168831168831,
+        "upper": 1.0
+      },
+      "balanced_accuracy": {
+        "lower": 0.7402597402597402,
+        "upper": 1.0
+      },
+      "MCC": {
+        "lower": 0.5076119249638631,
+        "upper": 1.0
+      },
+      "F1": {
+        "lower": 0.8837209302325582,
+        "upper": 1.0
+      },
+      "precision": {
+        "lower": 0.8695652173913043,
+        "upper": 1.0
+      },
+      "recall": {
+        "lower": 0.8636363636363636,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.9636936790975822,
+        "upper": 1.0
+      },
+      "Brier": {
+        "lower": 0.053702117904176394,
+        "upper": 0.11900930777891507
+      },
+      "accuracy": {
+        "lower": 0.8275862068965517,
+        "upper": 1.0
+      }
+    }
+  },
+  {
+    "tag": "matched_logistic_loso",
+    "model": "logistic",
+    "split": "loso",
+    "observations": 598,
+    "sources": 29,
+    "BH_sources": 7,
+    "NS_sources": 22,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "4c34b0b57ed7a0f9f806a959392d21323e4bcdd71f273902a671be5fe584f77b",
+    "metrics": {
+      "AUROC": 0.9805194805194806,
+      "balanced_accuracy": 0.9058441558441559,
+      "MCC": 0.8116883116883117,
+      "F1": 0.9545454545454546,
+      "precision": 0.9545454545454546,
+      "recall": 0.9545454545454546,
+      "PR_AUC": 0.993793097548038,
+      "Brier": 0.10129786842850289,
+      "accuracy": 0.9310344827586207
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.922077922077922,
+        "upper": 1.0
+      },
+      "balanced_accuracy": {
+        "lower": 0.7402597402597402,
+        "upper": 1.0
+      },
+      "MCC": {
+        "lower": 0.5076119249638631,
+        "upper": 1.0
+      },
+      "F1": {
+        "lower": 0.8837209302325582,
+        "upper": 1.0
+      },
+      "precision": {
+        "lower": 0.8695652173913043,
+        "upper": 1.0
+      },
+      "recall": {
+        "lower": 0.8636363636363636,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.9769637082285304,
+        "upper": 1.0
+      },
+      "Brier": {
+        "lower": 0.07730771345496505,
+        "upper": 0.1277146006003463
+      },
+      "accuracy": {
+        "lower": 0.8275862068965517,
+        "upper": 1.0
+      }
+    }
+  },
+  {
+    "tag": "shape_logistic",
+    "model": "logistic",
+    "split": "grouped",
+    "observations": 687,
+    "sources": 29,
+    "BH_sources": 7,
+    "NS_sources": 22,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "eb46e803dce0791de6631441296dccc213f81cc8d8076bdbb651ad9901a4ce34",
+    "metrics": {
+      "AUROC": 0.9610389610389611,
+      "balanced_accuracy": 0.9058441558441559,
+      "MCC": 0.8116883116883117,
+      "F1": 0.9545454545454546,
+      "precision": 0.9545454545454546,
+      "recall": 0.9545454545454546,
+      "PR_AUC": 0.9866027732524507,
+      "Brier": 0.08208381863052432,
+      "accuracy": 0.9310344827586207
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.8636363636363635,
+        "upper": 1.0
+      },
+      "balanced_accuracy": {
+        "lower": 0.7625000000000001,
+        "upper": 1.0
+      },
+      "MCC": {
+        "lower": 0.5533182635734681,
+        "upper": 1.0
+      },
+      "F1": {
+        "lower": 0.8837209302325582,
+        "upper": 1.0
+      },
+      "precision": {
+        "lower": 0.875,
+        "upper": 1.0
+      },
+      "recall": {
+        "lower": 0.8636363636363636,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.9540896612748598,
+        "upper": 1.0
+      },
+      "Brier": {
+        "lower": 0.05050520366921125,
+        "upper": 0.12057418937317622
+      },
+      "accuracy": {
+        "lower": 0.8275862068965517,
+        "upper": 1.0
+      }
+    }
+  },
+  {
+    "tag": "metadata_forest",
+    "model": "forest",
+    "split": "grouped",
+    "observations": 687,
+    "sources": 29,
+    "BH_sources": 7,
+    "NS_sources": 22,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "20e9ae7330c38381090e14d84b1303268d9d01a0f591840920d5af42465be706",
+    "metrics": {
+      "AUROC": 0.6038961038961039,
+      "balanced_accuracy": 0.5,
+      "MCC": 0.0,
+      "F1": 0.8627450980392157,
+      "precision": 0.7586206896551724,
+      "recall": 1.0,
+      "PR_AUC": 0.8417281914019371,
+      "Brier": 0.18820994622882825,
+      "accuracy": 0.7586206896551724
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.3571428571428572,
+        "upper": 0.8246753246753247
+      },
+      "balanced_accuracy": {
+        "lower": 0.5,
+        "upper": 0.5
+      },
+      "MCC": {
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "F1": {
+        "lower": 0.8627450980392157,
+        "upper": 0.8627450980392157
+      },
+      "precision": {
+        "lower": 0.7586206896551724,
+        "upper": 0.7586206896551724
+      },
+      "recall": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.7298859452329278,
+        "upper": 0.9474061352793204
+      },
+      "Brier": {
+        "lower": 0.16984280217349862,
+        "upper": 0.20899208078737633
+      },
+      "accuracy": {
+        "lower": 0.7586206896551724,
+        "upper": 0.7586206896551724
+      }
+    }
+  },
+  {
+    "tag": "matched_forest_grouped",
+    "model": "forest",
+    "split": "grouped",
+    "observations": 598,
+    "sources": 29,
+    "BH_sources": 7,
+    "NS_sources": 22,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "4c34b0b57ed7a0f9f806a959392d21323e4bcdd71f273902a671be5fe584f77b",
+    "metrics": {
+      "AUROC": 0.935064935064935,
+      "balanced_accuracy": 0.6201298701298701,
+      "MCC": 0.337593489228338,
+      "F1": 0.875,
+      "precision": 0.8076923076923077,
+      "recall": 0.9545454545454546,
+      "PR_AUC": 0.9808003484776937,
+      "Brier": 0.10501571303707963,
+      "accuracy": 0.7931034482758621
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.8246753246753248,
+        "upper": 1.0
+      },
+      "balanced_accuracy": {
+        "lower": 0.45454545454545453,
+        "upper": 0.7857142857142857
+      },
+      "MCC": {
+        "lower": -0.15352206215727945,
+        "upper": 0.7091242083423347
+      },
+      "F1": {
+        "lower": 0.8085106382978723,
+        "upper": 0.9361702127659575
+      },
+      "precision": {
+        "lower": 0.7407407407407407,
+        "upper": 0.88
+      },
+      "recall": {
+        "lower": 0.8636363636363636,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.9493301806888764,
+        "upper": 1.0
+      },
+      "Brier": {
+        "lower": 0.06778552289112533,
+        "upper": 0.14753784658684577
+      },
+      "accuracy": {
+        "lower": 0.6896551724137931,
+        "upper": 0.896551724137931
+      }
+    }
+  },
+  {
+    "tag": "matched_forest_loso",
+    "model": "forest",
+    "split": "loso",
+    "observations": 598,
+    "sources": 29,
+    "BH_sources": 7,
+    "NS_sources": 22,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "4c34b0b57ed7a0f9f806a959392d21323e4bcdd71f273902a671be5fe584f77b",
+    "metrics": {
+      "AUROC": 0.9545454545454546,
+      "balanced_accuracy": 0.6428571428571428,
+      "MCC": 0.48249790963716394,
+      "F1": 0.8979591836734694,
+      "precision": 0.8148148148148148,
+      "recall": 1.0,
+      "PR_AUC": 0.984791179049552,
+      "Brier": 0.10160464273700726,
+      "accuracy": 0.8275862068965517
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.8571428571428571,
+        "upper": 1.0
+      },
+      "balanced_accuracy": {
+        "lower": 0.5,
+        "upper": 0.7857142857142857
+      },
+      "MCC": {
+        "lower": 0.0,
+        "upper": 0.7091242083423347
+      },
+      "F1": {
+        "lower": 0.8627450980392157,
+        "upper": 0.9361702127659575
+      },
+      "precision": {
+        "lower": 0.7586206896551724,
+        "upper": 0.88
+      },
+      "recall": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.953722000773306,
+        "upper": 1.0
+      },
+      "Brier": {
+        "lower": 0.06937955164121401,
+        "upper": 0.1367276870250995
+      },
+      "accuracy": {
+        "lower": 0.7586206896551724,
+        "upper": 0.896551724137931
+      }
+    }
+  },
+  {
+    "tag": "shape_forest",
+    "model": "forest",
+    "split": "grouped",
+    "observations": 687,
+    "sources": 29,
+    "BH_sources": 7,
+    "NS_sources": 22,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "eb46e803dce0791de6631441296dccc213f81cc8d8076bdbb651ad9901a4ce34",
+    "metrics": {
+      "AUROC": 0.9545454545454545,
+      "balanced_accuracy": 0.9058441558441559,
+      "MCC": 0.8116883116883117,
+      "F1": 0.9545454545454546,
+      "precision": 0.9545454545454546,
+      "recall": 0.9545454545454546,
+      "PR_AUC": 0.9856497649081379,
+      "Brier": 0.05912839236143499,
+      "accuracy": 0.9310344827586207
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.8636363636363636,
+        "upper": 1.0
+      },
+      "balanced_accuracy": {
+        "lower": 0.7625000000000001,
+        "upper": 1.0
+      },
+      "MCC": {
+        "lower": 0.5533182635734681,
+        "upper": 1.0
+      },
+      "F1": {
+        "lower": 0.8837209302325582,
+        "upper": 1.0
+      },
+      "precision": {
+        "lower": 0.875,
+        "upper": 1.0
+      },
+      "recall": {
+        "lower": 0.8636363636363636,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.9582590692226808,
+        "upper": 1.0
+      },
+      "Brier": {
+        "lower": 0.005706781089771983,
+        "upper": 0.1372582679450159
+      },
+      "accuracy": {
+        "lower": 0.8275862068965517,
+        "upper": 1.0
+      }
+    }
+  },
+  {
+    "tag": "background_0.25_logistic",
+    "model": "logistic",
+    "split": "grouped",
+    "observations": 580,
+    "sources": 28,
+    "BH_sources": 7,
+    "NS_sources": 21,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "aa83bea2c141d9f1c92462a18b0811896bc563c35394afe5696b79a269c9f5db",
+    "metrics": {
+      "AUROC": 0.9455782312925171,
+      "balanced_accuracy": 0.8095238095238095,
+      "MCC": 0.6190476190476191,
+      "F1": 0.9047619047619048,
+      "precision": 0.9047619047619048,
+      "recall": 0.9047619047619048,
+      "PR_AUC": 0.9831647300068356,
+      "Brier": 0.1257075998247064,
+      "accuracy": 0.8571428571428571
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.8435374149659863,
+        "upper": 1.0
+      },
+      "balanced_accuracy": {
+        "lower": 0.5952380952380952,
+        "upper": 0.9761904761904762
+      },
+      "MCC": {
+        "lower": 0.23570226039551587,
+        "upper": 0.9128709291752769
+      },
+      "F1": {
+        "lower": 0.8,
+        "upper": 0.9767441860465116
+      },
+      "precision": {
+        "lower": 0.8,
+        "upper": 1.0
+      },
+      "recall": {
+        "lower": 0.7619047619047619,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.9540452518910001,
+        "upper": 1.0
+      },
+      "Brier": {
+        "lower": 0.09505629652547172,
+        "upper": 0.15835473879634093
+      },
+      "accuracy": {
+        "lower": 0.7142857142857143,
+        "upper": 0.9642857142857143
+      }
+    }
+  },
+  {
+    "tag": "background_0.25_forest",
+    "model": "forest",
+    "split": "grouped",
+    "observations": 580,
+    "sources": 28,
+    "BH_sources": 7,
+    "NS_sources": 21,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "aa83bea2c141d9f1c92462a18b0811896bc563c35394afe5696b79a269c9f5db",
+    "metrics": {
+      "AUROC": 0.9863945578231293,
+      "balanced_accuracy": 0.8571428571428572,
+      "MCC": 0.8075728530872482,
+      "F1": 0.9545454545454546,
+      "precision": 0.9130434782608695,
+      "recall": 1.0,
+      "PR_AUC": 0.9955679241393529,
+      "Brier": 0.05507128302583819,
+      "accuracy": 0.9285714285714286
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.9319727891156463,
+        "upper": 1.0
+      },
+      "balanced_accuracy": {
+        "lower": 0.7142857142857143,
+        "upper": 1.0
+      },
+      "MCC": {
+        "lower": 0.6,
+        "upper": 1.0
+      },
+      "F1": {
+        "lower": 0.9130434782608695,
+        "upper": 1.0
+      },
+      "precision": {
+        "lower": 0.84,
+        "upper": 1.0
+      },
+      "recall": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.9785402240779816,
+        "upper": 1.0000000000000002
+      },
+      "Brier": {
+        "lower": 0.025060872691960844,
+        "upper": 0.09743823862673338
+      },
+      "accuracy": {
+        "lower": 0.8571428571428571,
+        "upper": 1.0
+      }
+    }
+  },
+  {
+    "tag": "background_0.5_logistic",
+    "model": "logistic",
+    "split": "grouped",
+    "observations": 667,
+    "sources": 29,
+    "BH_sources": 7,
+    "NS_sources": 22,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "7b2eea11eef365f84bb5ee27c3544e747db808d38fff451f0ec432a2386098a4",
+    "metrics": {
+      "AUROC": 0.9480519480519481,
+      "balanced_accuracy": 0.9285714285714286,
+      "MCC": 0.9054699202058099,
+      "F1": 0.9777777777777777,
+      "precision": 0.9565217391304348,
+      "recall": 1.0,
+      "PR_AUC": 0.9810880673700977,
+      "Brier": 0.09829118145190192,
+      "accuracy": 0.9655172413793104
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.8246753246753247,
+        "upper": 1.0
+      },
+      "balanced_accuracy": {
+        "lower": 0.7857142857142857,
+        "upper": 1.0
+      },
+      "MCC": {
+        "lower": 0.7091242083423347,
+        "upper": 1.0
+      },
+      "F1": {
+        "lower": 0.9361702127659575,
+        "upper": 1.0
+      },
+      "precision": {
+        "lower": 0.88,
+        "upper": 1.0
+      },
+      "recall": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.9407046359986083,
+        "upper": 1.0
+      },
+      "Brier": {
+        "lower": 0.06911782737917349,
+        "upper": 0.13317531015799147
+      },
+      "accuracy": {
+        "lower": 0.896551724137931,
+        "upper": 1.0
+      }
+    }
+  },
+  {
+    "tag": "background_0.5_forest",
+    "model": "forest",
+    "split": "grouped",
+    "observations": 667,
+    "sources": 29,
+    "BH_sources": 7,
+    "NS_sources": 22,
+    "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+    "dataset_fingerprint": "7b2eea11eef365f84bb5ee27c3544e747db808d38fff451f0ec432a2386098a4",
+    "metrics": {
+      "AUROC": 0.922077922077922,
+      "balanced_accuracy": 0.7142857142857143,
+      "MCC": 0.6021937915964948,
+      "F1": 0.9166666666666666,
+      "precision": 0.8461538461538461,
+      "recall": 1.0,
+      "PR_AUC": 0.9740538124460467,
+      "Brier": 0.09400600498260162,
+      "accuracy": 0.8620689655172413
+    },
+    "intervals": {
+      "AUROC": {
+        "lower": 0.7857142857142857,
+        "upper": 1.0
+      },
+      "balanced_accuracy": {
+        "lower": 0.5714285714285714,
+        "upper": 0.9285714285714286
+      },
+      "MCC": {
+        "lower": 0.33502969713024494,
+        "upper": 0.9054699202058099
+      },
+      "F1": {
+        "lower": 0.88,
+        "upper": 0.9777777777777777
+      },
+      "precision": {
+        "lower": 0.7857142857142857,
+        "upper": 0.9565217391304348
+      },
+      "recall": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "PR_AUC": {
+        "lower": 0.9313461952720324,
+        "upper": 1.0
+      },
+      "Brier": {
+        "lower": 0.055804010983688306,
+        "upper": 0.13783983179106518
+      },
+      "accuracy": {
+        "lower": 0.7931034482758621,
+        "upper": 0.9655172413793104
+      }
+    }
+  }
+]

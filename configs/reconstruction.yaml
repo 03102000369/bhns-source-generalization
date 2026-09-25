@@ -1,0 +1,17 @@
+representation: PCA_OGIP_RATE43_OVERLAP_V1
+energy_edges: {minimum_keV: 5.0, maximum_keV: 25.0, bins: 43}
+rebinning: piecewise_constant_native_channel_count_density_fractional_overlap
+units: recorded_counts_per_second_per_selected_PCU_per_output_bin
+deadtime_correction: not_applied_archive_standard_products
+background: OGIP_AREASCAL_BACKSCAL_exposure_scaled
+errors: propagated_archive_STAT_ERR_or_explicit_POISSERR_with_full_rebin_covariance
+quality_cut: {minimum_net_rate: 5.0, band_keV: [5.0, 25.0], comparison: greater_than}
+identity: {exact_reviewed_designation: true, maximum_pointing_separation_deg: 0.05}
+selection:
+  maximum_observations_per_source: 32
+  method: deterministic_evenly_spaced_chronological_ranks_including_endpoints
+  purpose: bounded_first_cohort_covering_mission_time_without_model_or_brightness_selection
+minimum_sources_per_class: 5
+minimum_usable_observations_per_source: 4
+exact_reference_replication: false
+PM_required: false
