@@ -1,0 +1,27 @@
+{
+  "written_before_fits_utc": "2026-09-23T13:03:32.031164+00:00",
+  "locked_protocol_sha256": "0991965b1c313a2703b02143aeb7221ab1ec102cf3cc11b9de84421529d8c542",
+  "primary_grouping_min_background_counts": 5,
+  "diagnostic_grouping_counts": [
+    1,
+    10
+  ],
+  "bootstrap_repeats": 96,
+  "seed": 240923,
+  "guard_sensitivity_limits_keV": [
+    3,
+    40
+  ],
+  "area_sensitivity": {
+    "uniform_scale": 1.03,
+    "tilt_exponent": 0.03,
+    "note": "Illustrative stress tests, not an official calibration uncertainty"
+  },
+  "investigation_flags": {
+    "bootstrap_gof_p_below": 0.01,
+    "band_difference_sigma_above": 3,
+    "grouping_or_guard_flux_change_fraction_above": 0.05
+  },
+  "module_combination": "None; normalization anchor is not frozen",
+  "class_labels_read": false
+}

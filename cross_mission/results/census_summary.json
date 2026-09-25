@@ -1,0 +1,17 @@
+{
+  "archive_rows": 12027,
+  "discovery_sources": 145,
+  "secure_label_sources": {
+    "BH": 18,
+    "NS": 93
+  },
+  "public_candidate_sources": {
+    "BH": 11,
+    "NS": 31
+  },
+  "candidate_observations": 251,
+  "new_public_sources": {
+    "BH": 5,
+    "NS": 17
+  }
+}

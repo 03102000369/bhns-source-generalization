@@ -1,0 +1,491 @@
+{
+  "created_at_utc": "2026-09-23T13:02:32.251451+00:00",
+  "verdict": "PASS",
+  "scientific_status": "NOT_YET_TESTED",
+  "classification_run": false,
+  "modules": [
+    {
+      "obsid": "10601308002",
+      "module": "FPMA",
+      "status": "PASS",
+      "exposure": 12183.81199232267,
+      "background_exposure": 12183.81199232267,
+      "source_counts": 22348,
+      "background_counts": 941,
+      "background_scaling": 0.4528749858151158,
+      "paths": {
+        "source": "data/processed/nustar/10601308002/x1_A/products_local/out/nu10601308002A01_sr.pha",
+        "background": "data/processed/nustar/10601308002/x1_A/products_local/out/nu10601308002A01_bk.pha",
+        "arf": "data/processed/nustar/10601308002/x1_A/products_local/out/nu10601308002A01_sr.arf",
+        "rmf": "data/processed/nustar/10601308002/x1_A/products_local/out/nu10601308002A01_sr.rmf"
+      },
+      "hashes": {
+        "source": "2dbc0dc591bfde02ccf130668ffac3ac3a580b66fb81d1281b3bbb76cca6c8ec",
+        "background": "dc7a968b1ac18c6aaf0ef034c4cede7babb3d25afc832df7215111b15eea46de",
+        "arf": "4ba92f7e30f398ce3f3520f950d066a0028bc3b3757d41c5d122e02a2692e6ec",
+        "rmf": "3c192886efb6dab838a140eccc3c46651c61940401c1ac0a98da866a602990c4"
+      },
+      "response": {
+        "status": "PASS",
+        "channels": 4096,
+        "matrix_rows": 4096,
+        "energy_min_keV": 1.600000023841858,
+        "energy_max_keV": 165.44000244140625,
+        "arf_min_5_25": 88.67546081542969,
+        "rmf_row_sum_min_5_25": 0.9788243770599365,
+        "rmf_sha256": "3c192886efb6dab838a140eccc3c46651c61940401c1ac0a98da866a602990c4",
+        "arf_sha256": "4ba92f7e30f398ce3f3520f950d066a0028bc3b3757d41c5d122e02a2692e6ec"
+      },
+      "bands": {
+        "5_8": {
+          "source_counts": 4685.0,
+          "background_counts": 124.0,
+          "background_fraction": 0.011986445729151411,
+          "net_rate": 0.3799175089598951,
+          "net_rate_error": 0.005633096286517927,
+          "net_significance": 67.44381591154009,
+          "channels": 75
+        },
+        "8_12": {
+          "source_counts": 1017.0,
+          "background_counts": 38.0,
+          "background_fraction": 0.016921582557496952,
+          "net_rate": 0.08205894437381496,
+          "net_rate_error": 0.0026274533964887265,
+          "net_significance": 31.231360557518094,
+          "channels": 100
+        },
+        "12_18": {
+          "source_counts": 341.0,
+          "background_counts": 22.0,
+          "background_fraction": 0.029217741020330052,
+          "net_rate": 0.027170211631684905,
+          "net_rate_error": 0.0015256272803675223,
+          "net_significance": 17.80920673176454,
+          "channels": 150
+        },
+        "18_25": {
+          "source_counts": 147.0,
+          "background_counts": 35.0,
+          "background_fraction": 0.10782737757502757,
+          "net_rate": 0.01076423171821032,
+          "net_rate_error": 0.0010191274746371383,
+          "net_significance": 10.56220343980319,
+          "channels": 175
+        },
+        "5_25": {
+          "source_counts": 6190.0,
+          "background_counts": 219.0,
+          "background_fraction": 0.016022556040954823,
+          "net_rate": 0.49991089668360533,
+          "net_rate_error": 0.006480852145517908,
+          "net_significance": 77.13659954877055,
+          "channels": 500
+        }
+      },
+      "region_status": "PASS",
+      "response_status": "PASS",
+      "region_separation_arcsec": 179.99983936029673,
+      "command_record": "data/processed/nustar/10601308002/x1_A/products_local/command.json",
+      "processing_log": "data/processed/nustar/10601308002/x1_A/products_local/task.log",
+      "event_status": "PASS",
+      "event_path": "data/processed/nustar/10601308002/attempt002/clean/nu10601308002A01_cl.evt",
+      "event_sha256": "bc0877d0f6dd3630517790b16a0d2010f0e7230f8fc86240ca0819aa0f8a3eec",
+      "original_clean_event_sha256": "bc0877d0f6dd3630517790b16a0d2010f0e7230f8fc86240ca0819aa0f8a3eec",
+      "lightcurve": {
+        "corrected_max_rate": 20.989910125732422,
+        "max_rate_fracexp": 0.17499029636383057,
+        "bins_above_100": 0,
+        "time_bin_seconds": 1.0,
+        "deadtime_corrected": true,
+        "max_full_exposure_rate": 13.203423500061035
+      },
+      "lightcurve_status": "PASS"
+    },
+    {
+      "obsid": "10601308002",
+      "module": "FPMB",
+      "status": "PASS",
+      "exposure": 12118.13380718489,
+      "background_exposure": 12118.13380718489,
+      "source_counts": 20409,
+      "background_counts": 874,
+      "background_scaling": 0.4475510923672438,
+      "paths": {
+        "source": "data/processed/nustar/10601308002/x1_B/products_local/out/nu10601308002B01_sr.pha",
+        "background": "data/processed/nustar/10601308002/x1_B/products_local/out/nu10601308002B01_bk.pha",
+        "arf": "data/processed/nustar/10601308002/x1_B/products_local/out/nu10601308002B01_sr.arf",
+        "rmf": "data/processed/nustar/10601308002/x1_B/products_local/out/nu10601308002B01_sr.rmf"
+      },
+      "hashes": {
+        "source": "321399681341f6bfc5d9d807c9800f971c11d1ecec52c592889b5f85e4f756d5",
+        "background": "3e291e943b4ee2b36e86383c8486038224d138a15df962e90f416b019f77b785",
+        "arf": "4718a1dcea37b559d67b91378f85e45d831880c14fabe7f4df4e4f3016f04894",
+        "rmf": "a8d903a1062edb551c2a8e5ba0c18054466933e919e40eaea9e48523c1f1f090"
+      },
+      "response": {
+        "status": "PASS",
+        "channels": 4096,
+        "matrix_rows": 4096,
+        "energy_min_keV": 1.600000023841858,
+        "energy_max_keV": 165.44000244140625,
+        "arf_min_5_25": 87.22410583496094,
+        "rmf_row_sum_min_5_25": 0.9784675240516663,
+        "rmf_sha256": "a8d903a1062edb551c2a8e5ba0c18054466933e919e40eaea9e48523c1f1f090",
+        "arf_sha256": "4718a1dcea37b559d67b91378f85e45d831880c14fabe7f4df4e4f3016f04894"
+      },
+      "bands": {
+        "5_8": {
+          "source_counts": 4396.0,
+          "background_counts": 136.0,
+          "background_fraction": 0.013845984659223192,
+          "net_rate": 0.35773932854807544,
+          "net_rate_error": 0.00548825852971888,
+          "net_significance": 65.18266707206294,
+          "channels": 75
+        },
+        "8_12": {
+          "source_counts": 1021.0,
+          "background_counts": 47.0,
+          "background_fraction": 0.020602254007111125,
+          "net_rate": 0.08251807700504646,
+          "net_rate_error": 0.002648928112476089,
+          "net_significance": 31.151497323161625,
+          "channels": 100
+        },
+        "12_18": {
+          "source_counts": 335.0,
+          "background_counts": 21.0,
+          "background_fraction": 0.028055441611080954,
+          "net_rate": 0.026868941393206728,
+          "net_rate_error": 0.0015198342870652417,
+          "net_significance": 17.678862506181456,
+          "channels": 150
+        },
+        "18_25": {
+          "source_counts": 133.0,
+          "background_counts": 28.0,
+          "background_fraction": 0.09422128260363026,
+          "net_rate": 0.009941181648142132,
+          "net_rate_error": 0.0009715364933244041,
+          "net_significance": 10.23243256063948,
+          "channels": 175
+        },
+        "5_25": {
+          "source_counts": 5885.0,
+          "background_counts": 232.0,
+          "background_fraction": 0.01764347551898055,
+          "net_rate": 0.4770675285944707,
+          "net_rate_error": 0.006355437140913155,
+          "net_significance": 75.06447125774345,
+          "channels": 500
+        }
+      },
+      "region_status": "PASS",
+      "response_status": "PASS",
+      "region_separation_arcsec": 179.9998378309934,
+      "command_record": "data/processed/nustar/10601308002/x1_B/products_local/command.json",
+      "processing_log": "data/processed/nustar/10601308002/x1_B/products_local/task.log",
+      "event_status": "PASS",
+      "event_path": "data/processed/nustar/10601308002/attempt002/clean/nu10601308002B01_cl.evt",
+      "event_sha256": "91b0fb5495315efeb55d65befaa42d853781eeacee3ec57fc7952525664ac74f",
+      "original_clean_event_sha256": "91b0fb5495315efeb55d65befaa42d853781eeacee3ec57fc7952525664ac74f",
+      "lightcurve": {
+        "corrected_max_rate": 77.37554168701172,
+        "max_rate_fracexp": 0.024994254112243652,
+        "bins_above_100": 0,
+        "time_bin_seconds": 1.0,
+        "deadtime_corrected": true,
+        "max_full_exposure_rate": 13.552391052246094
+      },
+      "lightcurve_status": "PASS"
+    },
+    {
+      "obsid": "30363002002",
+      "module": "FPMA",
+      "status": "PASS",
+      "exposure": 19155.15093301456,
+      "background_exposure": 19155.15093301456,
+      "source_counts": 490999,
+      "background_counts": 9878,
+      "background_scaling": 0.4452201161117042,
+      "paths": {
+        "source": "data/processed/nustar/30363002002/x1_A/products_bright/out/nu30363002002A01_sr.pha",
+        "background": "data/processed/nustar/30363002002/x1_A/products_bright/out/nu30363002002A01_bk.pha",
+        "arf": "data/processed/nustar/30363002002/x1_A/products_bright/out/nu30363002002A01_sr.arf",
+        "rmf": "data/processed/nustar/30363002002/x1_A/products_bright/out/nu30363002002A01_sr.rmf"
+      },
+      "hashes": {
+        "source": "01f82ed7555bf4409c94d83061d5e0d2d34df5cc3dfb44548a8e738b2866dd2a",
+        "background": "cc56d0ccd16be0a99c4f65f9ddfebc23f8a11b117240ff8ae2e1e436b65cccac",
+        "arf": "01173e02c964ac67a8badb3954df8b036d579fee3bef4590e7d2617af397e5a9",
+        "rmf": "8a3d9a76f7f9c11bd79ec40257168fea922c772c6ffae7e55e11baf8d6f77236"
+      },
+      "response": {
+        "status": "PASS",
+        "channels": 4096,
+        "matrix_rows": 4096,
+        "energy_min_keV": 1.600000023841858,
+        "energy_max_keV": 165.44000244140625,
+        "arf_min_5_25": 89.5783920288086,
+        "rmf_row_sum_min_5_25": 0.9788243770599365,
+        "rmf_sha256": "8a3d9a76f7f9c11bd79ec40257168fea922c772c6ffae7e55e11baf8d6f77236",
+        "arf_sha256": "01173e02c964ac67a8badb3954df8b036d579fee3bef4590e7d2617af397e5a9"
+      },
+      "bands": {
+        "5_8": {
+          "source_counts": 178461.0,
+          "background_counts": 3152.0,
+          "background_fraction": 0.007863532121775018,
+          "net_rate": 9.243344874346615,
+          "net_rate_error": 0.022092506331581992,
+          "net_significance": 418.3927679193618,
+          "channels": 75
+        },
+        "8_12": {
+          "source_counts": 70591.0,
+          "background_counts": 1174.0,
+          "background_fraction": 0.0074044625563477046,
+          "net_rate": 3.657935759875414,
+          "net_rate_error": 0.01389324717711163,
+          "net_significance": 263.2887555546888,
+          "channels": 100
+        },
+        "12_18": {
+          "source_counts": 14500.0,
+          "background_counts": 247.0,
+          "background_fraction": 0.007584094391695927,
+          "net_rate": 0.751235564869327,
+          "net_rate_error": 0.006296952324110573,
+          "net_significance": 119.30145349725781,
+          "channels": 150
+        },
+        "18_25": {
+          "source_counts": 2246.0,
+          "background_counts": 77.0,
+          "background_fraction": 0.015263556963758336,
+          "net_rate": 0.11546335806978304,
+          "net_rate_error": 0.002482504024582507,
+          "net_significance": 46.51084426306258,
+          "channels": 175
+        },
+        "5_25": {
+          "source_counts": 265798.0,
+          "background_counts": 4650.0,
+          "background_fraction": 0.007788898110292118,
+          "net_rate": 13.767979557161139,
+          "net_rate_error": 0.026961372144968816,
+          "net_significance": 510.6557441932844,
+          "channels": 500
+        }
+      },
+      "region_status": "PASS",
+      "response_status": "PASS",
+      "region_separation_arcsec": 179.99986906058643,
+      "command_record": "data/processed/nustar/30363002002/x1_A/products_bright/command.json",
+      "processing_log": "data/processed/nustar/30363002002/x1_A/products_bright/task.log",
+      "bright_screening": {
+        "status": "APPLIED",
+        "pipeline_command": "data/processed/nustar/30363002002/x1_bright_attempt001/command.json",
+        "statusexpr": "(STATUS==b0000xxx00xxxx000)&&(SHIELD==0)",
+        "geometry": {
+          "module": "FPMA",
+          "obsid": "30363002002",
+          "GTI_identical": true,
+          "BADPIX_identical": true,
+          "exposure_identical": true,
+          "original_event_count": 680074,
+          "new_event_count": 685689,
+          "new_centroid_offset_from_approved_center_arcsec": 1.6292754359226218,
+          "exposure_stats": {
+            "source": {
+              "zero_exposure_fraction": 0.0,
+              "relative_exposure_percentiles": [
+                0.9975764155387878,
+                1.0000001192092896,
+                1.0000001192092896,
+                1.0000001192092896,
+                1.0000001192092896
+              ]
+            },
+            "background": {
+              "zero_exposure_fraction": 0.0,
+              "relative_exposure_percentiles": [
+                0.8435665369033813,
+                0.9817254424095154,
+                1.0000001192092896,
+                1.0000001192092896,
+                1.0000001192092896
+              ]
+            }
+          },
+          "status": "PASS",
+          "aspect_tables_identical": {
+            "nu30363002002_att.fits": true,
+            "nu30363002002_mast.fits": true,
+            "nu30363002002A_det1.fits": false,
+            "nu30363002002A_oa.fits": false
+          },
+          "coordinate_realization_note": "NuSTAR random subpixel coordinate realization differs by at most about 1.09 SKY pixels; GTI, bad pixels, attitude and mast unchanged. New official exposure maps explicitly recomputed; no geometry equivalence assumed."
+        }
+      },
+      "event_status": "PASS",
+      "event_path": "data/processed/nustar/30363002002/x1_bright_attempt001/clean/nu30363002002A01_cl.evt",
+      "event_sha256": "283d4441588b942902366e04199c6059041bf9bfbd287f45e0f4db5782b02002",
+      "original_clean_event_sha256": "a7417b57ab463fdfe0509383d07528b5dc663feaa74ab5cde5f379188b1ee603",
+      "lightcurve": {
+        "corrected_max_rate": 156.25006103515625,
+        "max_rate_fracexp": 0.024994254112243652,
+        "bins_above_100": 1,
+        "time_bin_seconds": 1.0,
+        "deadtime_corrected": true,
+        "max_full_exposure_rate": 90.34016418457031
+      },
+      "lightcurve_status": "PASS"
+    },
+    {
+      "obsid": "30363002002",
+      "module": "FPMB",
+      "status": "PASS",
+      "exposure": 18706.38466089101,
+      "background_exposure": 18706.38466089101,
+      "source_counts": 445046,
+      "background_counts": 7841,
+      "background_scaling": 0.44319653915070306,
+      "paths": {
+        "source": "data/processed/nustar/30363002002/x1_B/products_bright/out/nu30363002002B01_sr.pha",
+        "background": "data/processed/nustar/30363002002/x1_B/products_bright/out/nu30363002002B01_bk.pha",
+        "arf": "data/processed/nustar/30363002002/x1_B/products_bright/out/nu30363002002B01_sr.arf",
+        "rmf": "data/processed/nustar/30363002002/x1_B/products_bright/out/nu30363002002B01_sr.rmf"
+      },
+      "hashes": {
+        "source": "ad6a4b66ab420bf32354a88c76a895948c73ece7808336a7ebf5009287647e98",
+        "background": "bc224c596f25e07ba042bf50e7ddbe5daf449d3cde7c7395dd3bee6a03d62f8e",
+        "arf": "73b276a70e72f5aaf364121973bb170362916f8d38cf5d692d4db91895fa0886",
+        "rmf": "96bdd08b0c3f644ce92a5f01af99511bb09482be611c8ba1548ad000df999d3a"
+      },
+      "response": {
+        "status": "PASS",
+        "channels": 4096,
+        "matrix_rows": 4096,
+        "energy_min_keV": 1.600000023841858,
+        "energy_max_keV": 165.44000244140625,
+        "arf_min_5_25": 86.27326965332031,
+        "rmf_row_sum_min_5_25": 0.9784690737724304,
+        "rmf_sha256": "96bdd08b0c3f644ce92a5f01af99511bb09482be611c8ba1548ad000df999d3a",
+        "arf_sha256": "73b276a70e72f5aaf364121973bb170362916f8d38cf5d692d4db91895fa0886"
+      },
+      "bands": {
+        "5_8": {
+          "source_counts": 163652.0,
+          "background_counts": 2488.0,
+          "background_fraction": 0.006737913312437057,
+          "net_rate": 8.689510557880864,
+          "net_rate_error": 0.021657996599706537,
+          "net_significance": 401.21488235890683,
+          "channels": 75
+        },
+        "8_12": {
+          "source_counts": 64888.0,
+          "background_counts": 931.0,
+          "background_fraction": 0.006358894987506234,
+          "net_rate": 3.446704704883346,
+          "net_rate_error": 0.013636516616793727,
+          "net_significance": 252.75550947069863,
+          "channels": 100
+        },
+        "12_18": {
+          "source_counts": 12884.0,
+          "background_counts": 189.0,
+          "background_fraction": 0.006501408405734468,
+          "net_rate": 0.6842709634246784,
+          "net_rate_error": 0.006076594920561635,
+          "net_significance": 112.60763180202804,
+          "channels": 150
+        },
+        "18_25": {
+          "source_counts": 1862.0,
+          "background_counts": 50.0,
+          "background_fraction": 0.011901088591587086,
+          "net_rate": 0.09835359458254778,
+          "net_rate_error": 0.002312822563206376,
+          "net_significance": 42.52535241881915,
+          "channels": 175
+        },
+        "5_25": {
+          "source_counts": 243286.0,
+          "background_counts": 3658.0,
+          "background_fraction": 0.006663815181363794,
+          "net_rate": 12.918839820771435,
+          "net_rate_error": 0.026406392335767175,
+          "net_significance": 489.23153365683373,
+          "channels": 500
+        }
+      },
+      "region_status": "PASS",
+      "response_status": "PASS",
+      "region_separation_arcsec": 179.99986923395915,
+      "command_record": "data/processed/nustar/30363002002/x1_B/products_bright/command.json",
+      "processing_log": "data/processed/nustar/30363002002/x1_B/products_bright/task.log",
+      "bright_screening": {
+        "status": "APPLIED",
+        "pipeline_command": "data/processed/nustar/30363002002/x1_bright_attempt001/command.json",
+        "statusexpr": "(STATUS==b0000xxx00xxxx000)&&(SHIELD==0)",
+        "geometry": {
+          "module": "FPMB",
+          "obsid": "30363002002",
+          "GTI_identical": true,
+          "BADPIX_identical": true,
+          "exposure_identical": true,
+          "original_event_count": 603603,
+          "new_event_count": 610248,
+          "new_centroid_offset_from_approved_center_arcsec": 1.460412894848242,
+          "exposure_stats": {
+            "source": {
+              "zero_exposure_fraction": 0.0,
+              "relative_exposure_percentiles": [
+                0.7800581455230713,
+                0.9347438216209412,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "background": {
+              "zero_exposure_fraction": 0.0,
+              "relative_exposure_percentiles": [
+                0.8870350122451782,
+                0.986643373966217,
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "status": "PASS",
+          "aspect_tables_identical": {
+            "nu30363002002_att.fits": true,
+            "nu30363002002_mast.fits": true,
+            "nu30363002002B_det1.fits": false,
+            "nu30363002002B_oa.fits": false
+          },
+          "coordinate_realization_note": "NuSTAR random subpixel coordinate realization differs by at most about 1.09 SKY pixels; GTI, bad pixels, attitude and mast unchanged. New official exposure maps explicitly recomputed; no geometry equivalence assumed."
+        }
+      },
+      "event_status": "PASS",
+      "event_path": "data/processed/nustar/30363002002/x1_bright_attempt001/clean/nu30363002002B01_cl.evt",
+      "event_sha256": "aecc851791ab5d3ee8de0d32d563d75afdb50c4ad3390095f444c398202babe2",
+      "original_clean_event_sha256": "4d4965cf0eb8bef999ef14e80a12ac4783d84816f5fb8b44abd2b87599ad8b40",
+      "lightcurve": {
+        "corrected_max_rate": 164.9274139404297,
+        "max_rate_fracexp": 0.024994254112243652,
+        "bins_above_100": 1,
+        "time_bin_seconds": 1.0,
+        "deadtime_corrected": true,
+        "max_full_exposure_rate": 90.87521362304688
+      },
+      "lightcurve_status": "PASS"
+    }
+  ],
+  "calibration_manifest": "data/manifests/nustar_calibration_manifest.csv"
+}

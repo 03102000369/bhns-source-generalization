@@ -1,0 +1,169 @@
+protocol_id: phase2_rxte_nustar_v0.1
+status: PREFLIGHT_DESIGN_LOCKED_MEASUREMENT_VALIDATION_PENDING
+classification_authorized: false
+namespace: cross_mission
+phase1_policy: read_only_hash_verified_before_and_after
+research_questions:
+  RQ1: Within-mission source transfer using exactly the common representation.
+  RQ2: RXTE to NuSTAR zero-shot transfer to entirely unseen physical systems.
+  RQ3: Reverse transfer only with sufficient NuSTAR training diversity.
+  RQ4: Residual mission information conditional on overlapping source population.
+  RQ5: Source-associated structure and randomized physical-source labels.
+  RQ6: Absolute observed flux versus normalized shape and fixed hardness coordinates.
+publication_strategy: SEPARATE_PHASE2_PAPER
+labels:
+  positive_class: NS
+  BH: secure dynamical evidence; uncertain lower limits remain unresolved
+  NS: direct thermonuclear bursts or coherent accretion-powered pulsations
+  inference_from_spectrum: forbidden
+  unresolved_cluster_attribution: defer until observation-specific evidence
+identity:
+  normalizer: remove whitespace and underscore; uppercase; retain digits and signs
+  aliases: explicit reviewed mapping only; conflicting alias is fatal
+  discovery_radius_arcmin: 9
+  automatic_pointing_identity_radius_arcmin: 3
+  outside_identity_radius: review_required_not_intrinsically_bad_data
+  pointing_policy: exact reviewed designation AND independent catalogue position
+census:
+  snapshot_date_utc: '2026-09-23'
+  minimum_target_BH: 5
+  minimum_target_NS: 5
+  minimum_observations_per_system: 1
+  interpretation: minimum feasibility floor, not statistical sufficiency
+  below_floor: PILOT_AND_STOP_BEFORE_CONFIRMATORY_ML
+  archive_candidate_is_quality_accepted: false
+engineering_pilot:
+  obsids: ['10601308002', '30363002002']
+  rationale: Two secure isolated-source pointings with positive FPMA/FPMB exposure and no catalogue issue flag; LMC X-3 and 4U 0614+09. Engineering selection does not define the final source cohort.
+  selection_used_predictions: false
+  selection_excludes_other_cohort_sources: false
+reduction:
+  heasoft: '6.37.1'
+  nustardas: 'nustardas_15Jun26_v2.1.6'
+  caldb_release_advertised: '20260903'
+  caldb_access: official HEASARC S3 remote; index snapshot and used files must be hashed
+  modules: [FPMA, FPMB]
+  coadd_module_spectra: false
+  pipeline:
+    entrystage: 1
+    exitstage: 2
+    instrument: ALL
+    obsmode: SCIENCE
+    saamode: NONE
+    saacalc: 3
+    tentacle: no
+    statusexpr: DEFAULT
+    clobber: no
+    history: yes
+  screening_policy: Start with installed standard screening; inspect SOC background report, detector images, and lightcurves before any scientific admission. Preserve every rerun as a separate attempt.
+  bright_source_rule: If corrected 1-second 3-79 keV lightcurve has bins above 100 c/s, rerun nupipeline from L1 using official STATUS==b0000xxx00xxxx000 expression; log affected modules and rates. This is instrument screening, not a BH/NS inclusion rule.
+  enhanced_background_rule: Use SOC report and documented saacalc=3 optimized/tentacle alternatives; any change requires a recorded label-blind evidence-based exception before measurement freeze.
+  products:
+    bkgextract: yes
+    runmkarf: yes
+    runmkrmf: yes
+    runbackscale: yes
+    rungrppha: no
+    arfmlicorr: no
+    binsize: 1
+    barycorr: no
+regions:
+  status: PILOT_POLICY_LOCKED_COHORT_VALIDATION_PENDING
+  coordinates: fk5
+  source_radius_arcsec: 60
+  center: independent catalogue position refined by per-module event centroid within 30 arcsec; larger offsets require manual identity review
+  background_radius_arcsec: 90
+  default_candidates: Nearby circles at 180 arcsec from source, in E/N/W/S order, reduced to 60 arcsec only for detector geometry with explicit exception
+  acceptance: Source-free, same detector where possible, no overlap with source aperture; inspect exposure and detector maps for gaps, clipping, stray light and ghost rays; no automatic acceptance from a sky image alone
+  allowed_exceptions: Smaller source/background radius or masked contaminant; document geometric or background evidence and apply before ML. Crowded/ambiguous fields remain pending until defensible extraction exists.
+  review_labels: no prediction or error inspection; reviewers use observation identifiers and detector diagnostics
+quality:
+  status: NOT_YET_FROZEN
+  hard_failures: [unresolved_identity, invalid_response, mismatched_PHA_background, nonpositive_exposure, absent_module_without_recorded_failure, invalid_region]
+  diagnostics: [exposure, source_counts, background_counts, net_significance, background_fraction, active_detector_coverage, response_energy_coverage, flux_errors, FPMA_FPMB_agreement, fit_convergence, residual_structure]
+  rate_cut_from_rxte: forbidden
+  final_thresholds: null
+  rationale: Instrument documentation does not supply a universal count-rate or significance cut for this study. Numerical cuts require a label-blind multi-source measurement audit before X2 can pass.
+representation:
+  status: CANDIDATE_DESIGN_NOT_VALIDATED
+  energy_domain_keV: [5, 25]
+  bands_keV: [[5, 8], [8, 12], [12, 18], [18, 25]]
+  primary: A
+  A: log10 of four response-forward-fitted observed energy fluxes in erg/cm2/s; model-dependent
+  B: four band-flux fractions normalized per observation by total 5-25 keV flux
+  C: log10(F8_12/F5_8), log10(F18_25/F12_18), log10(F5_25)
+  D: optional common phenomenological parameters; secondary and disabled until separate measurement validation
+  absorption_correction: none
+  raw_detector_count_pooling: forbidden
+  fitting_candidate: positive piecewise log-linear photon continuum on fixed nodes at 3,5,8,12,18,25,40 keV; forward-fold through native response; integrate fitted observed continuum into fixed bands
+  fitting_parameters: log photon-density amplitudes on shared nodes; identical model for all classes and missions; outer guard nodes constrained by adjoining slope extrapolation
+  draft_bounds: photon density 1e-12 to 1e3 photons/cm2/s/keV; adjacent photon indices -2 to 6; must be validated before final freeze
+  likelihood: must correctly handle NuSTAR Poisson background data and RXTE model-background uncertainty; do not treat the RXTE modeled background as an independent Poisson measurement
+  module_fit: simultaneous native FPMA/FPMB likelihood, common shape and free cross-normalization; independent-module fits for diagnostics; do not co-add responses
+  validation_required: simulations through both mission responses, recovery bias and uncertainty coverage, convergence and residuals, module agreement, guard-band sensitivity, response sensitivity, finite features and complete coverage
+  required_freeze_file: configs/common_representation_frozen.yaml
+  create_freeze_only_after_validation: true
+rxte_input:
+  branch: independent HEASoft/CALDB expanded-source branch
+  index: ../data/processed/validation_heasoft/expanded_source_observations.csv
+  products: ../data/processed/validation_heasoft/reduction/OBS_ID/{source.pha,background.pha,response.rsp}
+  new_output: data/processed/rxte
+  preexisting_detector_vectors_as_flux: forbidden
+splits:
+  primary: five label-independent outer source folds
+  allocation: sort target physical-source identifiers by SHA256(seed|canonical_id), assign round-robin to five folds; no target labels accepted by allocator
+  seed: 42
+  test: target mission observations of complete assigned physical systems
+  train: source mission observations excluding every outer test physical system
+  no_global_overlap_source_discard: true
+  inner_validation: stratified source-disjoint 20 percent holdout in training mission only
+  insufficient_inner_classes: fail fold; never consult target labels to repair it
+  fold_revision_after_performance: forbidden
+  secondary: source-level leave-one-system-out cross-mission sensitivity if feasible
+  fatal_assertions: [no_shared_physical_source, no_target_mission_in_training, unique_observation_keys, complete_test_source_assignment]
+models:
+  prior: weighted training-mission source prior only
+  logistic_regression_C: [0.01, 0.1, 1, 10]
+  random_forest_depth: [4, null]
+  random_forest_trees: 100
+  random_forest_min_leaf: 3
+  seed: 42
+  tuning_metric: inner validation physical-source AUROC; first candidate wins tie
+  sample_weight: equal total weight per training physical source
+  scaler: fit inner training only during tuning; fresh outer training only for final fit
+  features: explicit numeric allowlist for A/B/C; exclude mission, instrument, source ID, coordinates, class, ObsID, time, quality flags and calibration metadata
+  threshold: 0.5
+  target_feature_fitting: forbidden
+  target_label_access: evaluation only after predictions and protocol hashes are written
+metrics:
+  unit: physical_system
+  source_aggregation: mean clipped observation log-odds, clip probability to [1e-7, 0.9999999]
+  primary: AUROC
+  secondary: [balanced_accuracy, MCC, F1, average_precision, Brier]
+  bootstrap: 2000 class-stratified physical-source resamples, seed 42, percentile 95 percent CI; predictions fixed; no observation bootstrap
+  multiple_representations: report all predeclared families, never choose by outer AUROC
+within_mission:
+  required_before_transfer: [RXTE_source_disjoint, NuSTAR_source_disjoint]
+  same_representation_and_grids: true
+reverse:
+  confirmatory_minimum_per_class_training_after_each_exclusion: 5
+  confirmatory_minimum_per_class_target: 5
+  below_floor: do_not_run_in_first_execution
+controls:
+  mission_identity: overlapping systems observed by both missions; source-grouped CV; source-by-mission weights balanced; report AUROC with source-bootstrap CI; non-simultaneity and state remain confounders
+  source_identity: repeated-observation source identification diagnostic, separate from held-out-system BH/NS evaluation
+  randomized_labels: 100 seeds; one random label per canonical physical system shared across missions; repeat full training-mission inner tuning; report empirical distribution, not a formal significance test
+  randomization_evaluation: randomized labels also assigned to held-out sources by the same global map; report any invalid class-degenerate replicate
+states:
+  phase1_reopened: false
+  future_protocol_only_if: at least 5 BH and 5 NS within an independently defensible common regime
+adaptation:
+  permitted_before_zero_shot_freeze: false
+  later_unsupervised: explicitly separate target-feature access without target labels
+  later_few_shot: explicitly declared target-labelled systems; separate estimand
+chronology:
+  performance_started: false
+  order: [X0_census, X1_reduction, X2_measurement_freeze, X3_folds_and_leakage, X4_within_mission, X5_zero_shot, X6_reverse_if_feasible, X7_controls]
+  engineering_fold_contract_tests_before_X2: allowed_but_not_a_completed_X3_scientific_audit
+  prediction_record_required: data_hashes, response_hashes, protocol_hash, feature_freeze_hash, fold_hash, scaler_fit_rows, tuning_rows, fit_rows, timestamps
+  figures: X1-X7 only after frozen results; engineering data-quality inspection is not a performance result

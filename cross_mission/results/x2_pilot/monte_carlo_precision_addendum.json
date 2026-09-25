@@ -1,0 +1,5 @@
+{
+  "repeats": 399,
+  "seed": 240924,
+  "reason": "Initial 96-draw plus-one p-value cannot resolve the predeclared p<0.01 diagnostic. Increase simulation precision without changing the criterion, continuum or features."
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "module": "FPMA",
+    "obsid": "30363002002",
+    "GTI_identical": true,
+    "BADPIX_identical": true,
+    "exposure_identical": true,
+    "original_event_count": 680074,
+    "new_event_count": 685689,
+    "new_centroid_offset_from_approved_center_arcsec": 1.6292754359226218,
+    "exposure_stats": {
+      "source": {
+        "zero_exposure_fraction": 0.0,
+        "relative_exposure_percentiles": [
+          0.9975764155387878,
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896
+        ]
+      },
+      "background": {
+        "zero_exposure_fraction": 0.0,
+        "relative_exposure_percentiles": [
+          0.8435665369033813,
+          0.9817254424095154,
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0000001192092896
+        ]
+      }
+    },
+    "status": "PASS",
+    "aspect_tables_identical": {
+      "nu30363002002_att.fits": true,
+      "nu30363002002_mast.fits": true,
+      "nu30363002002A_det1.fits": false,
+      "nu30363002002A_oa.fits": false
+    },
+    "coordinate_realization_note": "NuSTAR random subpixel coordinate realization differs by at most about 1.09 SKY pixels; GTI, bad pixels, attitude and mast unchanged. New official exposure maps explicitly recomputed; no geometry equivalence assumed."
+  },
+  {
+    "module": "FPMB",
+    "obsid": "30363002002",
+    "GTI_identical": true,
+    "BADPIX_identical": true,
+    "exposure_identical": true,
+    "original_event_count": 603603,
+    "new_event_count": 610248,
+    "new_centroid_offset_from_approved_center_arcsec": 1.460412894848242,
+    "exposure_stats": {
+      "source": {
+        "zero_exposure_fraction": 0.0,
+        "relative_exposure_percentiles": [
+          0.7800581455230713,
+          0.9347438216209412,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "background": {
+        "zero_exposure_fraction": 0.0,
+        "relative_exposure_percentiles": [
+          0.8870350122451782,
+          0.986643373966217,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "status": "PASS",
+    "aspect_tables_identical": {
+      "nu30363002002_att.fits": true,
+      "nu30363002002_mast.fits": true,
+      "nu30363002002B_det1.fits": false,
+      "nu30363002002B_oa.fits": false
+    },
+    "coordinate_realization_note": "NuSTAR random subpixel coordinate realization differs by at most about 1.09 SKY pixels; GTI, bad pixels, attitude and mast unchanged. New official exposure maps explicitly recomputed; no geometry equivalence assumed."
+  }
+]
