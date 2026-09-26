@@ -1,4 +1,4 @@
-# Black-Hole and Neutron-Star Classification Beyond Known Sources
+# Black Hole and Neutron Star Classification Beyond Known Sources
 
 This project tests whether X-ray spectra distinguish black-hole and neutron-star binaries when the test systems are absent from training. Repeated observations of the same binary can share source and instrumental structure, so physical source identity must be resolved before splitting the data.
 
@@ -55,8 +55,6 @@ Raw mission data come from [NASA HEASARC](https://heasarc.gsfc.nasa.gov/docs/arc
 
 ## Manuscript
 
-The [Phase-I manuscript and supplement](manuscript/README.md) retain their scientific content. The immutable snapshot is tagged `v1.0.0-phase1-paper`. Author metadata and declarations still need approval; Phase II remains a separate paper.
+The [Phase-I manuscript and supplement](manuscript/README.md) retain their scientific content. Earlier release snapshots remain in Git history; no release tag is currently defined. Author metadata and declarations still need approval; Phase II remains a separate paper.
 
-## Citation
 
-`CITATION.cff` is structurally valid but has an explicit author TODO and is not yet a publication-ready citation. Authorship, citation metadata and licensing remain [author decisions](manuscript/AUTHOR_TODOS.md). No DOI or project license is claimed.
