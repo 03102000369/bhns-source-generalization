@@ -32,7 +32,7 @@
 \hypersetup{hidelinks,pdftitle={black hole and neutron star Classification Beyond Known Sources},pdfauthor={Author information pending}}
 
 \title[BH/NS classification beyond known sources]{Black Hole and Neutron Star Classification Beyond Known Sources: An RXTE/PCA Evaluation}
-\author[Author information pending]{Youhan Wanigasuriya$^{1}$\thanks{youhanwanigasuriya@gmail.com}\\
+\author[Youhan Wanigasuriya]{Youhan Wanigasuriya$^{1}$\thanks{youhanwanigasuriya@gmail.com}\\
 $^{1}$University of Colombo}
 \date{Submission and acceptance dates to be supplied by the publisher}
 \pubyear{2026}
@@ -151,7 +151,7 @@ The reconstruction records the input paths, download status, transformations and
 
 The primary cohort contains 687 observations from 29 independent physical systems: 122 observations from 7 BH systems and 565 observations from 22 NS systems. The independently processed HEASoft validation cohort contains 207 observations from the same physical-source roster. Restricting the primary and independently processed representations to their defined common instrumental support retains 598 and 201 observations, respectively.
 
-The expanded independently processed cohort contains 213 observations from 31 physical systems: 9 BHs and 22 NSs. GRO~J1655$-$40 and GRS~1915+105 provide the two additional BH systems, whereas V404~Cyg supplied no usable observation under the frozen quality criteria. The number of independent systems is therefore substantially smaller, and more class-imbalanced, than the number of individual spectra might suggest.
+The expanded independently processed cohort contains 213 observations from 31 physical systems: 9 BHs and 22 NSs. GRO~J1655$-$40 and GRS~1915+105 provide the two additional BH systems, whereas V404~Cyg supplied no usable observation under the frozen quality criteria. The number of independent systems is therefore substantially smaller than the number of individual spectra, and the BH/NS source counts remain unequal.
 
 Because the primary, independently processed, common-support and expanded cohorts differ in observation selection and/or processing, each reported performance estimate is identified by its corresponding cohort.
 
@@ -198,7 +198,7 @@ All preprocessing and hyperparameter selection are confined to the corresponding
 
 For each candidate model, \texttt{StandardScaler} is fitted only on the inner-training observations and then applied to the corresponding validation observations. After hyperparameter selection, the scaler and model are refitted using the complete outer training partition before prediction of the outer test data. No outer test source contributes to hyperparameter selection or scaler fitting in grouped or LOSO evaluation.
 
-The primary pipeline performs no imputation, learned feature selection or principal-component transformation. Because the number of independent systems, particularly BH systems, is limited, inner source-level validation provides a relatively coarse criterion for model selection; the hyperparameter search is therefore intentionally restricted to the frozen small grids described above. Split membership, selected hyperparameters and preprocessing audits are retained in Supplement~S3. The principal random seed is 42.
+The primary pipeline performs no imputation, learned feature selection or principal-component transformation. Because the number of independent systems, particularly BH systems, is limited, inner source-level validation provides a relatively coarse criterion for model selection; the hyperparameter search is therefore intentionally restricted to the frozen small grids described above. Source-level prediction summaries are provided in Supplement~S3, and the repository retains the primary split definitions. The full fit-audit records, including selected hyperparameters and preprocessing provenance, are not included in this release. The principal random seed is 42.
 
 \subsection{Source aggregation, metrics and uncertainty}
 
@@ -350,7 +350,7 @@ Differences between the primary and HEASoft cohorts can arise both from processi
 
 For grouped evaluation, the paired HEASoft-minus-original AUROC difference is $-0.006$ [$-0.039$, 0.000] for logistic regression and 0.006 [0.000, 0.039] for the random forest. For LOSO evaluation, the corresponding differences are 0.006 [0.000, 0.039] and $-0.006$ [$-0.039$, 0.000]. All conditional intervals include zero (Supplement~S4). The matched comparison therefore provides no evidence for a large change in source-level ranking attributable to the alternative processing workflow within these observations. It does not establish equivalence of the two representations or eliminate the possibility of instrumental effects.
 
-A complementary analysis restricts both representations to overlapping instrumental support. Strata combine PCA gain epoch and selected-PCU count, with at least two distinct physical systems from each class required in every retained stratum. Additional frozen restrictions require exposures between 256 and 16\,384~s, net rates between 5 and 1000~counts~s$^{-1}$ per PCU, background fraction no greater than 0.5, and at least two retained observations per source. These restrictions define overlapping support; they do not produce exact matching of the class-conditional instrumental distributions.
+A complementary analysis restricts both representations to overlapping instrumental support. Strata combine PCA gain epoch and selected-PCU configuration, with at least two distinct physical systems from each class required in every retained stratum. Additional frozen restrictions require exposures between 256 and 16\,384~s, net rates between 5 and 1000~counts~s$^{-1}$ per PCU, background fraction no greater than 0.5, and at least two retained observations per source. These restrictions define overlapping support; they do not produce exact matching of the class-conditional instrumental distributions.
 
 Within the restricted primary representation, grouped AUROC is 0.968 for logistic regression and 0.935 for the random forest. The corresponding values for the independently processed representation are 0.877 and 0.864. Thus source-level ranking remains present after restriction to the declared common instrumental support, although differences between these unequal subsets should not be interpreted as controlled processing effects. Figure~\ref{fig:4} summarizes both the matched-observation and common-support comparisons.
 

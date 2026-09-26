@@ -1,8 +1,15 @@
 % Official MNRAS class, unmodified. Scientific prose converted from reviewed Markdown.
 \PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+\PassOptionsToPackage{sort&compress}{natbib}
 \RequirePackage{fix-cm}
 \pdfminorversion=5
 \documentclass[fleqn,usenatbib]{mnras}
+% Requested numeric presentation: superscript citations and a numbered
+% bibliography, while retaining the MNRAS bibliography entry formatting.
+% Calling \bibpunct here switches Natbib before the auxiliary file is read.
+\bibpunct{}{}{,}{s}{}{,}
+\renewcommand{\refname}{REFERENCES}
+\renewcommand{\bibfont}{\footnotesize}
 \usepackage{newtxtext,newtxmath}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx,amsmath,booktabs,longtable}
@@ -21,14 +28,35 @@
 }{}{\PackageError{bhns}{Undated citation patch failed}{Check natbib compatibility.}}
 \makeatother
 \DeclareRobustCommand{\VAN}[3]{#2}
+\makeatletter
 \let\VANthebibliography\thebibliography
-\def\thebibliography{\DeclareRobustCommand{\VAN}[3]{##3}\VANthebibliography}
+\def\thebibliography#1{%
+  \DeclareRobustCommand{\VAN}[3]{##3}%
+  \let\@biblabel\NAT@biblabelnum
+  \let\@bibsetup\NAT@bibsetnum
+  \def\NAT@anchor##1##2{%
+    \hyper@natanchorstart{##1\@extra@b@citeb}%
+    \@biblabel{\the\c@NAT@ctr}%
+    \hyper@natanchorend
+  }%
+  % mnras.bst supplies author--year optional labels. Discard only those labels
+  % so Natbib generates sequential numeric labels while keeping each MNRAS-
+  % formatted reference entry unchanged.
+  \let\MNRASauthorbibitem\bibitem
+  \def\MNRASnumericbibitem[##1]##2{%
+    \MNRASauthorbibitem{##2}%
+    \makebox[2.4em][l]{[\the\c@NAT@ctr]}%
+  }%
+  \def\bibitem{\@ifnextchar[{\MNRASnumericbibitem}{\MNRASauthorbibitem}}%
+  \VANthebibliography{99}%
+}
+\makeatother
 \newcommand{\AuthorTODO}[1]{\textbf{TODO: #1}}
-\hypersetup{hidelinks,pdftitle={Black-Hole and Neutron-Star Classification Beyond Known Sources},pdfauthor={Author information pending}}
+\hypersetup{hidelinks,pdftitle={Black Hole and Neutron Star Classification Beyond Known Sources},pdfauthor={Youhan Wanigasuriya}}
 
-\title[Supporting information]{Supporting information: Black-Hole and Neutron-Star Classification Beyond Known Sources: An RXTE/PCA Evaluation}
-\author[Author information pending]{\AuthorTODO{author names and affiliations}}
-\date{Author review copy}
+\title[Supporting information]{Supporting information: Black Hole and Neutron Star Classification Beyond Known Sources: An RXTE/PCA Evaluation}
+\author[Youhan Wanigasuriya]{{Youhan Wanigasuriya}}
+\date{Review copy}
 \pubyear{2026}
 \begin{document}\label{firstpage}\pagerange{\pageref{firstpage}--\pageref{lastpage}}\maketitle
 \renewcommand{\thesection}{S\arabic{section}}
@@ -40,7 +68,7 @@ This supplement accompanies the integrated manuscript. Its machine-readable evid
 
 \section{Source census, observation provenance and cohort definitions}
 
-Tables S1 comprise the full reference roster, source registry, reviewed aliases, label-provenance records, selected ObsIDs, exclusions and cohort census. The catalogue and central identity evidence is given by \citet{CorralSantana2016,Galloway2020,Orosz2001,Sanna2018}. The reference roster includes rejected and unresolved entries; it is not the final admitted sample. The canonical source identifier is the grouping key. A different catalogue string does not create a new physical system.
+Tables S1 comprise the full reference roster, source registry, reviewed aliases, label-provenance records, selected ObsIDs, exclusions and cohort census. The catalogue and central identity evidence is given by \citep{CorralSantana2016,Galloway2020,Orosz2001,Sanna2018}. The reference roster includes rejected and unresolved entries; it is not the final admitted sample. The canonical source identifier is the grouping key. A different catalogue string does not create a new physical system.
 
 The primary reconstruction required four usable observations per source, whereas the later independently processed cohorts required two. This corrects a generalization in the protected historical Methods draft, not a dataset or protocol. The primary cohort has 687 observations (122 BH and 565 NS) from 29 sources (7 BH and 22 NS). The independently processed original-source cohort has 207 observations; the expanded sample has 213, with 9 BH and 22 NS systems. These counts are copied in \href{tables/S1_cohort_census.csv}{S1\_cohort\_census.csv}.
 
