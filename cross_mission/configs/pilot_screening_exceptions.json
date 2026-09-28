@@ -1,0 +1,28 @@
+{
+  "recorded_at_utc": "2026-09-23T09:30:44.289343+00:00",
+  "performance_started": false,
+  "exceptions": [
+    {
+      "obsid": "30363002002",
+      "modules": [
+        "FPMA",
+        "FPMB"
+      ],
+      "saacalc": 3,
+      "saamode": "OPTIMIZED",
+      "tentacle": "yes",
+      "reason": "Official SOC SAA reports page 5 show brief background spikes associated with geographic SAA regions; algorithm 3 removes those features while retaining 95.96% (A) and 93.62% (B) of report reference exposure. Inspect both module products; final acceptance pending.",
+      "source_documents": [
+        "nu30363002002_SAA_Report_A.pdf",
+        "nu30363002002_SAA_Report_B.pdf"
+      ],
+      "new_attempt": "attempt003"
+    }
+  ],
+  "unchanged": [
+    {
+      "obsid": "10601308002",
+      "reason": "SOC algorithm 3 optimized/tentacle curves preserve 100% of the reference exposure in both modules, with no additional prominent rejected flare episodes. Retain standard screening."
+    }
+  ]
+}
