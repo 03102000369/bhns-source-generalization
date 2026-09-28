@@ -1,0 +1,30 @@
+{
+  "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+  "dataset_sha256": {
+    "data/processed/validation_heasoft/heasoft_validation_observations.csv": "3af35b8e314a832ed29d088d9e4cf09cb6e3484b444eeddb51145109d80c8ce0",
+    "data/processed/validation_heasoft/expanded_source_observations.csv": "c40651ef414f3202530e09b0f7b911ee2fae7a51730b08e72d1f867f4eaa4cfb",
+    "data/processed/validation_heasoft/heasoft_matched_observations.csv": "ce483a41ae2876e301f66278f251ddf0c2dfce59482f047e5619cd678ea02d80"
+  },
+  "cohorts": {
+    "HEASOFT_VALIDATION": {
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22
+    },
+    "EXPANDED_SOURCE": {
+      "observations": 213,
+      "sources": 31,
+      "BH_sources": 9,
+      "NS_sources": 22
+    },
+    "HEASOFT_MATCHED": {
+      "observations": 201,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22
+    }
+  },
+  "selected": 247,
+  "excluded": 34
+}

@@ -1,0 +1,4 @@
+#!/bin/sh
+# HEASoft xtedatamode expects GNU zcat's .gz behavior. macOS zcat expects .Z.
+# This changes only lossless decompression, not FITS bytes or scientific processing.
+exec /usr/bin/gzip -dc "$@"

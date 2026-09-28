@@ -1,0 +1,6 @@
+extends: base.yaml
+experiment:
+  name: loso
+evaluation:
+  mode: loso
+  group_column: source_name

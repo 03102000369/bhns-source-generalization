@@ -1,0 +1,1521 @@
+{
+  "completed": [
+    {
+      "tag": "HEASOFT_VALIDATION_logistic_grouped",
+      "model": "logistic",
+      "split": "grouped",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "1509a95754a02b778049bc3fd11f6ccdb207e127f3d41ed472020dbacae9f900",
+      "metrics": {
+        "AUROC": 0.9025974025974026,
+        "balanced_accuracy": 0.762987012987013,
+        "MCC": 0.5958460099157059,
+        "F1": 0.9130434782608695,
+        "precision": 0.875,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9671305821675531,
+        "Brier": 0.13666942142451735,
+        "accuracy": 0.8620689655172413
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7532467532467533,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.5746753246753247,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.24174688920761409,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8444444444444444,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.7916666666666666,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9175517046827207,
+          "upper": 0.9999999999999999
+        },
+        "Brier": {
+          "lower": 0.1028428216561327,
+          "upper": 0.17327407066304945
+        },
+        "accuracy": {
+          "lower": 0.7586206896551724,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_VALIDATION"
+    },
+    {
+      "tag": "HEASOFT_VALIDATION_logistic_loso",
+      "model": "logistic",
+      "split": "loso",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "1509a95754a02b778049bc3fd11f6ccdb207e127f3d41ed472020dbacae9f900",
+      "metrics": {
+        "AUROC": 0.922077922077922,
+        "balanced_accuracy": 0.762987012987013,
+        "MCC": 0.5958460099157059,
+        "F1": 0.9130434782608695,
+        "precision": 0.875,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9730410419317679,
+        "Brier": 0.1593983638874233,
+        "accuracy": 0.8620689655172413
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7857142857142857,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.5746753246753247,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.24174688920761409,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8444444444444444,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.7916666666666666,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9264820232666258,
+          "upper": 1.0
+        },
+        "Brier": {
+          "lower": 0.13206497732211042,
+          "upper": 0.18836965699482328
+        },
+        "accuracy": {
+          "lower": 0.7586206896551724,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_VALIDATION"
+    },
+    {
+      "tag": "HEASOFT_VALIDATION_forest_grouped",
+      "model": "forest",
+      "split": "grouped",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "1509a95754a02b778049bc3fd11f6ccdb207e127f3d41ed472020dbacae9f900",
+      "metrics": {
+        "AUROC": 0.8961038961038961,
+        "balanced_accuracy": 0.7857142857142857,
+        "MCC": 0.7091242083423347,
+        "F1": 0.9361702127659575,
+        "precision": 0.88,
+        "recall": 1.0,
+        "PR_AUC": 0.9674062919605877,
+        "Brier": 0.10972596742676666,
+        "accuracy": 0.896551724137931
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7597402597402597,
+          "upper": 0.987012987012987
+        },
+        "balanced_accuracy": {
+          "lower": 0.6428571428571428,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.48249790963716394,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8979591836734694,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.8148148148148148,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 1.0,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9262551221466799,
+          "upper": 0.9960474308300394
+        },
+        "Brier": {
+          "lower": 0.06419120152977299,
+          "upper": 0.15647822981387607
+        },
+        "accuracy": {
+          "lower": 0.8275862068965517,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_VALIDATION"
+    },
+    {
+      "tag": "HEASOFT_VALIDATION_forest_loso",
+      "model": "forest",
+      "split": "loso",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "1509a95754a02b778049bc3fd11f6ccdb207e127f3d41ed472020dbacae9f900",
+      "metrics": {
+        "AUROC": 0.8961038961038961,
+        "balanced_accuracy": 0.7142857142857143,
+        "MCC": 0.6021937915964948,
+        "F1": 0.9166666666666666,
+        "precision": 0.8461538461538461,
+        "recall": 1.0,
+        "PR_AUC": 0.9674062919605877,
+        "Brier": 0.11428855452549544,
+        "accuracy": 0.8620689655172413
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7532467532467533,
+          "upper": 0.987012987012987
+        },
+        "balanced_accuracy": {
+          "lower": 0.5714285714285714,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.33502969713024494,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.88,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.7857142857142857,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 1.0,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.924063354752714,
+          "upper": 0.9960474308300394
+        },
+        "Brier": {
+          "lower": 0.07241592329615754,
+          "upper": 0.15931543170425283
+        },
+        "accuracy": {
+          "lower": 0.7931034482758621,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_VALIDATION"
+    },
+    {
+      "tag": "HEASOFT_MATCHED_logistic_grouped",
+      "model": "logistic",
+      "split": "grouped",
+      "observations": 201,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "1057e257fab50a9c4f4dc3041802561f41afd6897795df23aff5f4cf8eb49328",
+      "metrics": {
+        "AUROC": 0.8766233766233766,
+        "balanced_accuracy": 0.762987012987013,
+        "MCC": 0.5958460099157059,
+        "F1": 0.9130434782608695,
+        "precision": 0.875,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9584886147805265,
+        "Brier": 0.14174891200007989,
+        "accuracy": 0.8620689655172413
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7142857142857143,
+          "upper": 0.9805194805194806
+        },
+        "balanced_accuracy": {
+          "lower": 0.5746753246753247,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.24174688920761409,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8444444444444444,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.7916666666666666,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.903097662986917,
+          "upper": 0.9945454545454546
+        },
+        "Brier": {
+          "lower": 0.10673723563999302,
+          "upper": 0.17936986376640046
+        },
+        "accuracy": {
+          "lower": 0.7586206896551724,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_MATCHED"
+    },
+    {
+      "tag": "HEASOFT_MATCHED_logistic_loso",
+      "model": "logistic",
+      "split": "loso",
+      "observations": 201,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "1057e257fab50a9c4f4dc3041802561f41afd6897795df23aff5f4cf8eb49328",
+      "metrics": {
+        "AUROC": 0.9025974025974026,
+        "balanced_accuracy": 0.762987012987013,
+        "MCC": 0.5958460099157059,
+        "F1": 0.9130434782608695,
+        "precision": 0.875,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9685892477709557,
+        "Brier": 0.1664196845046078,
+        "accuracy": 0.8620689655172413
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7662337662337662,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.5746753246753247,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.24174688920761409,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8444444444444444,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.7916666666666666,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9267971984848935,
+          "upper": 0.9999999999999999
+        },
+        "Brier": {
+          "lower": 0.13711021371781928,
+          "upper": 0.19832746789139424
+        },
+        "accuracy": {
+          "lower": 0.7586206896551724,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_MATCHED"
+    },
+    {
+      "tag": "HEASOFT_MATCHED_forest_grouped",
+      "model": "forest",
+      "split": "grouped",
+      "observations": 201,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "1057e257fab50a9c4f4dc3041802561f41afd6897795df23aff5f4cf8eb49328",
+      "metrics": {
+        "AUROC": 0.8636363636363636,
+        "balanced_accuracy": 0.762987012987013,
+        "MCC": 0.5958460099157059,
+        "F1": 0.9130434782608695,
+        "precision": 0.875,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9577879874351625,
+        "Brier": 0.12046785008771209,
+        "accuracy": 0.8620689655172413
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7142857142857143,
+          "upper": 0.974025974025974
+        },
+        "balanced_accuracy": {
+          "lower": 0.5746753246753247,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.24174688920761409,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8444444444444444,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.7916666666666666,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9103769159093684,
+          "upper": 0.9918321056413941
+        },
+        "Brier": {
+          "lower": 0.07386215615583948,
+          "upper": 0.16781246325831678
+        },
+        "accuracy": {
+          "lower": 0.7586206896551724,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_MATCHED"
+    },
+    {
+      "tag": "HEASOFT_MATCHED_forest_loso",
+      "model": "forest",
+      "split": "loso",
+      "observations": 201,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "1057e257fab50a9c4f4dc3041802561f41afd6897795df23aff5f4cf8eb49328",
+      "metrics": {
+        "AUROC": 0.8831168831168831,
+        "balanced_accuracy": 0.7857142857142857,
+        "MCC": 0.7091242083423347,
+        "F1": 0.9361702127659575,
+        "precision": 0.88,
+        "recall": 1.0,
+        "PR_AUC": 0.9634247471895692,
+        "Brier": 0.12069120604472955,
+        "accuracy": 0.896551724137931
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7402597402597402,
+          "upper": 0.9805194805194806
+        },
+        "balanced_accuracy": {
+          "lower": 0.6428571428571428,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.48249790963716394,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8979591836734694,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.8148148148148148,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 1.0,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9173002970955957,
+          "upper": 0.9938829286655373
+        },
+        "Brier": {
+          "lower": 0.07925753208297052,
+          "upper": 0.16316047608983147
+        },
+        "accuracy": {
+          "lower": 0.8275862068965517,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_MATCHED"
+    },
+    {
+      "tag": "EXPANDED_SOURCE_logistic_grouped",
+      "model": "logistic",
+      "split": "grouped",
+      "observations": 213,
+      "sources": 31,
+      "BH_sources": 9,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "aae9d8743342fce3066f6c78449c1d75b9c5da711d120207286eef64e24d8b52",
+      "metrics": {
+        "AUROC": 0.9191919191919192,
+        "balanced_accuracy": 0.8888888888888888,
+        "MCC": 0.8443713418650369,
+        "F1": 0.9565217391304348,
+        "precision": 0.9166666666666666,
+        "recall": 1.0,
+        "PR_AUC": 0.9635464555958104,
+        "Brier": 0.10693667404395932,
+        "accuracy": 0.9354838709677419
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7828282828282829,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.7222222222222222,
+          "upper": 1.0
+        },
+        "MCC": {
+          "lower": 0.6017806225656267,
+          "upper": 1.0
+        },
+        "F1": {
+          "lower": 0.8979591836734694,
+          "upper": 1.0
+        },
+        "precision": {
+          "lower": 0.8148148148148148,
+          "upper": 1.0
+        },
+        "recall": {
+          "lower": 1.0,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9063478453773159,
+          "upper": 1.0
+        },
+        "Brier": {
+          "lower": 0.0694914689262153,
+          "upper": 0.14916916545600828
+        },
+        "accuracy": {
+          "lower": 0.8387096774193549,
+          "upper": 1.0
+        }
+      },
+      "cohort": "EXPANDED_SOURCE"
+    },
+    {
+      "tag": "EXPANDED_SOURCE_logistic_loso",
+      "model": "logistic",
+      "split": "loso",
+      "observations": 213,
+      "sources": 31,
+      "BH_sources": 9,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "aae9d8743342fce3066f6c78449c1d75b9c5da711d120207286eef64e24d8b52",
+      "metrics": {
+        "AUROC": 0.9292929292929293,
+        "balanced_accuracy": 0.8106060606060606,
+        "MCC": 0.6744004873337632,
+        "F1": 0.9130434782608695,
+        "precision": 0.875,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9683697872605133,
+        "Brier": 0.1557609916684479,
+        "accuracy": 0.8709677419354839
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.797979797979798,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.6439393939393939,
+          "upper": 0.9444444444444444
+        },
+        "MCC": {
+          "lower": 0.38978972143455365,
+          "upper": 0.9220854330774995
+        },
+        "F1": {
+          "lower": 0.84,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.7777777777777778,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9131290551633758,
+          "upper": 1.0
+        },
+        "Brier": {
+          "lower": 0.12746725388916003,
+          "upper": 0.18541341276451348
+        },
+        "accuracy": {
+          "lower": 0.7741935483870968,
+          "upper": 0.967741935483871
+        }
+      },
+      "cohort": "EXPANDED_SOURCE"
+    },
+    {
+      "tag": "EXPANDED_SOURCE_forest_grouped",
+      "model": "forest",
+      "split": "grouped",
+      "observations": 213,
+      "sources": 31,
+      "BH_sources": 9,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "aae9d8743342fce3066f6c78449c1d75b9c5da711d120207286eef64e24d8b52",
+      "metrics": {
+        "AUROC": 0.8888888888888888,
+        "balanced_accuracy": 0.7222222222222222,
+        "MCC": 0.6017806225656267,
+        "F1": 0.8979591836734694,
+        "precision": 0.8148148148148148,
+        "recall": 1.0,
+        "PR_AUC": 0.9563013775384213,
+        "Brier": 0.12330509259278483,
+        "accuracy": 0.8387096774193549
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.757449494949495,
+          "upper": 0.9797979797979798
+        },
+        "balanced_accuracy": {
+          "lower": 0.5555555555555556,
+          "upper": 0.8888888888888888
+        },
+        "MCC": {
+          "lower": 0.2854496128592251,
+          "upper": 0.8443713418650369
+        },
+        "F1": {
+          "lower": 0.8461538461538461,
+          "upper": 0.9565217391304348
+        },
+        "precision": {
+          "lower": 0.7333333333333333,
+          "upper": 0.9166666666666666
+        },
+        "recall": {
+          "lower": 1.0,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.90729694528685,
+          "upper": 0.9916104152764231
+        },
+        "Brier": {
+          "lower": 0.0735433551957752,
+          "upper": 0.17498692081039383
+        },
+        "accuracy": {
+          "lower": 0.7419354838709677,
+          "upper": 0.9354838709677419
+        }
+      },
+      "cohort": "EXPANDED_SOURCE"
+    },
+    {
+      "tag": "EXPANDED_SOURCE_forest_loso",
+      "model": "forest",
+      "split": "loso",
+      "observations": 213,
+      "sources": 31,
+      "BH_sources": 9,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "aae9d8743342fce3066f6c78449c1d75b9c5da711d120207286eef64e24d8b52",
+      "metrics": {
+        "AUROC": 0.8737373737373737,
+        "balanced_accuracy": 0.6994949494949495,
+        "MCC": 0.4924054147377875,
+        "F1": 0.875,
+        "precision": 0.8076923076923077,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9519063969261596,
+        "Brier": 0.1288332645579995,
+        "accuracy": 0.8064516129032258
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7272727272727273,
+          "upper": 0.9696969696969697
+        },
+        "balanced_accuracy": {
+          "lower": 0.5328282828282829,
+          "upper": 0.8661616161616161
+        },
+        "MCC": {
+          "lower": 0.12131004404043509,
+          "upper": 0.7659416862050705
+        },
+        "F1": {
+          "lower": 0.8,
+          "upper": 0.9361702127659575
+        },
+        "precision": {
+          "lower": 0.7241379310344828,
+          "upper": 0.9130434782608695
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.8990399897642981,
+          "upper": 0.9888636363636364
+        },
+        "Brier": {
+          "lower": 0.08321349446889043,
+          "upper": 0.1786654950709042
+        },
+        "accuracy": {
+          "lower": 0.7096774193548387,
+          "upper": 0.9032258064516129
+        }
+      },
+      "cohort": "EXPANDED_SOURCE"
+    },
+    {
+      "tag": "PRIMARY_SAME_OBSIDS_logistic_grouped",
+      "model": "logistic",
+      "split": "grouped",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "ffd165df7c114125f75110a13b7da8a3d6bbe4acf2e7cba1c82a7c981c288cc4",
+      "metrics": {
+        "AUROC": 0.9090909090909091,
+        "balanced_accuracy": 0.8344155844155845,
+        "MCC": 0.7065409225848365,
+        "F1": 0.9333333333333333,
+        "precision": 0.9130434782608695,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9701608851978563,
+        "Brier": 0.13678996330284948,
+        "accuracy": 0.896551724137931
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7662337662337663,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.6461038961038961,
+          "upper": 1.0
+        },
+        "MCC": {
+          "lower": 0.3825184261187248,
+          "upper": 1.0
+        },
+        "F1": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "precision": {
+          "lower": 0.8260869565217391,
+          "upper": 1.0
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9244729976739547,
+          "upper": 0.9999999999999999
+        },
+        "Brier": {
+          "lower": 0.10289726026215519,
+          "upper": 0.17417489467234298
+        },
+        "accuracy": {
+          "lower": 0.7931034482758621,
+          "upper": 1.0
+        }
+      },
+      "cohort": "PRIMARY_SAME_OBSIDS"
+    },
+    {
+      "tag": "PRIMARY_SAME_OBSIDS_logistic_loso",
+      "model": "logistic",
+      "split": "loso",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "ffd165df7c114125f75110a13b7da8a3d6bbe4acf2e7cba1c82a7c981c288cc4",
+      "metrics": {
+        "AUROC": 0.9155844155844155,
+        "balanced_accuracy": 0.762987012987013,
+        "MCC": 0.5958460099157059,
+        "F1": 0.9130434782608695,
+        "precision": 0.875,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9697942886850146,
+        "Brier": 0.16005618426919999,
+        "accuracy": 0.8620689655172413
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7662337662337663,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.5746753246753247,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.24174688920761409,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8444444444444444,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.7916666666666666,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9153643670826164,
+          "upper": 1.0
+        },
+        "Brier": {
+          "lower": 0.13249202153733347,
+          "upper": 0.18967795493439324
+        },
+        "accuracy": {
+          "lower": 0.7586206896551724,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "PRIMARY_SAME_OBSIDS"
+    },
+    {
+      "tag": "PRIMARY_SAME_OBSIDS_forest_grouped",
+      "model": "forest",
+      "split": "grouped",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "ffd165df7c114125f75110a13b7da8a3d6bbe4acf2e7cba1c82a7c981c288cc4",
+      "metrics": {
+        "AUROC": 0.8896103896103895,
+        "balanced_accuracy": 0.7857142857142857,
+        "MCC": 0.7091242083423347,
+        "F1": 0.9361702127659575,
+        "precision": 0.88,
+        "recall": 1.0,
+        "PR_AUC": 0.9647324951691438,
+        "Brier": 0.10316858105898939,
+        "accuracy": 0.896551724137931
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7467532467532467,
+          "upper": 0.987012987012987
+        },
+        "balanced_accuracy": {
+          "lower": 0.6428571428571428,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.48249790963716394,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8979591836734694,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.8148148148148148,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 1.0,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9192414633306042,
+          "upper": 0.995959845490478
+        },
+        "Brier": {
+          "lower": 0.05830930997860048,
+          "upper": 0.1517224022307152
+        },
+        "accuracy": {
+          "lower": 0.8275862068965517,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "PRIMARY_SAME_OBSIDS"
+    },
+    {
+      "tag": "PRIMARY_SAME_OBSIDS_forest_loso",
+      "model": "forest",
+      "split": "loso",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "ffd165df7c114125f75110a13b7da8a3d6bbe4acf2e7cba1c82a7c981c288cc4",
+      "metrics": {
+        "AUROC": 0.9025974025974026,
+        "balanced_accuracy": 0.7857142857142857,
+        "MCC": 0.7091242083423347,
+        "F1": 0.9361702127659575,
+        "precision": 0.88,
+        "recall": 1.0,
+        "PR_AUC": 0.9692756347390212,
+        "Brier": 0.1067135762824001,
+        "accuracy": 0.896551724137931
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7662337662337662,
+          "upper": 0.9870129870129871
+        },
+        "balanced_accuracy": {
+          "lower": 0.6428571428571428,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.48249790963716394,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8979591836734694,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.8148148148148148,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 1.0,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9268454167703178,
+          "upper": 0.9962121212121212
+        },
+        "Brier": {
+          "lower": 0.06410717490276617,
+          "upper": 0.15264603088023743
+        },
+        "accuracy": {
+          "lower": 0.8275862068965517,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "PRIMARY_SAME_OBSIDS"
+    },
+    {
+      "tag": "HEASOFT_SHAPE_logistic_grouped",
+      "model": "logistic",
+      "split": "grouped",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "3cb7761abc14fcc7f6f856413b039e73bf62081faa3a0f65da9bb2959ca4d5b9",
+      "metrics": {
+        "AUROC": 0.9675324675324675,
+        "balanced_accuracy": 0.9090909090909092,
+        "MCC": 0.721568539381252,
+        "F1": 0.9,
+        "precision": 1.0,
+        "recall": 0.8181818181818182,
+        "PR_AUC": 0.9897087760724121,
+        "Brier": 0.12925218663202184,
+        "accuracy": 0.8620689655172413
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.8896103896103896,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.8181818181818181,
+          "upper": 0.9772727272727273
+        },
+        "MCC": {
+          "lower": 0.5449492609130661,
+          "upper": 0.9139076937674137
+        },
+        "F1": {
+          "lower": 0.7777777777777778,
+          "upper": 0.9767441860465116
+        },
+        "precision": {
+          "lower": 1.0,
+          "upper": 1.0
+        },
+        "recall": {
+          "lower": 0.6363636363636364,
+          "upper": 0.9545454545454546
+        },
+        "PR_AUC": {
+          "lower": 0.9655775328472697,
+          "upper": 1.0
+        },
+        "Brier": {
+          "lower": 0.09829168998652411,
+          "upper": 0.1635294942374496
+        },
+        "accuracy": {
+          "lower": 0.7241379310344828,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_SHAPE"
+    },
+    {
+      "tag": "HEASOFT_SHAPE_forest_grouped",
+      "model": "forest",
+      "split": "grouped",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "3cb7761abc14fcc7f6f856413b039e73bf62081faa3a0f65da9bb2959ca4d5b9",
+      "metrics": {
+        "AUROC": 0.9675324675324675,
+        "balanced_accuracy": 0.8344155844155845,
+        "MCC": 0.7065409225848365,
+        "F1": 0.9333333333333333,
+        "precision": 0.9130434782608695,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9909408773045134,
+        "Brier": 0.07319095929814914,
+        "accuracy": 0.896551724137931
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.8896103896103896,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.6461038961038961,
+          "upper": 1.0
+        },
+        "MCC": {
+          "lower": 0.3721377969952915,
+          "upper": 1.0
+        },
+        "F1": {
+          "lower": 0.8571428571428571,
+          "upper": 1.0
+        },
+        "precision": {
+          "lower": 0.8260869565217391,
+          "upper": 1.0
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9703629703629704,
+          "upper": 1.0
+        },
+        "Brier": {
+          "lower": 0.021166303693353133,
+          "upper": 0.1389840523062233
+        },
+        "accuracy": {
+          "lower": 0.7931034482758621,
+          "upper": 1.0
+        }
+      },
+      "cohort": "HEASOFT_SHAPE"
+    },
+    {
+      "tag": "HEASOFT_BACKGROUND_0.25_logistic_grouped",
+      "model": "logistic",
+      "split": "grouped",
+      "observations": 184,
+      "sources": 28,
+      "BH_sources": 7,
+      "NS_sources": 21,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "60113939aa889574660d2c6c174f8a8e007bbf30cc45e54296b7db43a7cd5e0f",
+      "metrics": {
+        "AUROC": 0.891156462585034,
+        "balanced_accuracy": 0.8095238095238095,
+        "MCC": 0.6190476190476191,
+        "F1": 0.9047619047619048,
+        "precision": 0.9047619047619048,
+        "recall": 0.9047619047619048,
+        "PR_AUC": 0.9613890899262418,
+        "Brier": 0.15117316934746144,
+        "accuracy": 0.8571428571428571
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7278911564625851,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.6190476190476191,
+          "upper": 0.9761904761904762
+        },
+        "MCC": {
+          "lower": 0.23803541365274503,
+          "upper": 0.9128709291752769
+        },
+        "F1": {
+          "lower": 0.8095238095238095,
+          "upper": 0.9767441860465116
+        },
+        "precision": {
+          "lower": 0.8,
+          "upper": 1.0
+        },
+        "recall": {
+          "lower": 0.7619047619047619,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9057403506967127,
+          "upper": 1.0
+        },
+        "Brier": {
+          "lower": 0.11484690151056526,
+          "upper": 0.19084694687352566
+        },
+        "accuracy": {
+          "lower": 0.7142857142857143,
+          "upper": 0.9642857142857143
+        }
+      },
+      "cohort": "HEASOFT_BACKGROUND_0.25"
+    },
+    {
+      "tag": "HEASOFT_BACKGROUND_0.25_forest_grouped",
+      "model": "forest",
+      "split": "grouped",
+      "observations": 184,
+      "sources": 28,
+      "BH_sources": 7,
+      "NS_sources": 21,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "60113939aa889574660d2c6c174f8a8e007bbf30cc45e54296b7db43a7cd5e0f",
+      "metrics": {
+        "AUROC": 0.9047619047619048,
+        "balanced_accuracy": 0.7619047619047619,
+        "MCC": 0.5922200922639821,
+        "F1": 0.9090909090909091,
+        "precision": 0.8695652173913043,
+        "recall": 0.9523809523809523,
+        "PR_AUC": 0.9684513592784272,
+        "Brier": 0.1039356814243539,
+        "accuracy": 0.8571428571428571
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7551020408163266,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.5714285714285714,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.16151457061744964,
+          "upper": 0.9045340337332909
+        },
+        "F1": {
+          "lower": 0.8292682926829268,
+          "upper": 0.9767441860465116
+        },
+        "precision": {
+          "lower": 0.7777777777777778,
+          "upper": 0.9545454545454546
+        },
+        "recall": {
+          "lower": 0.8571428571428571,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9256363624397128,
+          "upper": 1.0
+        },
+        "Brier": {
+          "lower": 0.05108807021895059,
+          "upper": 0.160203079667729
+        },
+        "accuracy": {
+          "lower": 0.75,
+          "upper": 0.9642857142857143
+        }
+      },
+      "cohort": "HEASOFT_BACKGROUND_0.25"
+    },
+    {
+      "tag": "HEASOFT_BACKGROUND_0.5_logistic_grouped",
+      "model": "logistic",
+      "split": "grouped",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "1509a95754a02b778049bc3fd11f6ccdb207e127f3d41ed472020dbacae9f900",
+      "metrics": {
+        "AUROC": 0.9025974025974026,
+        "balanced_accuracy": 0.762987012987013,
+        "MCC": 0.5958460099157059,
+        "F1": 0.9130434782608695,
+        "precision": 0.875,
+        "recall": 0.9545454545454546,
+        "PR_AUC": 0.9671305821675531,
+        "Brier": 0.13666942142451735,
+        "accuracy": 0.8620689655172413
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7532467532467533,
+          "upper": 1.0
+        },
+        "balanced_accuracy": {
+          "lower": 0.5746753246753247,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.24174688920761409,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8444444444444444,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.7916666666666666,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 0.8636363636363636,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9175517046827207,
+          "upper": 0.9999999999999999
+        },
+        "Brier": {
+          "lower": 0.1028428216561327,
+          "upper": 0.17327407066304945
+        },
+        "accuracy": {
+          "lower": 0.7586206896551724,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_BACKGROUND_0.5"
+    },
+    {
+      "tag": "HEASOFT_BACKGROUND_0.5_forest_grouped",
+      "model": "forest",
+      "split": "grouped",
+      "observations": 207,
+      "sources": 29,
+      "BH_sources": 7,
+      "NS_sources": 22,
+      "protocol_sha256": "e5a788be37bdb9a23ca0139074541663b07dc038a0bb6cad4f5ebf8370ab05cd",
+      "dataset_fingerprint": "1509a95754a02b778049bc3fd11f6ccdb207e127f3d41ed472020dbacae9f900",
+      "metrics": {
+        "AUROC": 0.8961038961038961,
+        "balanced_accuracy": 0.7857142857142857,
+        "MCC": 0.7091242083423347,
+        "F1": 0.9361702127659575,
+        "precision": 0.88,
+        "recall": 1.0,
+        "PR_AUC": 0.9674062919605877,
+        "Brier": 0.10972596742676667,
+        "accuracy": 0.896551724137931
+      },
+      "intervals": {
+        "AUROC": {
+          "lower": 0.7597402597402597,
+          "upper": 0.987012987012987
+        },
+        "balanced_accuracy": {
+          "lower": 0.6428571428571428,
+          "upper": 0.9285714285714286
+        },
+        "MCC": {
+          "lower": 0.48249790963716394,
+          "upper": 0.9054699202058099
+        },
+        "F1": {
+          "lower": 0.8979591836734694,
+          "upper": 0.9777777777777777
+        },
+        "precision": {
+          "lower": 0.8148148148148148,
+          "upper": 0.9565217391304348
+        },
+        "recall": {
+          "lower": 1.0,
+          "upper": 1.0
+        },
+        "PR_AUC": {
+          "lower": 0.9262551221466799,
+          "upper": 0.9960474308300394
+        },
+        "Brier": {
+          "lower": 0.06419120152977298,
+          "upper": 0.15647822981387607
+        },
+        "accuracy": {
+          "lower": 0.8275862068965517,
+          "upper": 0.9655172413793104
+        }
+      },
+      "cohort": "HEASOFT_BACKGROUND_0.5"
+    }
+  ],
+  "skipped": [],
+  "paired": [
+    {
+      "model": "logistic",
+      "split": "grouped",
+      "definition": "HEASOFT minus original rates on identical admitted ObsIDs",
+      "intervals": {
+        "AUROC": {
+          "lower": -0.038961038961038974,
+          "upper": 0.0
+        },
+        "balanced_accuracy": {
+          "lower": -0.2142857142857143,
+          "upper": 0.0
+        },
+        "MCC": {
+          "lower": -0.33625276291333733,
+          "upper": 0.0
+        },
+        "F1": {
+          "lower": -0.061111111111111116,
+          "upper": 0.0
+        },
+        "precision": {
+          "lower": -0.11454545454545462,
+          "upper": 0.0
+        },
+        "recall": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "PR_AUC": {
+          "lower": -0.016042780748663166,
+          "upper": 2.2784233310482737e-05
+        },
+        "Brier": {
+          "lower": -0.002487027596453051,
+          "upper": 0.002218447139739854
+        },
+        "accuracy": {
+          "lower": -0.10344827586206895,
+          "upper": 0.0
+        }
+      }
+    },
+    {
+      "model": "logistic",
+      "split": "loso",
+      "definition": "HEASOFT minus original rates on identical admitted ObsIDs",
+      "intervals": {
+        "AUROC": {
+          "lower": 0.0,
+          "upper": 0.03896103896103886
+        },
+        "balanced_accuracy": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "MCC": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "F1": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "precision": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "recall": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "PR_AUC": {
+          "lower": -4.162504162508185e-05,
+          "upper": 0.016071126110422447
+        },
+        "Brier": {
+          "lower": -0.002825697328236137,
+          "upper": 0.0013517514746764032
+        },
+        "accuracy": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      }
+    },
+    {
+      "model": "forest",
+      "split": "grouped",
+      "definition": "HEASOFT minus original rates on identical admitted ObsIDs",
+      "intervals": {
+        "AUROC": {
+          "lower": 0.0,
+          "upper": 0.038961038961038974
+        },
+        "balanced_accuracy": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "MCC": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "F1": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "precision": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "recall": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "PR_AUC": {
+          "lower": -9.322242039604134e-05,
+          "upper": 0.013636363636363669
+        },
+        "Brier": {
+          "lower": -0.001642634451906263,
+          "upper": 0.015218341320442358
+        },
+        "accuracy": {
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      }
+    },
+    {
+      "model": "forest",
+      "split": "loso",
+      "definition": "HEASOFT minus original rates on identical admitted ObsIDs",
+      "intervals": {
+        "AUROC": {
+          "lower": -0.03896103896103886,
+          "upper": 0.0
+        },
+        "balanced_accuracy": {
+          "lower": -0.2142857142857144,
+          "upper": 0.0
+        },
+        "MCC": {
+          "lower": -0.37409451121208975,
+          "upper": 0.0
+        },
+        "F1": {
+          "lower": -0.061111111111111116,
+          "upper": 0.0
+        },
+        "precision": {
+          "lower": -0.11036789297658867,
+          "upper": 0.0
+        },
+        "recall": {
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "PR_AUC": {
+          "lower": -0.010018667048805191,
+          "upper": 8.471451490764944e-05
+        },
+        "Brier": {
+          "lower": 0.0014933643333655496,
+          "upper": 0.014025073135452712
+        },
+        "accuracy": {
+          "lower": -0.10344827586206906,
+          "upper": 0.0
+        }
+      }
+    }
+  ]
+}

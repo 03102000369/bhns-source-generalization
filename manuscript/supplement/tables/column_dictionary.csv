@@ -1,0 +1,692 @@
+file,column,description,units_if_explicit
+S1_cohort_census.csv,cohort,Named frozen analysis cohort,
+S1_cohort_census.csv,observations,Observation count within the named row/category,
+S1_cohort_census.csv,sources,Distinct physical-source count within the named row/category,
+S1_cohort_census.csv,BH_sources,Count of BH sources within the named cohort/regime; category counts are not additive independent samples,
+S1_cohort_census.csv,BH_observations,Count of BH observations within the named cohort/regime; category counts are not additive independent samples,
+S1_cohort_census.csv,NS_sources,Count of NS sources within the named cohort/regime; category counts are not additive independent samples,
+S1_cohort_census.csv,NS_observations,Count of NS observations within the named cohort/regime; category counts are not additive independent samples,
+S1_excluded_observations.csv,rxte_obsid,RXTE archive observation identifier,
+S1_excluded_observations.csv,source_id,Canonical physical-source grouping identifier,
+S1_excluded_observations.csv,canonical_source,Canonical physical-source identity,
+S1_excluded_observations.csv,stage,Recorded project stage,
+S1_excluded_observations.csv,exclusion_reason,Recorded reason for exclusion,
+S1_label_provenance.csv,source_id,Canonical physical-source grouping identifier,
+S1_label_provenance.csv,source_name,Human-readable physical-source name,
+S1_label_provenance.csv,compact_object_class,Physical compact-object class,
+S1_label_provenance.csv,label_reference,Reference supporting the label,
+S1_label_provenance.csv,label_status,Label review disposition,
+S1_label_provenance.csv,notes,Retained explanatory annotation; not an inferred measurement,
+S1_reference_roster.csv,reference_source_name,Source string from the reference roster,
+S1_reference_roster.csv,canonical_source_name,Human-readable canonical source name,
+S1_reference_roster.csv,source_id,Canonical physical-source grouping identifier,
+S1_reference_roster.csv,aliases,Retained catalogue-name aliases,
+S1_reference_roster.csv,reference_class,Class string from the reference roster,
+S1_reference_roster.csv,class_label,Adopted physical compact-object class; reference registries may also contain unresolved labels,
+S1_reference_roster.csv,classification_status,Physical-class review disposition,
+S1_reference_roster.csv,classification_reference,Reference supporting the class assignment,
+S1_reference_roster.csv,reference_observation_count,"Observation count reported in the reference roster, not the admitted project count",
+S1_reference_roster.csv,identity_status,Identity review disposition,
+S1_reference_roster.csv,ra_deg,Right ascension in degrees,degrees
+S1_reference_roster.csv,dec_deg,Declination in degrees,degrees
+S1_reference_roster.csv,notes,Retained explanatory annotation; not an inferred measurement,
+S1_selected_obsids.csv,rxte_obsid,RXTE archive observation identifier,
+S1_selected_obsids.csv,source_id,Canonical physical-source grouping identifier,
+S1_selected_obsids.csv,canonical_source,Canonical physical-source identity,
+S1_selected_obsids.csv,archive_target_name,Target name returned by the archive,
+S1_selected_obsids.csv,reference_class,Class string from the reference roster,
+S1_selected_obsids.csv,class_label,Adopted physical compact-object class; reference registries may also contain unresolved labels,
+S1_selected_obsids.csv,proposal_id,RXTE observing-proposal identifier,
+S1_selected_obsids.csv,cycle,Recorded observing cycle,
+S1_selected_obsids.csv,observation_start,Observation start in the format/scale recorded by the table,
+S1_selected_obsids.csv,duration,Recorded observation duration; use the originating time convention,
+S1_selected_obsids.csv,exposure,Recorded exposure under the originating reduction convention,
+S1_selected_obsids.csv,archive_identifier,Archive query identifier,
+S1_selected_obsids.csv,mapping_method,Documented method used for the shared-regime mapping,
+S1_selected_obsids.csv,mapping_confidence,Recorded confidence in the common-regime mapping,
+S1_selected_obsids.csv,separation_deg,Angular separation used for source/pointing identity checks,degrees
+S1_selected_obsids.csv,ra,Right ascension in the originating catalogue format,
+S1_selected_obsids.csv,dec,Declination in the originating catalogue format,
+S1_selected_obsids.csv,archive_status,Archive acquisition/review disposition,
+S1_selected_obsids.csv,status,Recorded processing/review status,
+S1_selected_obsids.csv,query_record,Retained literature-search query or query-record identifier,
+S1_selected_obsids.csv,notes,Retained explanatory annotation; not an inferred measurement,
+S1_selected_obsids.csv,selection_method,Frozen method used to select observations,
+S1_selected_obsids.csv,inspection_sample,Recorded inspection-sample designation,
+S1_source_aliases.csv,alias,Alternative catalogue name for the physical system,
+S1_source_aliases.csv,source_id,Canonical physical-source grouping identifier,
+S1_source_aliases.csv,alias_reference,Evidence reference for the alias mapping,
+S1_source_aliases.csv,status,Recorded processing/review status,
+S1_source_aliases.csv,notes,Retained explanatory annotation; not an inferred measurement,
+S1_source_registry.csv,source_id,Canonical physical-source grouping identifier,
+S1_source_registry.csv,canonical_source_name,Human-readable canonical source name,
+S1_source_registry.csv,class_label,Adopted physical compact-object class; reference registries may also contain unresolved labels,
+S1_source_registry.csv,class_label_text,Original descriptive physical-class assignment,
+S1_source_registry.csv,classification_status,Physical-class review disposition,
+S1_source_registry.csv,classification_reference,Reference supporting the class assignment,
+S1_source_registry.csv,classification_evidence,Physical evidence supporting the compact-object class,
+S1_source_registry.csv,identity_reference,Reference supporting the source identity,
+S1_source_registry.csv,included_in_trusted_cohort,Whether the reviewed identity/label is admitted to the trusted roster,
+S1_source_registry.csv,confidence_status,Recorded confidence annotation for identity/class evidence,
+S1_source_registry.csv,notes,Retained explanatory annotation; not an inferred measurement,
+S2_identity_predictions.csv,obs_id,Observation identifier as retained by this table,
+S2_identity_predictions.csv,source_id,Canonical physical-source grouping identifier,
+S2_identity_predictions.csv,predicted_source_id,Predicted identity in the separate multiclass source-identification diagnostic,
+S2_identity_predictions.csv,correct,Recorded correctness indicator for the named prediction,
+S2_learning_curve.csv,seed,Recorded pseudorandom seed,
+S2_learning_curve.csv,fold,Outer fold identifier,
+S2_learning_curve.csv,training_sources,Number of independent physical training sources,
+S2_learning_curve.csv,training_sources_per_class,Training-source count per physical class in the learning-curve diagnostic,
+S2_learning_curve.csv,test_sources,Number of independent physical test sources,
+S2_learning_curve.csv,training_source_ids,Retained list of training-source grouping identifiers,
+S2_learning_curve.csv,AUROC,Area under the receiver operating characteristic curve,dimensionless
+S2_learning_curve.csv,balanced_accuracy,Mean class recall at the frozen threshold,dimensionless
+S2_learning_curve.csv,MCC,Matthews correlation coefficient at the frozen threshold,dimensionless
+S2_learning_curve.csv,F1,NS-class harmonic mean of precision and recall,dimensionless
+S2_learning_curve.csv,precision,NS-class precision at the frozen threshold,dimensionless
+S2_learning_curve.csv,recall,NS-class recall at the frozen threshold,dimensionless
+S2_learning_curve.csv,PR_AUC,Average precision (not trapezoidal area under a precision-recall curve),dimensionless
+S2_learning_curve.csv,Brier,Mean squared error of the NS probability score,dimensionless
+S2_learning_curve.csv,accuracy,Fraction correctly classified at the frozen threshold,dimensionless
+S2_primary_metrics.csv,model,Estimator name from the frozen run,
+S2_primary_metrics.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S2_primary_metrics.csv,analysis,Named analysis or diagnostic,
+S2_primary_metrics.csv,unit,Declared analysis/aggregation unit for the row; not necessarily a physical unit,
+S2_primary_metrics.csv,sources,Distinct physical-source count within the named row/category,
+S2_primary_metrics.csv,observations,Observation count within the named row/category,
+S2_primary_metrics.csv,AUROC,Area under the receiver operating characteristic curve,dimensionless
+S2_primary_metrics.csv,balanced_accuracy,Mean class recall at the frozen threshold,dimensionless
+S2_primary_metrics.csv,MCC,Matthews correlation coefficient at the frozen threshold,dimensionless
+S2_primary_metrics.csv,F1,NS-class harmonic mean of precision and recall,dimensionless
+S2_primary_metrics.csv,precision,NS-class precision at the frozen threshold,dimensionless
+S2_primary_metrics.csv,recall,NS-class recall at the frozen threshold,dimensionless
+S2_primary_metrics.csv,PR_AUC,Average precision (not trapezoidal area under a precision-recall curve),dimensionless
+S2_primary_metrics.csv,Brier,Mean squared error of the NS probability score,dimensionless
+S2_primary_metrics.csv,accuracy,Fraction correctly classified at the frozen threshold,dimensionless
+S2_primary_metrics.csv,AUROC_lower,Stored lower conditional source-bootstrap bound for area under the receiver operating characteristic curve,
+S2_primary_metrics.csv,AUROC_upper,Stored upper conditional source-bootstrap bound for area under the receiver operating characteristic curve,
+S2_primary_metrics.csv,balanced_accuracy_lower,Stored lower conditional source-bootstrap bound for mean class recall at the frozen threshold,
+S2_primary_metrics.csv,balanced_accuracy_upper,Stored upper conditional source-bootstrap bound for mean class recall at the frozen threshold,
+S2_primary_metrics.csv,MCC_lower,Stored lower conditional source-bootstrap bound for matthews correlation coefficient at the frozen threshold,
+S2_primary_metrics.csv,MCC_upper,Stored upper conditional source-bootstrap bound for matthews correlation coefficient at the frozen threshold,
+S2_primary_metrics.csv,F1_lower,Stored lower conditional source-bootstrap bound for ns-class harmonic mean of precision and recall,
+S2_primary_metrics.csv,F1_upper,Stored upper conditional source-bootstrap bound for ns-class harmonic mean of precision and recall,
+S2_primary_metrics.csv,precision_lower,Stored lower conditional source-bootstrap bound for ns-class precision at the frozen threshold,
+S2_primary_metrics.csv,precision_upper,Stored upper conditional source-bootstrap bound for ns-class precision at the frozen threshold,
+S2_primary_metrics.csv,recall_lower,Stored lower conditional source-bootstrap bound for ns-class recall at the frozen threshold,
+S2_primary_metrics.csv,recall_upper,Stored upper conditional source-bootstrap bound for ns-class recall at the frozen threshold,
+S2_primary_metrics.csv,PR_AUC_lower,Stored lower conditional source-bootstrap bound for average precision (not trapezoidal area under a precision-recall curve),
+S2_primary_metrics.csv,PR_AUC_upper,Stored upper conditional source-bootstrap bound for average precision (not trapezoidal area under a precision-recall curve),
+S2_primary_metrics.csv,Brier_lower,Stored lower conditional source-bootstrap bound for mean squared error of the ns probability score,
+S2_primary_metrics.csv,Brier_upper,Stored upper conditional source-bootstrap bound for mean squared error of the ns probability score,
+S2_primary_metrics.csv,accuracy_lower,Stored lower conditional source-bootstrap bound for fraction correctly classified at the frozen threshold,
+S2_primary_metrics.csv,accuracy_upper,Stored upper conditional source-bootstrap bound for fraction correctly classified at the frozen threshold,
+S2_primary_paired_differences.csv,model,Estimator name from the frozen run,
+S2_primary_paired_differences.csv,metric,Name of the measured quantity; use the metric definitions in this dictionary,
+S2_primary_paired_differences.csv,delta,Stored paired difference; subtraction direction is given by the table/analysis,
+S2_primary_paired_differences.csv,lower,Stored lower interval bound for the named quantity; interpret with the row analysis,
+S2_primary_paired_differences.csv,upper,Stored upper interval bound for the named quantity; interpret with the row analysis,
+S2_primary_randomization.csv,permutation_seed,Seed of the source-label permutation,
+S2_primary_randomization.csv,model,Estimator name from the frozen run,
+S2_primary_randomization.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S2_primary_randomization.csv,AUROC,Area under the receiver operating characteristic curve,dimensionless
+S2_primary_randomization.csv,balanced_accuracy,Mean class recall at the frozen threshold,dimensionless
+S2_primary_randomization.csv,MCC,Matthews correlation coefficient at the frozen threshold,dimensionless
+S2_primary_randomization.csv,F1,NS-class harmonic mean of precision and recall,dimensionless
+S2_primary_randomization.csv,precision,NS-class precision at the frozen threshold,dimensionless
+S2_primary_randomization.csv,recall,NS-class recall at the frozen threshold,dimensionless
+S2_primary_randomization.csv,PR_AUC,Average precision (not trapezoidal area under a precision-recall curve),dimensionless
+S2_primary_randomization.csv,Brier,Mean squared error of the NS probability score,dimensionless
+S2_primary_randomization.csv,accuracy,Fraction correctly classified at the frozen threshold,dimensionless
+S2_primary_robustness.csv,model,Estimator name from the frozen run,
+S2_primary_robustness.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S2_primary_robustness.csv,analysis,Named analysis or diagnostic,
+S2_primary_robustness.csv,unit,Declared analysis/aggregation unit for the row; not necessarily a physical unit,
+S2_primary_robustness.csv,sources,Distinct physical-source count within the named row/category,
+S2_primary_robustness.csv,observations,Observation count within the named row/category,
+S2_primary_robustness.csv,AUROC,Area under the receiver operating characteristic curve,dimensionless
+S2_primary_robustness.csv,balanced_accuracy,Mean class recall at the frozen threshold,dimensionless
+S2_primary_robustness.csv,MCC,Matthews correlation coefficient at the frozen threshold,dimensionless
+S2_primary_robustness.csv,F1,NS-class harmonic mean of precision and recall,dimensionless
+S2_primary_robustness.csv,precision,NS-class precision at the frozen threshold,dimensionless
+S2_primary_robustness.csv,recall,NS-class recall at the frozen threshold,dimensionless
+S2_primary_robustness.csv,PR_AUC,Average precision (not trapezoidal area under a precision-recall curve),dimensionless
+S2_primary_robustness.csv,Brier,Mean squared error of the NS probability score,dimensionless
+S2_primary_robustness.csv,accuracy,Fraction correctly classified at the frozen threshold,dimensionless
+S2_primary_robustness.csv,AUROC_lower,Stored lower conditional source-bootstrap bound for area under the receiver operating characteristic curve,
+S2_primary_robustness.csv,AUROC_upper,Stored upper conditional source-bootstrap bound for area under the receiver operating characteristic curve,
+S2_primary_robustness.csv,balanced_accuracy_lower,Stored lower conditional source-bootstrap bound for mean class recall at the frozen threshold,
+S2_primary_robustness.csv,balanced_accuracy_upper,Stored upper conditional source-bootstrap bound for mean class recall at the frozen threshold,
+S2_primary_robustness.csv,MCC_lower,Stored lower conditional source-bootstrap bound for matthews correlation coefficient at the frozen threshold,
+S2_primary_robustness.csv,MCC_upper,Stored upper conditional source-bootstrap bound for matthews correlation coefficient at the frozen threshold,
+S2_primary_robustness.csv,F1_lower,Stored lower conditional source-bootstrap bound for ns-class harmonic mean of precision and recall,
+S2_primary_robustness.csv,F1_upper,Stored upper conditional source-bootstrap bound for ns-class harmonic mean of precision and recall,
+S2_primary_robustness.csv,precision_lower,Stored lower conditional source-bootstrap bound for ns-class precision at the frozen threshold,
+S2_primary_robustness.csv,precision_upper,Stored upper conditional source-bootstrap bound for ns-class precision at the frozen threshold,
+S2_primary_robustness.csv,recall_lower,Stored lower conditional source-bootstrap bound for ns-class recall at the frozen threshold,
+S2_primary_robustness.csv,recall_upper,Stored upper conditional source-bootstrap bound for ns-class recall at the frozen threshold,
+S2_primary_robustness.csv,PR_AUC_lower,Stored lower conditional source-bootstrap bound for average precision (not trapezoidal area under a precision-recall curve),
+S2_primary_robustness.csv,PR_AUC_upper,Stored upper conditional source-bootstrap bound for average precision (not trapezoidal area under a precision-recall curve),
+S2_primary_robustness.csv,Brier_lower,Stored lower conditional source-bootstrap bound for mean squared error of the ns probability score,
+S2_primary_robustness.csv,Brier_upper,Stored upper conditional source-bootstrap bound for mean squared error of the ns probability score,
+S2_primary_robustness.csv,accuracy_lower,Stored lower conditional source-bootstrap bound for fraction correctly classified at the frozen threshold,
+S2_primary_robustness.csv,accuracy_upper,Stored upper conditional source-bootstrap bound for fraction correctly classified at the frozen threshold,
+S3_EXPANDED_SOURCE_forest_grouped.csv,source_id,Canonical physical-source grouping identifier,
+S3_EXPANDED_SOURCE_forest_grouped.csv,source_name,Human-readable physical-source name,
+S3_EXPANDED_SOURCE_forest_grouped.csv,true_class,Reference BH/NS class for evaluation,
+S3_EXPANDED_SOURCE_forest_grouped.csv,n_observations,Number of observations contributing to this row,
+S3_EXPANDED_SOURCE_forest_grouped.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_EXPANDED_SOURCE_forest_grouped.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_EXPANDED_SOURCE_forest_grouped.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_EXPANDED_SOURCE_forest_grouped.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_EXPANDED_SOURCE_forest_grouped.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_EXPANDED_SOURCE_forest_grouped.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_EXPANDED_SOURCE_forest_grouped.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_EXPANDED_SOURCE_forest_loso.csv,source_id,Canonical physical-source grouping identifier,
+S3_EXPANDED_SOURCE_forest_loso.csv,source_name,Human-readable physical-source name,
+S3_EXPANDED_SOURCE_forest_loso.csv,true_class,Reference BH/NS class for evaluation,
+S3_EXPANDED_SOURCE_forest_loso.csv,n_observations,Number of observations contributing to this row,
+S3_EXPANDED_SOURCE_forest_loso.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_EXPANDED_SOURCE_forest_loso.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_EXPANDED_SOURCE_forest_loso.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_EXPANDED_SOURCE_forest_loso.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_EXPANDED_SOURCE_forest_loso.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_EXPANDED_SOURCE_forest_loso.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_EXPANDED_SOURCE_forest_loso.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_EXPANDED_SOURCE_logistic_grouped.csv,source_id,Canonical physical-source grouping identifier,
+S3_EXPANDED_SOURCE_logistic_grouped.csv,source_name,Human-readable physical-source name,
+S3_EXPANDED_SOURCE_logistic_grouped.csv,true_class,Reference BH/NS class for evaluation,
+S3_EXPANDED_SOURCE_logistic_grouped.csv,n_observations,Number of observations contributing to this row,
+S3_EXPANDED_SOURCE_logistic_grouped.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_EXPANDED_SOURCE_logistic_grouped.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_EXPANDED_SOURCE_logistic_grouped.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_EXPANDED_SOURCE_logistic_grouped.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_EXPANDED_SOURCE_logistic_grouped.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_EXPANDED_SOURCE_logistic_grouped.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_EXPANDED_SOURCE_logistic_grouped.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_EXPANDED_SOURCE_logistic_loso.csv,source_id,Canonical physical-source grouping identifier,
+S3_EXPANDED_SOURCE_logistic_loso.csv,source_name,Human-readable physical-source name,
+S3_EXPANDED_SOURCE_logistic_loso.csv,true_class,Reference BH/NS class for evaluation,
+S3_EXPANDED_SOURCE_logistic_loso.csv,n_observations,Number of observations contributing to this row,
+S3_EXPANDED_SOURCE_logistic_loso.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_EXPANDED_SOURCE_logistic_loso.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_EXPANDED_SOURCE_logistic_loso.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_EXPANDED_SOURCE_logistic_loso.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_EXPANDED_SOURCE_logistic_loso.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_EXPANDED_SOURCE_logistic_loso.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_EXPANDED_SOURCE_logistic_loso.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_HEASOFT_MATCHED_forest_grouped.csv,source_id,Canonical physical-source grouping identifier,
+S3_HEASOFT_MATCHED_forest_grouped.csv,source_name,Human-readable physical-source name,
+S3_HEASOFT_MATCHED_forest_grouped.csv,true_class,Reference BH/NS class for evaluation,
+S3_HEASOFT_MATCHED_forest_grouped.csv,n_observations,Number of observations contributing to this row,
+S3_HEASOFT_MATCHED_forest_grouped.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_HEASOFT_MATCHED_forest_grouped.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_HEASOFT_MATCHED_forest_grouped.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_HEASOFT_MATCHED_forest_grouped.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_HEASOFT_MATCHED_forest_grouped.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_HEASOFT_MATCHED_forest_grouped.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_HEASOFT_MATCHED_forest_grouped.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_HEASOFT_MATCHED_forest_loso.csv,source_id,Canonical physical-source grouping identifier,
+S3_HEASOFT_MATCHED_forest_loso.csv,source_name,Human-readable physical-source name,
+S3_HEASOFT_MATCHED_forest_loso.csv,true_class,Reference BH/NS class for evaluation,
+S3_HEASOFT_MATCHED_forest_loso.csv,n_observations,Number of observations contributing to this row,
+S3_HEASOFT_MATCHED_forest_loso.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_HEASOFT_MATCHED_forest_loso.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_HEASOFT_MATCHED_forest_loso.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_HEASOFT_MATCHED_forest_loso.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_HEASOFT_MATCHED_forest_loso.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_HEASOFT_MATCHED_forest_loso.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_HEASOFT_MATCHED_forest_loso.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_HEASOFT_MATCHED_logistic_grouped.csv,source_id,Canonical physical-source grouping identifier,
+S3_HEASOFT_MATCHED_logistic_grouped.csv,source_name,Human-readable physical-source name,
+S3_HEASOFT_MATCHED_logistic_grouped.csv,true_class,Reference BH/NS class for evaluation,
+S3_HEASOFT_MATCHED_logistic_grouped.csv,n_observations,Number of observations contributing to this row,
+S3_HEASOFT_MATCHED_logistic_grouped.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_HEASOFT_MATCHED_logistic_grouped.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_HEASOFT_MATCHED_logistic_grouped.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_HEASOFT_MATCHED_logistic_grouped.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_HEASOFT_MATCHED_logistic_grouped.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_HEASOFT_MATCHED_logistic_grouped.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_HEASOFT_MATCHED_logistic_grouped.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_HEASOFT_MATCHED_logistic_loso.csv,source_id,Canonical physical-source grouping identifier,
+S3_HEASOFT_MATCHED_logistic_loso.csv,source_name,Human-readable physical-source name,
+S3_HEASOFT_MATCHED_logistic_loso.csv,true_class,Reference BH/NS class for evaluation,
+S3_HEASOFT_MATCHED_logistic_loso.csv,n_observations,Number of observations contributing to this row,
+S3_HEASOFT_MATCHED_logistic_loso.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_HEASOFT_MATCHED_logistic_loso.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_HEASOFT_MATCHED_logistic_loso.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_HEASOFT_MATCHED_logistic_loso.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_HEASOFT_MATCHED_logistic_loso.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_HEASOFT_MATCHED_logistic_loso.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_HEASOFT_MATCHED_logistic_loso.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_HEASOFT_VALIDATION_forest_grouped.csv,source_id,Canonical physical-source grouping identifier,
+S3_HEASOFT_VALIDATION_forest_grouped.csv,source_name,Human-readable physical-source name,
+S3_HEASOFT_VALIDATION_forest_grouped.csv,true_class,Reference BH/NS class for evaluation,
+S3_HEASOFT_VALIDATION_forest_grouped.csv,n_observations,Number of observations contributing to this row,
+S3_HEASOFT_VALIDATION_forest_grouped.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_HEASOFT_VALIDATION_forest_grouped.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_HEASOFT_VALIDATION_forest_grouped.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_HEASOFT_VALIDATION_forest_grouped.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_HEASOFT_VALIDATION_forest_grouped.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_HEASOFT_VALIDATION_forest_grouped.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_HEASOFT_VALIDATION_forest_grouped.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_HEASOFT_VALIDATION_forest_loso.csv,source_id,Canonical physical-source grouping identifier,
+S3_HEASOFT_VALIDATION_forest_loso.csv,source_name,Human-readable physical-source name,
+S3_HEASOFT_VALIDATION_forest_loso.csv,true_class,Reference BH/NS class for evaluation,
+S3_HEASOFT_VALIDATION_forest_loso.csv,n_observations,Number of observations contributing to this row,
+S3_HEASOFT_VALIDATION_forest_loso.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_HEASOFT_VALIDATION_forest_loso.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_HEASOFT_VALIDATION_forest_loso.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_HEASOFT_VALIDATION_forest_loso.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_HEASOFT_VALIDATION_forest_loso.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_HEASOFT_VALIDATION_forest_loso.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_HEASOFT_VALIDATION_forest_loso.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,source_id,Canonical physical-source grouping identifier,
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,source_name,Human-readable physical-source name,
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,true_class,Reference BH/NS class for evaluation,
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,n_observations,Number of observations contributing to this row,
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_HEASOFT_VALIDATION_logistic_grouped.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_HEASOFT_VALIDATION_logistic_loso.csv,source_id,Canonical physical-source grouping identifier,
+S3_HEASOFT_VALIDATION_logistic_loso.csv,source_name,Human-readable physical-source name,
+S3_HEASOFT_VALIDATION_logistic_loso.csv,true_class,Reference BH/NS class for evaluation,
+S3_HEASOFT_VALIDATION_logistic_loso.csv,n_observations,Number of observations contributing to this row,
+S3_HEASOFT_VALIDATION_logistic_loso.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_HEASOFT_VALIDATION_logistic_loso.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_HEASOFT_VALIDATION_logistic_loso.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_HEASOFT_VALIDATION_logistic_loso.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_HEASOFT_VALIDATION_logistic_loso.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_HEASOFT_VALIDATION_logistic_loso.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_HEASOFT_VALIDATION_logistic_loso.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,source_id,Canonical physical-source grouping identifier,
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,source_name,Human-readable physical-source name,
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,true_class,Reference BH/NS class for evaluation,
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,n_observations,Number of observations contributing to this row,
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_grouped.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,source_id,Canonical physical-source grouping identifier,
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,source_name,Human-readable physical-source name,
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,true_class,Reference BH/NS class for evaluation,
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,n_observations,Number of observations contributing to this row,
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_forest_loso.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,source_id,Canonical physical-source grouping identifier,
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,source_name,Human-readable physical-source name,
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,true_class,Reference BH/NS class for evaluation,
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,n_observations,Number of observations contributing to this row,
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_grouped.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,source_id,Canonical physical-source grouping identifier,
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,source_name,Human-readable physical-source name,
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,true_class,Reference BH/NS class for evaluation,
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,n_observations,Number of observations contributing to this row,
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_PRIMARY_SAME_OBSIDS_logistic_loso.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_primary_LOSO.csv,source_id,Canonical physical-source grouping identifier,
+S3_primary_LOSO.csv,source_name,Human-readable physical-source name,
+S3_primary_LOSO.csv,true_class,Reference BH/NS class for evaluation,
+S3_primary_LOSO.csv,n_observations,Number of observations contributing to this row,
+S3_primary_LOSO.csv,p_NS,Mean-log-odds pooled source NS score; see main Methods,dimensionless
+S3_primary_LOSO.csv,mean_probability,Arithmetic mean of observation NS probabilities; not the pooled source score,dimensionless
+S3_primary_LOSO.csv,std_probability,Standard deviation of observation NS probabilities within a source; not an uncertainty interval,dimensionless
+S3_primary_LOSO.csv,minimum_probability,Smallest observation NS probability within the source,dimensionless
+S3_primary_LOSO.csv,maximum_probability,Largest observation NS probability within the source,dimensionless
+S3_primary_LOSO.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S3_primary_LOSO.csv,mean_signed_probability_error,Mean signed probability error relative to the recorded binary NS target,
+S3_primary_LOSO.csv,median_nearest_training_spectral_distance,Frozen median nearest-training spectral-distance diagnostic under its documented representation; not a physical distance,
+S3_primary_LOSO.csv,model,Estimator name from the frozen run,
+S3_primary_LOSO.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S4_HEASoft_randomization.csv,seed,Recorded pseudorandom seed,
+S4_HEASoft_randomization.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S4_HEASoft_randomization.csv,AUROC,Area under the receiver operating characteristic curve,dimensionless
+S4_HEASoft_randomization.csv,balanced_accuracy,Mean class recall at the frozen threshold,dimensionless
+S4_HEASoft_randomization.csv,MCC,Matthews correlation coefficient at the frozen threshold,dimensionless
+S4_HEASoft_randomization.csv,F1,NS-class harmonic mean of precision and recall,dimensionless
+S4_HEASoft_randomization.csv,precision,NS-class precision at the frozen threshold,dimensionless
+S4_HEASoft_randomization.csv,recall,NS-class recall at the frozen threshold,dimensionless
+S4_HEASoft_randomization.csv,PR_AUC,Average precision (not trapezoidal area under a precision-recall curve),dimensionless
+S4_HEASoft_randomization.csv,Brier,Mean squared error of the NS probability score,dimensionless
+S4_HEASoft_randomization.csv,accuracy,Fraction correctly classified at the frozen threshold,dimensionless
+S4_all_validation_metrics_tidy.csv,tag,Original experiment or run tag,
+S4_all_validation_metrics_tidy.csv,model,Estimator name from the frozen run,
+S4_all_validation_metrics_tidy.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S4_all_validation_metrics_tidy.csv,metric,Name of the measured quantity; use the metric definitions in this dictionary,
+S4_all_validation_metrics_tidy.csv,value,Frozen value of the named metric or summary,
+S4_all_validation_metrics_tidy.csv,lower,Stored lower interval bound for the named quantity; interpret with the row analysis,
+S4_all_validation_metrics_tidy.csv,upper,Stored upper interval bound for the named quantity; interpret with the row analysis,
+S4_all_validation_metrics_tidy.csv,observations,Observation count within the named row/category,
+S4_all_validation_metrics_tidy.csv,BH_sources,Count of BH sources within the named cohort/regime; category counts are not additive independent samples,
+S4_all_validation_metrics_tidy.csv,NS_sources,Count of NS sources within the named cohort/regime; category counts are not additive independent samples,
+S4_all_validation_metrics_tidy.csv,source_file,Original project-relative evidence file,
+S4_all_validation_metrics_tidy.csv,source_row,Selector identifying the original frozen row/entry,
+S4_all_validation_metrics_tidy.csv,source_sha256,SHA-256 of the original frozen evidence file,
+S4_detector_configuration.csv,rxte_obsid,RXTE archive observation identifier,
+S4_detector_configuration.csv,source_id,Canonical physical-source grouping identifier,
+S4_detector_configuration.csv,canonical_source,Canonical physical-source identity,
+S4_detector_configuration.csv,class_label,Adopted physical compact-object class; reference registries may also contain unresolved labels,
+S4_detector_configuration.csv,observation_time,Recorded observation time,
+S4_detector_configuration.csv,exposure,Recorded exposure under the originating reduction convention,
+S4_detector_configuration.csv,net_count_rate,Recorded net count rate under the named cohort detector normalization,
+S4_detector_configuration.csv,source_count_rate,Recorded source-region count rate under the named cohort detector normalization,
+S4_detector_configuration.csv,background_count_rate,Recorded background count rate under the named cohort detector normalization,
+S4_detector_configuration.csv,grid_id,Frozen hyperparameter-grid candidate identifier,
+S4_detector_configuration.csv,selected_pcus,Detector-selection configuration,
+S4_detector_configuration.csv,num_selected_pcus,Number of PCUs selected for the product,
+S4_detector_configuration.csv,gain_epoch,PCA gain-epoch label,
+S4_detector_configuration.csv,observation_year,Year of the observation,
+S4_detector_configuration.csv,log_exposure,Log-exposure feature under the frozen metadata protocol,
+S4_detector_configuration.csv,background_fraction,Background fraction retained in the detector-support diagnostic,
+S4_detector_configuration.csv,native_channels_used,Number of native detector channels retained,
+S4_detector_configuration.csv,native_min_keV,Minimum native response energy represented,keV
+S4_detector_configuration.csv,native_max_keV,Maximum native response energy represented,keV
+S4_detector_configuration.csv,response_identifier,Response-product identifier; not a spectral feature,
+S4_detector_configuration.csv,response_creator,Recorded response-generation tool/provenance,
+S4_detector_configuration.csv,source_product_sha256,SHA-256 of the retained source spectral product,
+S4_detector_configuration.csv,deadtime_status,Recorded deadtime/exposure-correction status,
+S4_detector_configuration.csv,pcu0_selected,Selection indicator for proportional counter unit 0,
+S4_detector_configuration.csv,pcu1_selected,Selection indicator for proportional counter unit 1,
+S4_detector_configuration.csv,pcu2_selected,Selection indicator for proportional counter unit 2,
+S4_detector_configuration.csv,pcu3_selected,Selection indicator for proportional counter unit 3,
+S4_detector_configuration.csv,pcu4_selected,Selection indicator for proportional counter unit 4,
+S4_detector_configuration.csv,gain_epoch_1,Indicator/recorded contribution for PCA gain epoch 1 in the named detector summary,
+S4_detector_configuration.csv,gain_epoch_2,Indicator/recorded contribution for PCA gain epoch 2 in the named detector summary,
+S4_detector_configuration.csv,gain_epoch_3,Indicator/recorded contribution for PCA gain epoch 3 in the named detector summary,
+S4_detector_configuration.csv,gain_epoch_4,Indicator/recorded contribution for PCA gain epoch 4 in the named detector summary,
+S4_detector_configuration.csv,gain_epoch_5,Indicator/recorded contribution for PCA gain epoch 5 in the named detector summary,
+S4_detector_configuration.csv,active_pcus,Active-PCU configuration recorded during screening,
+S4_detector_configuration.csv,num_active_pcus,Recorded number of active PCUs,
+S4_detector_configuration.csv,active_pcu_fractions,Recorded activity fractions by PCU,
+S4_detector_configuration.csv,filter_sample_count,Number of filter-file samples examined,
+S4_detector_configuration.csv,screening_sample_fraction,Recorded fraction of screening samples retained,
+S4_detector_configuration.csv,sampled_gti_seconds,Sampled duration admitted by the good-time filter,s
+S4_detector_configuration.csv,screening_retained_seconds_estimate,Estimated duration retained by the screening summary,s
+S4_detector_configuration.csv,screening_exposure_removed_estimate,Estimated exposure removed by the diagnostic screening summary,
+S4_epoch_distribution.csv,gain_epoch,PCA gain-epoch label,
+S4_epoch_distribution.csv,class_label,Adopted physical compact-object class; reference registries may also contain unresolved labels,
+S4_epoch_distribution.csv,observations,Observation count within the named row/category,
+S4_epoch_distribution.csv,sources,Distinct physical-source count within the named row/category,
+S4_epoch_holdout.csv,epoch,PCA gain-epoch category,
+S4_epoch_holdout.csv,test_BH,Physical-source count for test BH in the recorded split,
+S4_epoch_holdout.csv,test_NS,Physical-source count for test NS in the recorded split,
+S4_epoch_holdout.csv,train_BH,Physical-source count for train BH in the recorded split,
+S4_epoch_holdout.csv,train_NS,Physical-source count for train NS in the recorded split,
+S4_epoch_holdout.csv,feasible,Whether the named frozen feasibility criterion is satisfied,
+S4_epoch_holdout.csv,reason,"Recorded selection, failure or exclusion explanation",
+S4_epoch_holdout.csv,model,Estimator name from the frozen run,
+S4_epoch_holdout.csv,AUROC,Area under the receiver operating characteristic curve,dimensionless
+S4_epoch_holdout.csv,balanced_accuracy,Mean class recall at the frozen threshold,dimensionless
+S4_epoch_holdout.csv,MCC,Matthews correlation coefficient at the frozen threshold,dimensionless
+S4_epoch_holdout.csv,F1,NS-class harmonic mean of precision and recall,dimensionless
+S4_epoch_holdout.csv,precision,NS-class precision at the frozen threshold,dimensionless
+S4_epoch_holdout.csv,recall,NS-class recall at the frozen threshold,dimensionless
+S4_epoch_holdout.csv,PR_AUC,Average precision (not trapezoidal area under a precision-recall curve),dimensionless
+S4_epoch_holdout.csv,Brier,Mean squared error of the NS probability score,dimensionless
+S4_epoch_holdout.csv,accuracy,Fraction correctly classified at the frozen threshold,dimensionless
+S4_epoch_holdout.csv,AUROC_lower,Stored lower conditional source-bootstrap bound for area under the receiver operating characteristic curve,
+S4_epoch_holdout.csv,AUROC_upper,Stored upper conditional source-bootstrap bound for area under the receiver operating characteristic curve,
+S4_paired_processing_effects.csv,model,Estimator name from the frozen run,
+S4_paired_processing_effects.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S4_paired_processing_effects.csv,metric,Name of the measured quantity; use the metric definitions in this dictionary,
+S4_paired_processing_effects.csv,difference_HEASoft_minus_original,Stored HEASoft metric minus original-processing metric on matched observations,
+S4_paired_processing_effects.csv,lower,Stored lower interval bound for the named quantity; interpret with the row analysis,
+S4_paired_processing_effects.csv,upper,Stored upper interval bound for the named quantity; interpret with the row analysis,
+S4_paired_processing_effects.csv,source_file,Original project-relative evidence file,
+S4_paired_processing_effects.csv,source_row,Selector identifying the original frozen row/entry,
+S4_paired_processing_effects.csv,source_sha256,SHA-256 of the original frozen evidence file,
+S4_residual_imbalance.csv,cohort,Named frozen analysis cohort,
+S4_residual_imbalance.csv,class_label,Adopted physical compact-object class; reference registries may also contain unresolved labels,
+S4_residual_imbalance.csv,sources,Distinct physical-source count within the named row/category,
+S4_residual_imbalance.csv,observation_year,Year of the observation,
+S4_residual_imbalance.csv,exposure,Recorded exposure under the originating reduction convention,
+S4_residual_imbalance.csv,num_selected_pcus,Number of PCUs selected for the product,
+S4_residual_imbalance.csv,net_count_rate,Recorded net count rate under the named cohort detector normalization,
+S4_residual_imbalance.csv,background_fraction,Background fraction retained in the detector-support diagnostic,
+S4_validation_metrics.csv,cohort,Named frozen analysis cohort,
+S4_validation_metrics.csv,model,Estimator name from the frozen run,
+S4_validation_metrics.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S4_validation_metrics.csv,observations,Observation count within the named row/category,
+S4_validation_metrics.csv,BH_sources,Count of BH sources within the named cohort/regime; category counts are not additive independent samples,
+S4_validation_metrics.csv,NS_sources,Count of NS sources within the named cohort/regime; category counts are not additive independent samples,
+S4_validation_metrics.csv,AUROC,Area under the receiver operating characteristic curve,dimensionless
+S4_validation_metrics.csv,AUROC_lower,Stored lower conditional source-bootstrap bound for area under the receiver operating characteristic curve,
+S4_validation_metrics.csv,AUROC_upper,Stored upper conditional source-bootstrap bound for area under the receiver operating characteristic curve,
+S4_validation_metrics.csv,balanced_accuracy,Mean class recall at the frozen threshold,dimensionless
+S4_validation_metrics.csv,MCC,Matthews correlation coefficient at the frozen threshold,dimensionless
+S4_validation_metrics.csv,F1,NS-class harmonic mean of precision and recall,dimensionless
+S4_validation_metrics.csv,PR_AUC,Average precision (not trapezoidal area under a precision-recall curve),dimensionless
+S4_validation_metrics.csv,Brier,Mean squared error of the NS probability score,dimensionless
+S5_final_regime_counts.csv,common_regime,Proposed shared physical spectral regime under the frozen mapping,
+S5_final_regime_counts.csv,BH_sources,Count of BH sources within the named cohort/regime; category counts are not additive independent samples,
+S5_final_regime_counts.csv,BH_observations,Count of BH observations within the named cohort/regime; category counts are not additive independent samples,
+S5_final_regime_counts.csv,BH_DIRECT_sources,Count of BH DIRECT sources within the named cohort/regime; category counts are not additive independent samples,
+S5_final_regime_counts.csv,BH_STRONG_sources,Count of BH STRONG sources within the named cohort/regime; category counts are not additive independent samples,
+S5_final_regime_counts.csv,NS_sources,Count of NS sources within the named cohort/regime; category counts are not additive independent samples,
+S5_final_regime_counts.csv,NS_observations,Count of NS observations within the named cohort/regime; category counts are not additive independent samples,
+S5_final_regime_counts.csv,NS_DIRECT_sources,Count of NS DIRECT sources within the named cohort/regime; category counts are not additive independent samples,
+S5_final_regime_counts.csv,NS_STRONG_sources,Count of NS STRONG sources within the named cohort/regime; category counts are not additive independent samples,
+S5_final_regime_counts.csv,PASS,Retained pass/fail indicator from the named diagnostic,
+S5_merged_state_catalogue.csv,rxte_obsid,RXTE archive observation identifier,
+S5_merged_state_catalogue.csv,source_id,Canonical physical-source grouping identifier,
+S5_merged_state_catalogue.csv,canonical_source,Canonical physical-source identity,
+S5_merged_state_catalogue.csv,class_label,Adopted physical compact-object class; reference registries may also contain unresolved labels,
+S5_merged_state_catalogue.csv,observation_start,Observation start in the format/scale recorded by the table,
+S5_merged_state_catalogue.csv,duration,Recorded observation duration; use the originating time convention,
+S5_merged_state_catalogue.csv,query_record,Retained literature-search query or query-record identifier,
+S5_merged_state_catalogue.csv,start_mjd,Observation start as Modified Julian Date,days (MJD; retain recorded time scale)
+S5_merged_state_catalogue.csv,end_mjd,Observation end as Modified Julian Date,days (MJD; retain recorded time scale)
+S5_merged_state_catalogue.csv,observation_end,Observation end in the format/scale recorded by the table,
+S5_merged_state_catalogue.csv,time_provenance,Origin of the recorded observation timing,
+S5_merged_state_catalogue.csv,time_scale,Declared timing scale/convention,
+S5_merged_state_catalogue.csv,in_primary,Membership in the primary observation set,
+S5_merged_state_catalogue.csv,in_heasoft,Membership in the independent-processing observation set,
+S5_merged_state_catalogue.csv,in_expanded,Membership in the expanded observation set,
+S5_merged_state_catalogue.csv,native_state_label,Source-native physical-state label; not automatically a cross-class common regime,
+S5_merged_state_catalogue.csv,state_family,Retained state-family grouping,
+S5_merged_state_catalogue.csv,state_evidence_level,Evidence grade for the native-state assignment,
+S5_merged_state_catalogue.csv,state_assignment_method,Method documented for assigning the native state,
+S5_merged_state_catalogue.csv,reference_id,Project reference key,
+S5_merged_state_catalogue.csv,reference_title,Title retained for the cited evidence,
+S5_merged_state_catalogue.csv,reference_authors,Authors retained for the cited evidence,
+S5_merged_state_catalogue.csv,reference_year,Publication year retained for the cited evidence,
+S5_merged_state_catalogue.csv,reference_identifier_or_url,Persistent publication identifier or source URL,
+S5_merged_state_catalogue.csv,evidence_time_start,Start of the literature-supported interval in its documented convention,
+S5_merged_state_catalogue.csv,evidence_time_end,End of the literature-supported interval in its documented convention,
+S5_merged_state_catalogue.csv,obsid_directly_listed,Whether the exact ObsID is directly identified by the evidence,
+S5_merged_state_catalogue.csv,date_window_match,Recorded date-window overlap/match flag; alone does not establish whole-observation support,
+S5_merged_state_catalogue.csv,source_state_taxonomy,Source-specific native-state vocabulary,
+S5_merged_state_catalogue.csv,state_confidence,Recorded confidence annotation for the physical-state assignment,
+S5_merged_state_catalogue.csv,ambiguous,Unresolved ambiguity flag,
+S5_merged_state_catalogue.csv,notes,Retained explanatory annotation; not an inferred measurement,
+S5_merged_state_catalogue.csv,common_regime,Proposed shared physical spectral regime under the frozen mapping,
+S5_merged_state_catalogue.csv,original_rxte_obsid,Original catalogue: RXTE archive observation identifier,
+S5_merged_state_catalogue.csv,original_source_id,Original catalogue: Canonical physical-source grouping identifier,
+S5_merged_state_catalogue.csv,original_canonical_source,Original catalogue: Canonical physical-source identity,
+S5_merged_state_catalogue.csv,original_class_label,Original catalogue: Adopted physical compact-object class; reference registries may also contain unresolved labels,
+S5_merged_state_catalogue.csv,original_observation_start,Original catalogue: Observation start in the format/scale recorded by the table,
+S5_merged_state_catalogue.csv,original_duration,Original catalogue: Recorded observation duration; use the originating time convention,
+S5_merged_state_catalogue.csv,original_query_record,Original catalogue: Retained literature-search query or query-record identifier,
+S5_merged_state_catalogue.csv,original_start_mjd,Original catalogue: Observation start as Modified Julian Date,days (MJD; retain recorded time scale)
+S5_merged_state_catalogue.csv,original_end_mjd,Original catalogue: Observation end as Modified Julian Date,days (MJD; retain recorded time scale)
+S5_merged_state_catalogue.csv,original_observation_end,Original catalogue: Observation end in the format/scale recorded by the table,
+S5_merged_state_catalogue.csv,original_time_provenance,Original catalogue: Origin of the recorded observation timing,
+S5_merged_state_catalogue.csv,original_time_scale,Original catalogue: Declared timing scale/convention,
+S5_merged_state_catalogue.csv,original_in_primary,Original catalogue: Membership in the primary observation set,
+S5_merged_state_catalogue.csv,original_in_heasoft,Original catalogue: Membership in the independent-processing observation set,
+S5_merged_state_catalogue.csv,original_in_expanded,Original catalogue: Membership in the expanded observation set,
+S5_merged_state_catalogue.csv,original_native_state_label,Original catalogue: Source-native physical-state label; not automatically a cross-class common regime,
+S5_merged_state_catalogue.csv,original_state_family,Original catalogue: Retained state-family grouping,
+S5_merged_state_catalogue.csv,original_state_evidence_level,Original catalogue: Evidence grade for the native-state assignment,
+S5_merged_state_catalogue.csv,original_state_assignment_method,Original catalogue: Method documented for assigning the native state,
+S5_merged_state_catalogue.csv,original_reference_id,Original catalogue: Project reference key,
+S5_merged_state_catalogue.csv,original_reference_title,Original catalogue: Title retained for the cited evidence,
+S5_merged_state_catalogue.csv,original_reference_authors,Original catalogue: Authors retained for the cited evidence,
+S5_merged_state_catalogue.csv,original_reference_year,Original catalogue: Publication year retained for the cited evidence,
+S5_merged_state_catalogue.csv,original_reference_identifier_or_url,Original catalogue: Persistent publication identifier or source URL,
+S5_merged_state_catalogue.csv,original_evidence_time_start,Original catalogue: Start of the literature-supported interval in its documented convention,
+S5_merged_state_catalogue.csv,original_evidence_time_end,Original catalogue: End of the literature-supported interval in its documented convention,
+S5_merged_state_catalogue.csv,original_obsid_directly_listed,Original catalogue: Whether the exact ObsID is directly identified by the evidence,
+S5_merged_state_catalogue.csv,original_date_window_match,Original catalogue: Recorded date-window overlap/match flag; alone does not establish whole-observation support,
+S5_merged_state_catalogue.csv,original_source_state_taxonomy,Original catalogue: Source-specific native-state vocabulary,
+S5_merged_state_catalogue.csv,original_state_confidence,Original catalogue: Recorded confidence annotation for the physical-state assignment,
+S5_merged_state_catalogue.csv,original_ambiguous,Original catalogue: Unresolved ambiguity flag,
+S5_merged_state_catalogue.csv,original_notes,Original catalogue: Retained explanatory annotation; not an inferred measurement,
+S5_merged_state_catalogue.csv,original_common_regime,Original catalogue: Proposed shared physical spectral regime under the frozen mapping,
+S5_merged_state_catalogue.csv,state_provenance,Origin and evidence trail of the recorded state,
+S5_merged_state_catalogue.csv,extension_reviewed,Bounded extension: Whether the extension evidence was reviewed,
+S5_merged_state_catalogue.csv,eligible_for_confirmatory,Whether the evidence meets the declared confirmatory admission requirements,
+S5_merged_state_catalogue.csv,extension_source_id,Bounded extension: Canonical physical-source grouping identifier,
+S5_merged_state_catalogue.csv,extension_canonical_source,Bounded extension: Canonical physical-source identity,
+S5_merged_state_catalogue.csv,extension_class_label,Bounded extension: Adopted physical compact-object class; reference registries may also contain unresolved labels,
+S5_merged_state_catalogue.csv,extension_observation_start,Bounded extension: Observation start in the format/scale recorded by the table,
+S5_merged_state_catalogue.csv,extension_observation_end,Bounded extension: Observation end in the format/scale recorded by the table,
+S5_merged_state_catalogue.csv,extension_start_mjd,Bounded extension: Observation start as Modified Julian Date,days (MJD; retain recorded time scale)
+S5_merged_state_catalogue.csv,extension_end_mjd,Bounded extension: Observation end as Modified Julian Date,days (MJD; retain recorded time scale)
+S5_merged_state_catalogue.csv,extension_native_state_label,Bounded extension: Source-native physical-state label; not automatically a cross-class common regime,
+S5_merged_state_catalogue.csv,extension_common_regime,Bounded extension: Proposed shared physical spectral regime under the frozen mapping,
+S5_merged_state_catalogue.csv,extension_evidence_level,Bounded extension: Recorded evidence grade for the assignment,
+S5_merged_state_catalogue.csv,extension_evidence_method,Bounded extension: Method documented for the extension evidence assignment,
+S5_merged_state_catalogue.csv,extension_reference_id,Bounded extension: Project reference key,
+S5_merged_state_catalogue.csv,extension_reference_url_or_identifier,Bounded extension: Persistent publication identifier or source URL,
+S5_merged_state_catalogue.csv,extension_direct_obsid_match,Bounded extension: Exact ObsID match in extension evidence,
+S5_merged_state_catalogue.csv,extension_date_match,Bounded extension: Extension date-window match annotation,
+S5_merged_state_catalogue.csv,extension_gti_match,Bounded extension: Extension good-time-interval support annotation,
+S5_merged_state_catalogue.csv,extension_whole_observation_supported,Bounded extension: Whether the evidence supports the full observation interval,
+S5_merged_state_catalogue.csv,extension_ambiguous,Bounded extension: Unresolved ambiguity flag,
+S5_merged_state_catalogue.csv,extension_conflicted,Bounded extension: Unresolved evidence-conflict flag,
+S5_merged_state_catalogue.csv,extension_eligible_for_confirmatory,Bounded extension: Whether the evidence meets the declared confirmatory admission requirements,
+S5_merged_state_catalogue.csv,extension_notes,Bounded extension: Retained explanatory annotation; not an inferred measurement,
+S5_merged_state_catalogue.csv,extension_mapping_rule_id,Bounded extension: Identifier of the frozen source-specific regime-mapping rule,
+S5_merged_state_catalogue.csv,extension_regime_evidence_level,Bounded extension: Evidence grade for the common-regime mapping,
+S5_merged_state_catalogue.csv,extension_evidence_time_start,Bounded extension: Start of the literature-supported interval in its documented convention,
+S5_merged_state_catalogue.csv,extension_evidence_time_end,Bounded extension: End of the literature-supported interval in its documented convention,
+S5_native_state_descriptive.csv,cohort,Named frozen analysis cohort,
+S5_native_state_descriptive.csv,model,Estimator name from the frozen run,
+S5_native_state_descriptive.csv,source_id,Canonical physical-source grouping identifier,
+S5_native_state_descriptive.csv,source_name,Human-readable physical-source name,
+S5_native_state_descriptive.csv,true_class,Reference BH/NS class for evaluation,
+S5_native_state_descriptive.csv,native_state_label,Source-native physical-state label; not automatically a cross-class common regime,
+S5_native_state_descriptive.csv,observations,Observation count within the named row/category,
+S5_native_state_descriptive.csv,mean_p_NS,Mean of source NS scores within the named diagnostic group; sources/categories may overlap,
+S5_native_state_descriptive.csv,median_p_NS,Median of source NS scores within the named diagnostic group; sources/categories may overlap,
+S5_native_state_descriptive.csv,min_p_NS,Min of source NS scores within the named diagnostic group; sources/categories may overlap,
+S5_native_state_descriptive.csv,max_p_NS,Max of source NS scores within the named diagnostic group; sources/categories may overlap,
+S5_native_state_descriptive.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S5_original_state_catalogue.csv,rxte_obsid,RXTE archive observation identifier,
+S5_original_state_catalogue.csv,source_id,Canonical physical-source grouping identifier,
+S5_original_state_catalogue.csv,canonical_source,Canonical physical-source identity,
+S5_original_state_catalogue.csv,class_label,Adopted physical compact-object class; reference registries may also contain unresolved labels,
+S5_original_state_catalogue.csv,observation_start,Observation start in the format/scale recorded by the table,
+S5_original_state_catalogue.csv,duration,Recorded observation duration; use the originating time convention,
+S5_original_state_catalogue.csv,query_record,Retained literature-search query or query-record identifier,
+S5_original_state_catalogue.csv,start_mjd,Observation start as Modified Julian Date,days (MJD; retain recorded time scale)
+S5_original_state_catalogue.csv,end_mjd,Observation end as Modified Julian Date,days (MJD; retain recorded time scale)
+S5_original_state_catalogue.csv,observation_end,Observation end in the format/scale recorded by the table,
+S5_original_state_catalogue.csv,time_provenance,Origin of the recorded observation timing,
+S5_original_state_catalogue.csv,time_scale,Declared timing scale/convention,
+S5_original_state_catalogue.csv,in_primary,Membership in the primary observation set,
+S5_original_state_catalogue.csv,in_heasoft,Membership in the independent-processing observation set,
+S5_original_state_catalogue.csv,in_expanded,Membership in the expanded observation set,
+S5_original_state_catalogue.csv,native_state_label,Source-native physical-state label; not automatically a cross-class common regime,
+S5_original_state_catalogue.csv,state_family,Retained state-family grouping,
+S5_original_state_catalogue.csv,state_evidence_level,Evidence grade for the native-state assignment,
+S5_original_state_catalogue.csv,state_assignment_method,Method documented for assigning the native state,
+S5_original_state_catalogue.csv,reference_id,Project reference key,
+S5_original_state_catalogue.csv,reference_title,Title retained for the cited evidence,
+S5_original_state_catalogue.csv,reference_authors,Authors retained for the cited evidence,
+S5_original_state_catalogue.csv,reference_year,Publication year retained for the cited evidence,
+S5_original_state_catalogue.csv,reference_identifier_or_url,Persistent publication identifier or source URL,
+S5_original_state_catalogue.csv,evidence_time_start,Start of the literature-supported interval in its documented convention,
+S5_original_state_catalogue.csv,evidence_time_end,End of the literature-supported interval in its documented convention,
+S5_original_state_catalogue.csv,obsid_directly_listed,Whether the exact ObsID is directly identified by the evidence,
+S5_original_state_catalogue.csv,date_window_match,Recorded date-window overlap/match flag; alone does not establish whole-observation support,
+S5_original_state_catalogue.csv,source_state_taxonomy,Source-specific native-state vocabulary,
+S5_original_state_catalogue.csv,state_confidence,Recorded confidence annotation for the physical-state assignment,
+S5_original_state_catalogue.csv,ambiguous,Unresolved ambiguity flag,
+S5_original_state_catalogue.csv,notes,Retained explanatory annotation; not an inferred measurement,
+S5_original_state_catalogue.csv,common_regime,Proposed shared physical spectral regime under the frozen mapping,
+S5_proxy_full_paired.csv,model,Estimator name from the frozen run,
+S5_proxy_full_paired.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S5_proxy_full_paired.csv,metric,Name of the measured quantity; use the metric definitions in this dictionary,
+S5_proxy_full_paired.csv,BH_sources,Count of BH sources within the named cohort/regime; category counts are not additive independent samples,
+S5_proxy_full_paired.csv,NS_sources,Count of NS sources within the named cohort/regime; category counts are not additive independent samples,
+S5_proxy_full_paired.csv,difference_proxy_minus_full,Stored proxy-only metric minus full-spectrum metric,
+S5_proxy_full_paired.csv,lower,Stored lower interval bound for the named quantity; interpret with the row analysis,
+S5_proxy_full_paired.csv,upper,Stored upper interval bound for the named quantity; interpret with the row analysis,
+S5_proxy_metrics.csv,model,Estimator name from the frozen run,
+S5_proxy_metrics.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S5_proxy_metrics.csv,observations,Observation count within the named row/category,
+S5_proxy_metrics.csv,BH_sources,Count of BH sources within the named cohort/regime; category counts are not additive independent samples,
+S5_proxy_metrics.csv,NS_sources,Count of NS sources within the named cohort/regime; category counts are not additive independent samples,
+S5_proxy_metrics.csv,cohort,Named frozen analysis cohort,
+S5_proxy_metrics.csv,status,Recorded processing/review status,
+S5_proxy_metrics.csv,AUROC,Area under the receiver operating characteristic curve,dimensionless
+S5_proxy_metrics.csv,balanced_accuracy,Mean class recall at the frozen threshold,dimensionless
+S5_proxy_metrics.csv,MCC,Matthews correlation coefficient at the frozen threshold,dimensionless
+S5_proxy_metrics.csv,F1,NS-class harmonic mean of precision and recall,dimensionless
+S5_proxy_metrics.csv,PR_AUC,Average precision (not trapezoidal area under a precision-recall curve),dimensionless
+S5_proxy_metrics.csv,Brier,Mean squared error of the NS probability score,dimensionless
+S5_proxy_metrics.csv,AUROC_lower,Stored lower conditional source-bootstrap bound for area under the receiver operating characteristic curve,
+S5_proxy_metrics.csv,AUROC_upper,Stored upper conditional source-bootstrap bound for area under the receiver operating characteristic curve,
+S5_proxy_metrics.csv,balanced_accuracy_lower,Stored lower conditional source-bootstrap bound for mean class recall at the frozen threshold,
+S5_proxy_metrics.csv,balanced_accuracy_upper,Stored upper conditional source-bootstrap bound for mean class recall at the frozen threshold,
+S5_proxy_metrics.csv,MCC_lower,Stored lower conditional source-bootstrap bound for matthews correlation coefficient at the frozen threshold,
+S5_proxy_metrics.csv,MCC_upper,Stored upper conditional source-bootstrap bound for matthews correlation coefficient at the frozen threshold,
+S5_proxy_metrics.csv,F1_lower,Stored lower conditional source-bootstrap bound for ns-class harmonic mean of precision and recall,
+S5_proxy_metrics.csv,F1_upper,Stored upper conditional source-bootstrap bound for ns-class harmonic mean of precision and recall,
+S5_proxy_metrics.csv,PR_AUC_lower,Stored lower conditional source-bootstrap bound for average precision (not trapezoidal area under a precision-recall curve),
+S5_proxy_metrics.csv,PR_AUC_upper,Stored upper conditional source-bootstrap bound for average precision (not trapezoidal area under a precision-recall curve),
+S5_proxy_metrics.csv,Brier_lower,Stored lower conditional source-bootstrap bound for mean squared error of the ns probability score,
+S5_proxy_metrics.csv,Brier_upper,Stored upper conditional source-bootstrap bound for mean squared error of the ns probability score,
+S5_reliability.csv,cohort,Named frozen analysis cohort,
+S5_reliability.csv,model,Estimator name from the frozen run,
+S5_reliability.csv,split,"Outer evaluation design: observation-wise, source-grouped or LOSO",
+S5_reliability.csv,bin_lower,Lower probability-bin edge in the reliability diagnostic,dimensionless
+S5_reliability.csv,bin_upper,Upper probability-bin edge in the reliability diagnostic,dimensionless
+S5_reliability.csv,sources,Distinct physical-source count within the named row/category,
+S5_reliability.csv,BH_sources,Count of BH sources within the named cohort/regime; category counts are not additive independent samples,
+S5_reliability.csv,NS_sources,Count of NS sources within the named cohort/regime; category counts are not additive independent samples,
+S5_reliability.csv,mean_p_NS,Mean of source NS scores within the named diagnostic group; sources/categories may overlap,
+S5_reliability.csv,NS_fraction,Observed NS fraction in the reliability bin,dimensionless
+S5_within_source_descriptive.csv,cohort,Named frozen analysis cohort,
+S5_within_source_descriptive.csv,model,Estimator name from the frozen run,
+S5_within_source_descriptive.csv,source_id,Canonical physical-source grouping identifier,
+S5_within_source_descriptive.csv,source_name,Human-readable physical-source name,
+S5_within_source_descriptive.csv,true_class,Reference BH/NS class for evaluation,
+S5_within_source_descriptive.csv,native_state_label,Source-native physical-state label; not automatically a cross-class common regime,
+S5_within_source_descriptive.csv,observations,Observation count within the named row/category,
+S5_within_source_descriptive.csv,mean_p_NS,Mean of source NS scores within the named diagnostic group; sources/categories may overlap,
+S5_within_source_descriptive.csv,median_p_NS,Median of source NS scores within the named diagnostic group; sources/categories may overlap,
+S5_within_source_descriptive.csv,min_p_NS,Min of source NS scores within the named diagnostic group; sources/categories may overlap,
+S5_within_source_descriptive.csv,max_p_NS,Max of source NS scores within the named diagnostic group; sources/categories may overlap,
+S5_within_source_descriptive.csv,fraction_correct,Fraction of observations correctly classified within the source,dimensionless
+S5_within_source_descriptive.csv,interpretation,Frozen interpretation/caveat for the named diagnostic,
+evidence_index.csv,file,Packaged supporting filename,
+evidence_index.csv,original_sha256,SHA-256 of the original manuscript supporting copy,
+evidence_index.csv,packaged_sha256,SHA-256 after publication path-prefix normalization,
+evidence_index.csv,changed,Whether path-prefix normalization changed the supporting copy,
+evidence_index.csv,change,Description of the presentation-only copy change,

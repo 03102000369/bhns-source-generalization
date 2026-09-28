@@ -1,0 +1,32 @@
+{
+  "version": "STATE_REGIME_MAPPING_V1",
+  "native_labels_preserved": true,
+  "taxonomy_equivalence_assumed": false,
+  "assignment_rules_sha256": "272821f36391ed2088bfee21b6fe26971c5f776ce848f3220b0d11a10f30e333",
+  "common_regimes": {
+    "HARD_DOMINATED": "Only evidence-specific claims with explicit hard/Comptonized spectral interpretation; see reviewed rules. No automatic island-to-hard mapping.",
+    "SOFT_DOMINATED": "Evidence-specific BH thermal/high-soft or Ser X-1 soft campaign descriptions. No automatic banana-to-soft mapping.",
+    "UNMAPPED": "All other native categories, unresolved or conflicting evidence."
+  },
+  "physical_equivalence_claim": false,
+  "matching_status": "INFEASIBLE_DUE_TO_SOURCE_COUNT",
+  "proxies": {
+    "name": "detector_spectral_regime_coordinates_not_physical_states",
+    "edges_keV": [
+      5.0,
+      9.651162790697676,
+      14.767441860465116,
+      25.0
+    ],
+    "bands": "sum frozen integrated 43-bin net count rates at indices 0:10,10:21,21:43; signed bins retained",
+    "features": [
+      "log_hardness_mid_soft",
+      "log_hardness_high_mid",
+      "log_intensity"
+    ],
+    "formula": "log10(mid/soft), log10(high/mid), log10(soft+mid+high)",
+    "invalid": "Exclude nonfinite or nonpositive band totals without clipping or imputation",
+    "learned_population_statistics": "none",
+    "limitations": "Detector counts retain gain/response, absorption and distance effects; 5 keV lower boundary misses much thermal disk emission. Intensity is not Eddington-scaled."
+  }
+}

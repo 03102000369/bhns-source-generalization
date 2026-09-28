@@ -1,0 +1,10 @@
+extends: base.yaml
+experiment:
+  name: source_permutation
+  n_permutations: 100
+  randomize_unit: source
+  balance_unit: source
+evaluation:
+  modes: [observation, grouped]
+  n_splits: 5
+  test_size: 0.2

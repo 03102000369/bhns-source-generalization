@@ -1,0 +1,7 @@
+extends: base.yaml
+experiment:
+  name: grouped_cv
+evaluation:
+  mode: grouped
+  n_splits: 5
+  group_column: source_name

@@ -1,0 +1,5 @@
+cohort,model,split,observations,BH_sources,NS_sources,status,AUROC,AUROC_lower,AUROC_upper,balanced_accuracy,balanced_accuracy_lower,balanced_accuracy_upper,MCC,MCC_lower,MCC_upper,F1,F1_lower,F1_upper,PR_AUC,PR_AUC_lower,PR_AUC_upper,Brier,Brier_lower,Brier_upper
+STATE_MATCHED,logistic,grouped,0,0,0,INFEASIBLE_DUE_TO_SOURCE_COUNT,,,,,,,,,,,,,,,,,,
+STATE_MATCHED,logistic,loso,0,0,0,INFEASIBLE_DUE_TO_SOURCE_COUNT,,,,,,,,,,,,,,,,,,
+STATE_MATCHED,forest,grouped,0,0,0,INFEASIBLE_DUE_TO_SOURCE_COUNT,,,,,,,,,,,,,,,,,,
+STATE_MATCHED,forest,loso,0,0,0,INFEASIBLE_DUE_TO_SOURCE_COUNT,,,,,,,,,,,,,,,,,,

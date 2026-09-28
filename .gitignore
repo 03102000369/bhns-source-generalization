@@ -1,0 +1,68 @@
+# Python and tools
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+.ipynb_checkpoints/
+.vscode/
+.idea/
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+credentials.json
+# Raw mission data and installations
+data/raw/
+cross_mission/data/raw/
+cross_mission/data/processed/
+data/processed/native/
+*.evt
+*.evt.gz
+*.fits.gz
+*.pha
+*.rmf
+*.arf
+*.rsp
+*.npy
+*.npz
+caldb/
+CALDB/
+heasoft/
+HEASoft/
+# Build, scratch, logs and literature
+build/
+dist/
+scratch/
+tmp/
+cache/
+.cache/
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.partial
+*.icloud
+**/literature/
+data/provenance/retrieved/
+# Local preparation records: never part of the scientific release
+.release_audit/
+github_release_file_inventory.csv
+github_release_large_files.csv
+
+# Personal/operational release notes and local curation receipts
+.local_admin/

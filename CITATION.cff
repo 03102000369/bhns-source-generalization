@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "Author metadata is pending approval. This is a structural TODO record; do not use it as a publication citation. See manuscript/AUTHOR_TODOS.md."
+title: "Black-Hole and Neutron-Star Classification Beyond Known Sources"
+type: software
+authors:
+  - name: "TODO: author-approved author list required"
+abstract: "Frozen RXTE/PCA source-generalization study with a separate, unfinished RXTE–NuSTAR extension."

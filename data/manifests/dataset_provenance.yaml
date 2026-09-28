@@ -1,0 +1,16 @@
+# Fill only after acquiring and reviewing actual observational products.
+status: pending
+origin_reference: null
+canonical_sha256: null
+instrument: RXTE/PCA
+flux_units: null
+error_definition: null
+spectral_bin_edges_keV: null
+reduction_reference: null
+source_mapping_review: null
+reviewed_by: null
+reviewed_at: null
+# Also document raw-file checksums, extraction software/CALDB, background/response
+# processing, source alias evidence, and PM fitting/variance-proxy definitions.
+raw_products: []
+parameter_fitting_reference: null

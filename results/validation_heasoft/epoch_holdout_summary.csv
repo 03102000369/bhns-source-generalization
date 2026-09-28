@@ -1,0 +1,6 @@
+epoch,test_BH,test_NS,train_BH,train_NS,feasible,reason,model,AUROC,balanced_accuracy,MCC,F1,precision,recall,PR_AUC,Brier,accuracy,AUROC_lower,AUROC_upper
+1,0,0,7,22,False,Fails predeclared >=2 test and >=5 training sources per class after excluding all test identities,,,,,,,,,,,,
+3,1,5,6,17,False,Fails predeclared >=2 test and >=5 training sources per class after excluding all test identities,,,,,,,,,,,,
+4,2,2,5,20,True,,logistic,1.0,0.5,0.0,0.6666666666666666,0.5,1.0,1.0,0.18595370598502456,0.5,1.0,1.0
+4,2,2,5,20,True,,forest,1.0,0.5,0.0,0.6666666666666666,0.5,1.0,1.0,0.3505358672761371,0.5,1.0,1.0
+5,5,22,2,0,False,Fails predeclared >=2 test and >=5 training sources per class after excluding all test identities,,,,,,,,,,,,

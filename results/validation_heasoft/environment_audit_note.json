@@ -1,0 +1,9 @@
+{
+  "snapshot_sha256": "60ebf78e13340d953afe4deb865924d6f3b6a4e3bde803dcaf19c3d87fd0f879",
+  "field": "caldb.calibration_files",
+  "recorded_value": 241,
+  "meaning_of_recorded_value": "Recursive directory entries, including directories; original capture label was imprecise",
+  "actual_files": 223,
+  "directories": 18,
+  "action": "Original reduction-linked snapshot preserved; current capture script counts only files and refuses snapshot overwrite"
+}

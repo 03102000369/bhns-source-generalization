@@ -1,0 +1,30 @@
+{
+  "version": "STATE_REGIME_MAPPING_V2_EXTENSION",
+  "frozen_utc": "2026-09-22T15:44:41.440843+00:00",
+  "parent_path": "configs/state_regime_mapping.yaml",
+  "parent_sha256": "ad33e70ac571ee9711512572f0980cbde34e77341354c8f4bae933361f4345bf",
+  "physical_equivalence_claim": false,
+  "automatic_native_to_common_mapping": false,
+  "rules": {
+    "IGR_2004_A1_A2": {
+      "source_id": "igr_j00291_5934",
+      "obsids": [
+        "90052-03-01-00",
+        "90425-01-01-13"
+      ],
+      "native": "exceptional island; publication wording preserved",
+      "common": "HARD_DOMINATED",
+      "evidence": "Linares Table 1 A1/A2 and sections 4.1/4.2/5.1 explicitly hard; corroborating thermal Comptonization in Falanga. Late contaminated B/C excluded."
+    },
+    "SAX1808_2002_SD": {
+      "source_id": "sax_j1808_4_3658",
+      "obsids": [
+        "70080-01-02-03",
+        "70080-01-03-12"
+      ],
+      "native": "island in Bult Table 1; slow decay is a separate outburst phase",
+      "common": "HARD_DOMINATED",
+      "evidence": "Bult exact native IS plus full-span containment within Ibragimov Table 1 SD 52564.25\u201352574.29, whose spectral model has hot Comptonization and surface blackbody; sections 3.1\u20133.2. This is a broad hard/Comptonized observable restriction, not equality of NS/BH accretion physics."
+    }
+  }
+}
