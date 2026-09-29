@@ -30,6 +30,8 @@ The original audited workspace contains roughly 21.1 GB of logical files, includ
 
 ## Integrity scope
 
+The reproducibility package is archived as [version v1.0.0 on Zenodo](https://zenodo.org/records/23040384), with version-specific DOI [10.5281/zenodo.23040384](https://doi.org/10.5281/zenodo.23040384). The immutable `v1.0.0` tag identifies the archived files; subsequent journal-branch citation updates do not modify that archive.
+
 `RELEASE_MANIFEST.csv` covers every distributable payload file. Its own hash is in `RELEASE_MANIFEST.sha256`; that checksum file cannot meaningfully hash itself. `.git/`, ignored build/cache files and `.release_audit/` / `.local_admin/` local preparation records are outside this manifest. The exhaustive workstation inventory and large-file CSV remain local and ignored; aggregate exclusions and precise included-file provenance are distributed. After intentional changes, maintainers must review and regenerate the manifest with `scripts/update_release_manifest.py`; never use regeneration to conceal an unexpected integrity failure.
 
 The [release audit](release/phase1_release_audit.md) records Phase-I preservation; the [final pre-push report](release/final_pre_push_report.md) records local curation checks. Personal GitHub setup and collaborator notes are deliberately local-only.
