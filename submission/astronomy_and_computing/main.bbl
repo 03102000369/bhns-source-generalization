@@ -243,14 +243,14 @@
   \href{http://arxiv.org/abs/astro-ph/0103045}{{\tt arXiv:astro-ph/0103045}}.
 %Type = Article
 \bibitem[{Pattnaik et~al.(2021)Pattnaik, Sharma, Alabarta, Altamirano,
-  Chakraborty, Kembhavi, Mendez and Orwat-Kapola}]{Pattnaik2021}
+  Chakraborty, Kembhavi, M{\'e}ndez and Orwat-Kapola}]{Pattnaik2021}
 \bibinfo{author}{Pattnaik, R.}, \bibinfo{author}{Sharma, K.},
   \bibinfo{author}{Alabarta, K.}, \bibinfo{author}{Altamirano, D.},
   \bibinfo{author}{Chakraborty, M.}, \bibinfo{author}{Kembhavi, A.},
-  \bibinfo{author}{Mendez, M.}, \bibinfo{author}{Orwat-Kapola, J.K.},
+  \bibinfo{author}{M{\'e}ndez, M.}, \bibinfo{author}{Orwat-Kapola, J.K.},
   \bibinfo{year}{2021}.
-\newblock \bibinfo{title}{{A Machine Learning Approach For Classifying Low-mass
-  X-ray Binaries Based On Their Compact Object Nature}}.
+\newblock \bibinfo{title}{{A machine-learning approach for classifying low-mass
+  X-ray binaries based on their compact object nature}}.
 \newblock \bibinfo{journal}{MNRAS} \bibinfo{volume}{501},
   \bibinfo{pages}{3457--3471}.
 \newblock \URLprefix \url{https://doi.org/10.1093/mnras/staa3899},
