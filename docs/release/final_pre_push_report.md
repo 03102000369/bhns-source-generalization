@@ -1,5 +1,7 @@
 # Final pre-push report
 
+> **Historical scope (clarified 2026-09-29):** The report below records the 2026-09-25 repair, before subsequent documentation deletions and history flattening. Its file counts, commit/tag references and retention statements describe that historical state, not the current release. In particular, `docs/validation_record.md` and `manuscript/AUTHOR_TODOS.md` are no longer distributed on `main`; this note does not restore them. Earlier release commits are outside the flattened public `main` ancestry; locally retained archive refs/backups are separate. Consult the current `RELEASE_MANIFEST.csv` and `scripts/verify_release.py` for the present package inventory and integrity checks.
+
 Local manifest repair completed on 2026-09-25. This replaces the earlier curation status in the same canonical report.
 
 ## Merge repair

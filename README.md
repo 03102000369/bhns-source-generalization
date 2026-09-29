@@ -55,6 +55,6 @@ Raw mission data come from [NASA HEASARC](https://heasarc.gsfc.nasa.gov/docs/arc
 
 ## Manuscript
 
-The [Phase-I manuscript and supplement](manuscript/README.md) use a journal-neutral, two-column LaTeX article format with superscript numerical citations and retain their audited scientific content. Build both with `bash manuscript/build.sh`; adapt the neutral sources to the selected journal template at submission time if required. No specific journal or universal template compatibility is claimed. Earlier release snapshots remain in Git history; no release tag is currently defined. Author metadata and declarations still need approval; Phase II remains a separate paper.
+The [Phase-I manuscript and supplement](manuscript/README.md) use a journal-neutral, two-column LaTeX article format with superscript numerical citations and retain their audited scientific content. Build both with `bash manuscript/build.sh`; adapt the neutral sources to the selected journal template at submission time if required. No specific journal or universal template compatibility is claimed. Public `main` begins at the flattened initial-release root; earlier release commits are not part of its ancestry. Locally retained archive refs/backups are separate from public ancestry, and the reports under `docs/release/` document historical states rather than the current tree. No release tag is currently defined. Author metadata and declarations still need approval; Phase II remains a separate paper.
 
 

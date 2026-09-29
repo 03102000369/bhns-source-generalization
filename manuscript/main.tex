@@ -331,7 +331,7 @@ Preselected ObsIDs from the original source roster were processed independently 
 
 The independent reduction also differs from the primary products in deadtime and exposure handling. The live exposure already accounts for the contributing detector exposure and is therefore not divided by PCU count a second time \citep{NASAPCAext}. Rates and covariance are subsequently mapped to the same common detector-space representation used in the primary analysis. Because detector/layer selection, screening, background estimation, response construction and exposure handling change together, this branch tests robustness to the combined processing workflow rather than isolating the causal effect of any individual correction.
 
-On the independently processed cohort, source-grouped AUROC is 0.903 for logistic regression and 0.896 for the random forest. Corresponding LOSO values are 0.922 and 0.896. Source-disjoint ranking therefore remains present after independently executed RXTE/PCA processing. This is a processing-robustness result and should not be interpreted as validation on an independently sampled astronomical population.
+On the independently processed cohort (Table~\ref{tab:validation}), source-grouped AUROC is 0.903 for logistic regression and 0.896 for the random forest. Corresponding LOSO values are 0.922 and 0.896. Source-disjoint ranking therefore remains present after independently executed RXTE/PCA processing. This is a processing-robustness result and should not be interpreted as validation on an independently sampled astronomical population.
 
 \subsection{Matched-observation and common-support comparisons}
 
@@ -573,17 +573,15 @@ The physical origin of the transferable signal remains unresolved. Coarse hardne
 
 %\section*{Author contributions}\AuthorTODO{author-approved contribution statement and ORCID identifiers.}
 
-%\section*{Data availability}
+\section*{Data and software availability}
 
-%Raw RXTE archive products and mission reduction documentation are public through NASA HEASARC \citep{NASAStandard}. The retained project contains the source census, aliases and evidence, acquisition manifests, reconstructed arrays, covariance records, hashes, frozen configurations, out-of-fold predictions and fit audits. Supplement S1--S6 indexes these materials and distinguishes raw-data provenance from derived model inputs.
+The Phase-I code and reproducibility package are publicly available at \url{https://github.com/YouhanCW/bhns-source-generalization}. The repository includes archive-acquisition and spectral-reconstruction code, source-grouped evaluation code, frozen protocols, recorded software environments, implementation tests, release-integrity checks and scripts for rendering the main performance table and six main figures from stored results. The root \path{RELEASE_MANIFEST.csv} and its detached checksum identify the distributed files and their hashes.
 
-%TODO: deposit the author-approved code and derived-data release, select its licence, provide persistent accession identifiers, and replace this sentence with verified archive/repository links. No repository DOI or public code release is claimed here. The proposed release includes machine-readable tables and source-level predictions; publication PDFs retained for evidence review are referenced, not presumed redistributable. Detailed availability and release checks accompany the manuscript.
+Distributed data include the source roster, reviewed aliases and external class evidence; observation inventories, acquisition selections and exclusions; recorded raw-product URLs and checksums; primary and independently processed tabular spectral features; primary out-of-fold predictions; and frozen performance results, validation source summaries and state-evidence tables. Supplement S1--S6 and its machine-readable column dictionary and evidence index describe the accompanying tables and their provenance.
 
-%\section*{Software availability}
+Original RXTE/PCA mission products are public through NASA HEASARC \citep{NASAStandard}. Raw event/FITS archive trees, native arrays and covariance products, complete per-observation reduction lineage and fold-fit audits, HEASoft/CALDB installations, and literature PDFs are not redistributed. Repository-root \path{data/README.md} and \path{docs/data_provenance.md} document archive access and the scope of the included derived data.
 
-%Scientific processing uses NumPy for numerical arrays \citep{Harris2020} and Astropy for FITS products and time handling \citep{Astropy2022}.
-
-%Analysis code exists and has been checked locally, as described in Section~\ref{sec:12}. \AuthorTODO{provide the approved public code release, version, licence and persistent identifier. A public release and clean-host raw-data reproduction have not yet been established.}
+Verification and rendering require the Python dependencies in \path{requirements.txt}; manuscript compilation also requires the documented TeX packages. Full raw-data regeneration requires archive downloads, separately installed HEASoft/CALDB, substantial storage and processing time, and historical intermediate records omitted from this package. The commands and limitations are described in \path{docs/reproducibility.md}. The release supports checks of stored scientific results and regeneration of the main figures; a clean-host, end-to-end raw-data rerun has not been demonstrated. The original Figure S1 rendering workflow and complete proxy source-score inputs are not distributed, limiting regeneration of that supplementary figure.
 
 \balance
 \bibliographystyle{unsrtnat}\bibliography{references}
