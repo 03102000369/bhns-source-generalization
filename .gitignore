@@ -51,6 +51,7 @@ cache/
 *.log
 *.out
 *.bbl
+!submission/astronomy_and_computing/main.bbl
 *.blg
 *.fls
 *.fdb_latexmk

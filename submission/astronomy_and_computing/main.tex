@@ -67,7 +67,7 @@ Analysis protocols were frozen locally at successive project stages before execu
 
 \begin{figure*}[!tp]
 \centering
-\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figures/figure_1_design.pdf}
+\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figure_1_design.pdf}
 \caption{Analysis design. (A) Observation-wise evaluation permits different observations of the same physical system in training and test sets. (B) Source-disjoint evaluation withholds complete systems. (C) Numbers of independent BH and NS systems in the primary, independently processed and expanded cohorts. The HEASoft branch represents independent processing rather than an independent draw of the source population. Schematic cells are illustrative and do not denote actual fold membership.}
 \label{fig:1}
 % Accessibility description (not printed): A split-design schematic contrasts repeated observations shared between training and testing with whole-source exclusion; a separate panel shows the numbers of independent BH and NS systems across processing cohorts.
@@ -268,7 +268,7 @@ LOSO &
 
 \begin{figure*}[!tp]
 \centering
-\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figures/figure_2_primary.pdf}
+\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figure_2_primary.pdf}
 \caption{Primary source-level AUROC and balanced accuracy for observation-wise, source-grouped and leave-one-source-out evaluation. Error bars show conditional source-bootstrap intervals and do not include repeated fitting, hyperparameter-selection or fold-assignment uncertainty. The horizontal reference denotes chance ranking or balanced accuracy. The fixed 0.5 reference predictor is reported in Supplement~S2.}
 \label{fig:2}
 % Accessibility description (not printed): Two panels compare source-level AUROC and balanced accuracy across observation-wise, source-grouped and leave-one-source-out evaluation, with separate markers for logistic regression and random forest and conditional source-bootstrap interval bars.
@@ -299,7 +299,7 @@ Taken together, the randomization and source-identification diagnostics show tha
 
 \begin{figure*}[!tp]
 \centering
-\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figures/figure_3_randomization.pdf}
+\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figure_3_randomization.pdf}
 \caption{Source-level AUROC for the frozen source-label randomization diagnostics in the primary and independently processed HEASoft cohorts. Each physical source retains one randomized label across all of its observations, while observation-wise and source-grouped evaluation differ in whether observations of the same physical system can occur on both sides of the training--test split. Points show individual permutations and median values are marked. Horizontal offsets are deterministic and used only for visibility. The horizontal reference denotes chance ranking. The displayed permutation distributions are diagnostic results and are not confidence intervals for the real-label classifiers.}
 \label{fig:3}
 % Accessibility description (not printed): Two panels show source-level AUROC values from randomized source labels under observation-wise and source-grouped evaluation in the primary and independently processed HEASoft cohorts. Observation-wise values are generally much higher than grouped values, and median markers are shown relative to a chance-ranking line.
@@ -408,7 +408,7 @@ Expanded / LOSO &
 
 \begin{figure*}[!tp]
 \centering
-\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figures/figure_4_validation.pdf}
+\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figure_4_validation.pdf}
 \caption{Source-level AUROC under matched-observation and common instrumental-support comparisons, shown separately for source-grouped and LOSO evaluation. The matched-observation comparison uses identical ObsIDs to distinguish processing differences from observation selection as far as the design permits. Common-support rows restrict the representations to the declared instrumental-support criteria but do not constitute exact distributional matching. Error bars are conditional source-bootstrap intervals.}
 \label{fig:4}
 % Accessibility description (not printed): Source-grouped and leave-one-source-out panels compare source-level AUROC for the original and independently processed representations on identical observations and after restriction to common instrumental support. Logistic-regression and random-forest results are shown with conditional source-bootstrap interval bars.
@@ -416,7 +416,7 @@ Expanded / LOSO &
 
 \begin{figure*}[!tp]
 \centering
-\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figures/figure_5_expanded.pdf}
+\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figure_5_expanded.pdf}
 \caption{Expanded-cohort LOSO aggregate NS scores for every physical system, shown separately for logistic regression and the random forest. BH and NS systems are distinguished by marker and colour, and the vertical line denotes the fixed classification threshold. Score ordering determines AUROC, whereas a source's position relative to the threshold determines its fixed-threshold classification. Aggregate scores are source-level summaries rather than calibrated posterior probabilities and do not have source-specific confidence intervals.}
 \label{fig:5}
 % Accessibility description (not printed): Two aligned panels show LOSO aggregate neutron-star scores for every physical system in the expanded cohort, separately for logistic regression and random forest. BH and NS systems use different markers, and a vertical line marks the fixed classification threshold.
@@ -469,7 +469,7 @@ Physical spectral-state independence is therefore not established by the present
 
 \begin{figure*}[!tp]
 \centering
-\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figures/figure_6_state.pdf}
+\includegraphics[width=\textwidth,height=0.68\textheight,keepaspectratio]{figure_6_state.pdf}
 \caption{Spectral-state controls and feasibility. Left: numbers of independent BH and NS systems supported in the proposed hard- and soft-dominated common regimes, compared with the pre-specified requirement of five systems per class. Right: paired proxy-minus-full-spectrum AUROC differences with conditional source-bootstrap intervals in the frozen expanded cohort. Intervals crossing zero do not establish equivalence between the representations. The hardness--intensity diagnostic does not substitute for physical state matching, and no state-matched classifier result is shown because the feasibility criterion was not met.}
 \label{fig:6}
 % Accessibility description (not printed): The left panel compares the available numbers of independent BH and NS systems in hard- and soft-dominated common regimes with a five-per-class feasibility threshold. The right panel shows paired differences in source-level AUROC between the coarse hardness--intensity representation and the full spectral representation, with conditional bootstrap intervals.

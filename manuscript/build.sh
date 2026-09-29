@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 BHNS_MANUSCRIPT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BHNS_BUILD="$BHNS_MANUSCRIPT/../build/manuscript"
+BHNS_BUILD="${BHNS_LATEX_BUILD_DIR:-$BHNS_MANUSCRIPT/../build/manuscript}"
 mkdir -p "$BHNS_BUILD"
 cp "$BHNS_MANUSCRIPT/main.tex" "$BHNS_MANUSCRIPT/references.bib" "$BHNS_BUILD/"
 cp -R "$BHNS_MANUSCRIPT/figures" "$BHNS_BUILD/"
@@ -28,4 +28,4 @@ for BHNS_DOCUMENT in main supplement/supplement; do
     exit 1
   fi
 done
-printf '%s\n' 'Built build/manuscript/main.pdf and build/manuscript/supplement.pdf'
+printf 'Built %s/main.pdf and %s/supplement.pdf\n' "$BHNS_BUILD" "$BHNS_BUILD"

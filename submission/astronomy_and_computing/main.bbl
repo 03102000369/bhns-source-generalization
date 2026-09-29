@@ -1,0 +1,323 @@
+\begin{thebibliography}{25}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Belloni et~al.(2005)Belloni, Homan, Casella, van~der Klis, Nespoli,
+  Lewin, Miller and M{\'e}ndez}]{Belloni2005}
+\bibinfo{author}{Belloni, T.}, \bibinfo{author}{Homan, J.},
+  \bibinfo{author}{Casella, P.}, \bibinfo{author}{van~der Klis, M.},
+  \bibinfo{author}{Nespoli, E.}, \bibinfo{author}{Lewin, W.H.G.},
+  \bibinfo{author}{Miller, J.M.}, \bibinfo{author}{M{\'e}ndez, M.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{{The evolution of the timing properties of the
+  black-hole transient GX 339--4 during its 2002/2003 outburst}}.
+\newblock \bibinfo{journal}{A\&A} \bibinfo{volume}{440},
+  \bibinfo{pages}{207--222}.
+\newblock \URLprefix \url{https://doi.org/10.1051/0004-6361:20042457},
+  \DOIprefix\doi{10.1051/0004-6361:20042457},
+  \href{http://arxiv.org/abs/astro-ph/0504577}{{\tt arXiv:astro-ph/0504577}}.
+%Type = Article
+\bibitem[{{\VAN{Beurs}{de}{de}}~Beurs et~al.(2022){\VAN{Beurs}{de}{de}}~Beurs,
+  Islam, Gopalan and Vrtilek}]{deBeurs2022}
+\bibinfo{author}{{\VAN{Beurs}{de}{de}}~Beurs, Z.L.}, \bibinfo{author}{Islam,
+  N.}, \bibinfo{author}{Gopalan, G.}, \bibinfo{author}{Vrtilek, S.D.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{{A Comparative Study of Machine-learning Methods for
+  X-Ray Binary Classification}}.
+\newblock \bibinfo{journal}{ApJ} \bibinfo{volume}{933}, \bibinfo{pages}{116}.
+\newblock \URLprefix \url{https://doi.org/10.3847/1538-4357/ac6184},
+  \DOIprefix\doi{10.3847/1538-4357/ac6184},
+  \href{http://arxiv.org/abs/2204.00346}{{\tt arXiv:2204.00346}}.
+%Type = Article
+\bibitem[{Bult and van~der Klis(2015)}]{Bult2015}
+\bibinfo{author}{Bult, P.}, \bibinfo{author}{van~der Klis, M.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{The aperiodic X-ray variability of the accreting
+  millisecond pulsar SAX J1808.4-3658}}.
+\newblock \bibinfo{journal}{ApJ} \bibinfo{volume}{806}, \bibinfo{pages}{90}.
+\newblock \URLprefix \url{https://doi.org/10.1088/0004-637X/806/1/90},
+  \DOIprefix\doi{10.1088/0004-637X/806/1/90},
+  \href{http://arxiv.org/abs/1505.00596}{{\tt arXiv:1505.00596}}.
+%Type = Article
+\bibitem[{{Chaibub Neto} et~al.(2019){Chaibub Neto}, Pratap, Perumal,
+  Tummalacherla, Snyder, Bot, Trister, Friend, Mangravite and
+  Omberg}]{Neto2019}
+\bibinfo{author}{{Chaibub Neto}, E.}, \bibinfo{author}{Pratap, A.},
+  \bibinfo{author}{Perumal, T.M.}, \bibinfo{author}{Tummalacherla, M.},
+  \bibinfo{author}{Snyder, P.}, \bibinfo{author}{Bot, B.M.},
+  \bibinfo{author}{Trister, A.D.}, \bibinfo{author}{Friend, S.H.},
+  \bibinfo{author}{Mangravite, L.}, \bibinfo{author}{Omberg, L.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{{Detecting the impact of subject characteristics on
+  machine learning-based diagnostic applications}}.
+\newblock \bibinfo{journal}{npj Digit. Med.} \bibinfo{volume}{2},
+  \bibinfo{pages}{99}.
+\newblock \URLprefix \url{https://doi.org/10.1038/s41746-019-0178-x},
+  \DOIprefix\doi{10.1038/s41746-019-0178-x}.
+%Type = Article
+\bibitem[{Corral-Santana et~al.(2016)Corral-Santana, Casares, Mu{\~n}oz-Darias,
+  Bauer, Mart{\'i}nez-Pais and Russell}]{CorralSantana2016}
+\bibinfo{author}{Corral-Santana, J.M.}, \bibinfo{author}{Casares, J.},
+  \bibinfo{author}{Mu{\~n}oz-Darias, T.}, \bibinfo{author}{Bauer, F.E.},
+  \bibinfo{author}{Mart{\'i}nez-Pais, I.G.}, \bibinfo{author}{Russell, D.M.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{BlackCAT: A catalogue of stellar-mass black holes in
+  X-ray transients}}.
+\newblock \bibinfo{journal}{A\&A} \bibinfo{volume}{587}, \bibinfo{pages}{A61}.
+\newblock \URLprefix \url{https://doi.org/10.1051/0004-6361/201527130},
+  \DOIprefix\doi{10.1051/0004-6361/201527130},
+  \href{http://arxiv.org/abs/1510.08869}{{\tt arXiv:1510.08869}}.
+%Type = Article
+\bibitem[{Falanga et~al.(2005)Falanga, Kuiper, Poutanen, Bonning, Hermsen,
+  Di~Salvo, Goldoni, Goldwurm, Shaw and Stella}]{Falanga2005}
+\bibinfo{author}{Falanga, M.}, \bibinfo{author}{Kuiper, L.},
+  \bibinfo{author}{Poutanen, J.}, \bibinfo{author}{Bonning, E.W.},
+  \bibinfo{author}{Hermsen, W.}, \bibinfo{author}{Di~Salvo, T.},
+  \bibinfo{author}{Goldoni, P.}, \bibinfo{author}{Goldwurm, A.},
+  \bibinfo{author}{Shaw, S.E.}, \bibinfo{author}{Stella, L.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{{INTEGRAL and RXTE observations of accreting
+  millisecond pulsar IGR J00291+5934 in outburst}}.
+\newblock \bibinfo{journal}{A\&A} \bibinfo{volume}{444},
+  \bibinfo{pages}{15--24}.
+\newblock \URLprefix \url{https://doi.org/10.1051/0004-6361:20053472},
+  \DOIprefix\doi{10.1051/0004-6361:20053472},
+  \href{http://arxiv.org/abs/astro-ph/0508613}{{\tt arXiv:astro-ph/0508613}}.
+%Type = Article
+\bibitem[{Galloway et~al.(2020)Galloway, in~'t Zand, Chenevez, W{\"o}rpel,
+  Keek, Ootes, Watts, Gisler, Sanchez-Fernandez and Kuulkers}]{Galloway2020}
+\bibinfo{author}{Galloway, D.K.}, \bibinfo{author}{in~'t Zand, J.J.M.},
+  \bibinfo{author}{Chenevez, J.}, \bibinfo{author}{W{\"o}rpel, H.},
+  \bibinfo{author}{Keek, L.}, \bibinfo{author}{Ootes, L.},
+  \bibinfo{author}{Watts, A.L.}, \bibinfo{author}{Gisler, L.},
+  \bibinfo{author}{Sanchez-Fernandez, C.}, \bibinfo{author}{Kuulkers, E.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{{The Multi-INstrument Burst ARchive (MINBAR)}}.
+\newblock \bibinfo{journal}{ApJS} \bibinfo{volume}{249}, \bibinfo{pages}{32}.
+\newblock \URLprefix \url{https://doi.org/10.3847/1538-4365/ab9f2e},
+  \DOIprefix\doi{10.3847/1538-4365/ab9f2e},
+  \href{http://arxiv.org/abs/2003.00685}{{\tt arXiv:2003.00685}}.
+%Type = Misc
+\bibitem[{Garg et~al.(2026)Garg, Kumar, Kembhavi, Misra, Kembhavi, Philip,
+  Pattnaik and Watwe}]{Garg2026}
+\bibinfo{author}{Garg, A.}, \bibinfo{author}{Kumar, A.},
+  \bibinfo{author}{Kembhavi, A.}, \bibinfo{author}{Misra, R.},
+  \bibinfo{author}{Kembhavi, A.}, \bibinfo{author}{Philip, N.S.},
+  \bibinfo{author}{Pattnaik, R.}, \bibinfo{author}{Watwe, S.},
+  \bibinfo{year}{2026}.
+\newblock \bibinfo{title}{{Neuro-Parametric Spectral Classification of Black
+  Hole and Neutron Star X-ray Binary Systems}}.
+\newblock \bibinfo{howpublished}{arXiv e-prints}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2601.18139},
+  \DOIprefix\doi{10.48550/arXiv.2601.18139},
+  \href{http://arxiv.org/abs/2601.18139}{{\tt arXiv:2601.18139}}.
+  \bibinfo{note}{preprint; version 1, submitted 26 January 2026}.
+%Type = Article
+\bibitem[{Gladstone et~al.(2007)Gladstone, Done and
+  Gierli{\'n}ski}]{Gladstone2007}
+\bibinfo{author}{Gladstone, J.}, \bibinfo{author}{Done, C.},
+  \bibinfo{author}{Gierli{\'n}ski, M.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{{Analysing the atolls: X-ray spectral transitions of
+  accreting neutron stars}}.
+\newblock \bibinfo{journal}{MNRAS} \bibinfo{volume}{378},
+  \bibinfo{pages}{13--22}.
+\newblock \URLprefix \url{https://doi.org/10.1111/j.1365-2966.2007.11675.x},
+  \DOIprefix\doi{10.1111/j.1365-2966.2007.11675.x},
+  \href{http://arxiv.org/abs/astro-ph/0603126}{{\tt arXiv:astro-ph/0603126}}.
+%Type = Article
+\bibitem[{Gopalan et~al.(2015)Gopalan, Vrtilek and Bornn}]{Gopalan2015}
+\bibinfo{author}{Gopalan, G.}, \bibinfo{author}{Vrtilek, S.D.},
+  \bibinfo{author}{Bornn, L.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{Classifying X-ray Binaries: A Probabilistic
+  Approach}}.
+\newblock \bibinfo{journal}{ApJ} \bibinfo{volume}{809}, \bibinfo{pages}{40}.
+\newblock \URLprefix \url{https://doi.org/10.1088/0004-637X/809/1/40},
+  \DOIprefix\doi{10.1088/0004-637X/809/1/40},
+  \href{http://arxiv.org/abs/1507.03538}{{\tt arXiv:1507.03538}}.
+%Type = Article
+\bibitem[{Hasinger and van~der Klis(1989)}]{Hasinger1989}
+\bibinfo{author}{Hasinger, G.}, \bibinfo{author}{van~der Klis, M.},
+  \bibinfo{year}{1989}.
+\newblock \bibinfo{title}{{Two patterns of correlated X-ray timing and spectral
+  behaviour in low-mass X-ray binaries}}.
+\newblock \bibinfo{journal}{A\&A} \bibinfo{volume}{225},
+  \bibinfo{pages}{79--96}.
+\newblock \URLprefix
+  \url{https://dare.uva.nl/id/f6fab625-aa54-4d2a-bfaf-a1058b53d2e7}.
+%Type = Article
+\bibitem[{Ibragimov and Poutanen(2009)}]{Ibragimov2009}
+\bibinfo{author}{Ibragimov, A.}, \bibinfo{author}{Poutanen, J.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{{Accreting millisecond pulsar SAX J1808.4-3658 during
+  its 2002 outburst: evidence for a receding disc}}.
+\newblock \bibinfo{journal}{MNRAS} \bibinfo{volume}{400},
+  \bibinfo{pages}{492--508}.
+\newblock \URLprefix \url{https://doi.org/10.1111/j.1365-2966.2009.15477.x},
+  \DOIprefix\doi{10.1111/j.1365-2966.2009.15477.x},
+  \href{http://arxiv.org/abs/0901.0073}{{\tt arXiv:0901.0073}}.
+%Type = Article
+\bibitem[{Jahoda et~al.(2006)Jahoda, Markwardt, Radeva, Rots, Stark, Swank,
+  Strohmayer and Zhang}]{Jahoda2006}
+\bibinfo{author}{Jahoda, K.}, \bibinfo{author}{Markwardt, C.B.},
+  \bibinfo{author}{Radeva, Y.}, \bibinfo{author}{Rots, A.H.},
+  \bibinfo{author}{Stark, M.J.}, \bibinfo{author}{Swank, J.H.},
+  \bibinfo{author}{Strohmayer, T.E.}, \bibinfo{author}{Zhang, W.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{{Calibration of the Rossi X-ray Timing Explorer
+  Proportional Counter Array}}.
+\newblock \bibinfo{journal}{ApJS} \bibinfo{volume}{163},
+  \bibinfo{pages}{401--423}.
+\newblock \URLprefix \url{https://doi.org/10.1086/500659},
+  \DOIprefix\doi{10.1086/500659},
+  \href{http://arxiv.org/abs/astro-ph/0511531}{{\tt arXiv:astro-ph/0511531}}.
+%Type = Article
+\bibitem[{Linares et~al.(2007)Linares, van~der Klis and Wijnands}]{Linares2007}
+\bibinfo{author}{Linares, M.}, \bibinfo{author}{van~der Klis, M.},
+  \bibinfo{author}{Wijnands, R.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{{An accreting millisecond pulsar with black hole-like
+  X-ray variability: IGR J00291+5934}}.
+\newblock \bibinfo{journal}{ApJ} \bibinfo{volume}{660},
+  \bibinfo{pages}{595--604}.
+\newblock \URLprefix \url{https://doi.org/10.1086/512666},
+  \DOIprefix\doi{10.1086/512666},
+  \href{http://arxiv.org/abs/astro-ph/0609685}{{\tt arXiv:astro-ph/0609685}}.
+%Type = Misc
+\bibitem[{{NASA HEASARC}(2014)}]{HEASoft2014}
+\bibinfo{author}{{NASA HEASARC}}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{{HEAsoft: Unified Release of FTOOLS and XANADU}}.
+\newblock \bibinfo{howpublished}{Astrophysics Source Code Library, record
+  ascl:1408.004}.
+\newblock \URLprefix \url{https://ascl.net/1408.004}.
+%Type = Misc
+\bibitem[{{NASA HEASARC}(n.d.a)}]{NASAScreening}
+\bibinfo{author}{{NASA HEASARC}}, \bibinfo{year}{n.d.}a.
+\newblock \bibinfo{title}{{New PCA Tools: Screening}}.
+\newblock \bibinfo{howpublished}{Accessed 22 September 2026}.
+\newblock \URLprefix
+  \url{https://heasarc.gsfc.nasa.gov/docs/xte/recipes2/Screening.html}.
+%Type = Misc
+\bibitem[{{NASA HEASARC}(n.d.b)}]{NASAPCAext}
+\bibinfo{author}{{NASA HEASARC}}, \bibinfo{year}{n.d.}b.
+\newblock \bibinfo{title}{{pcaextspect2 HEADAS help file}}.
+\newblock \bibinfo{howpublished}{Accessed 22 September 2026}.
+\newblock \URLprefix
+  \url{https://heasarc.gsfc.nasa.gov/docs/software/lheasoft/help/pcaextspect2.html}.
+%Type = Misc
+\bibitem[{{NASA HEASARC}(n.d.c)}]{NASAStandard}
+\bibinfo{author}{{NASA HEASARC}}, \bibinfo{year}{n.d.}c.
+\newblock \bibinfo{title}{{RXTE GOF: Standard Products Guide}}.
+\newblock \bibinfo{howpublished}{Accessed 22 September 2026}.
+\newblock \URLprefix
+  \url{https://heasarc.gsfc.nasa.gov/docs/xte/recipes/stdprod_guide.html}.
+%Type = Misc
+\bibitem[{{NASA HEASARC}(n.d.d)}]{XSPECSpectra}
+\bibinfo{author}{{NASA HEASARC}}, \bibinfo{year}{n.d.}d.
+\newblock \bibinfo{title}{{XSPEC manual: The XSPEC implementation}}.
+\newblock \bibinfo{howpublished}{Accessed 22 September 2026}.
+\newblock \URLprefix
+  \url{https://heasarc.gsfc.nasa.gov/docs/software/xspec/manual/node11.html}.
+%Type = Article
+\bibitem[{Orosz et~al.(2001)Orosz, Kuulkers, van~der Klis, McClintock, Garcia,
+  Callanan, Bailyn, Jain and Remillard}]{Orosz2001}
+\bibinfo{author}{Orosz, J.A.}, \bibinfo{author}{Kuulkers, E.},
+  \bibinfo{author}{van~der Klis, M.}, \bibinfo{author}{McClintock, J.E.},
+  \bibinfo{author}{Garcia, M.R.}, \bibinfo{author}{Callanan, P.J.},
+  \bibinfo{author}{Bailyn, C.D.}, \bibinfo{author}{Jain, R.K.},
+  \bibinfo{author}{Remillard, R.A.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{{A Black Hole in the Superluminal Source SAX
+  J1819.3-2525 (V4641 Sgr)}}.
+\newblock \bibinfo{journal}{ApJ} \bibinfo{volume}{555},
+  \bibinfo{pages}{489--503}.
+\newblock \URLprefix \url{https://doi.org/10.1086/321442},
+  \DOIprefix\doi{10.1086/321442},
+  \href{http://arxiv.org/abs/astro-ph/0103045}{{\tt arXiv:astro-ph/0103045}}.
+%Type = Article
+\bibitem[{Pattnaik et~al.(2021)Pattnaik, Sharma, Alabarta, Altamirano,
+  Chakraborty, Kembhavi, Mendez and Orwat-Kapola}]{Pattnaik2021}
+\bibinfo{author}{Pattnaik, R.}, \bibinfo{author}{Sharma, K.},
+  \bibinfo{author}{Alabarta, K.}, \bibinfo{author}{Altamirano, D.},
+  \bibinfo{author}{Chakraborty, M.}, \bibinfo{author}{Kembhavi, A.},
+  \bibinfo{author}{Mendez, M.}, \bibinfo{author}{Orwat-Kapola, J.K.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{{A Machine Learning Approach For Classifying Low-mass
+  X-ray Binaries Based On Their Compact Object Nature}}.
+\newblock \bibinfo{journal}{MNRAS} \bibinfo{volume}{501},
+  \bibinfo{pages}{3457--3471}.
+\newblock \URLprefix \url{https://doi.org/10.1093/mnras/staa3899},
+  \DOIprefix\doi{10.1093/mnras/staa3899},
+  \href{http://arxiv.org/abs/2012.06934}{{\tt arXiv:2012.06934}}.
+%Type = Article
+\bibitem[{Pedregosa et~al.(2011)Pedregosa, Varoquaux, Gramfort, Michel,
+  Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
+  Cournapeau, Brucher, Perrot and Duchesnay}]{Pedregosa2011}
+\bibinfo{author}{Pedregosa, F.}, \bibinfo{author}{Varoquaux, G.},
+  \bibinfo{author}{Gramfort, A.}, \bibinfo{author}{Michel, V.},
+  \bibinfo{author}{Thirion, B.}, \bibinfo{author}{Grisel, O.},
+  \bibinfo{author}{Blondel, M.}, \bibinfo{author}{Prettenhofer, P.},
+  \bibinfo{author}{Weiss, R.}, \bibinfo{author}{Dubourg, V.},
+  \bibinfo{author}{Vanderplas, J.}, \bibinfo{author}{Passos, A.},
+  \bibinfo{author}{Cournapeau, D.}, \bibinfo{author}{Brucher, M.},
+  \bibinfo{author}{Perrot, M.}, \bibinfo{author}{Duchesnay, {\'E}.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{{Scikit-learn: Machine Learning in Python}}.
+\newblock \bibinfo{journal}{J. Mach. Learn. Res.} \bibinfo{volume}{12},
+  \bibinfo{pages}{2825--2830}.
+\newblock \URLprefix \url{https://www.jmlr.org/papers/v12/pedregosa11a.html}.
+%Type = Article
+\bibitem[{Sanna et~al.(2018)Sanna, Bozzo, Papitto, Riggio, Ferrigno, Di~Salvo,
+  Iaria, Mazzola, D'Amico and Burderi}]{Sanna2018}
+\bibinfo{author}{Sanna, A.}, \bibinfo{author}{Bozzo, E.},
+  \bibinfo{author}{Papitto, A.}, \bibinfo{author}{Riggio, A.},
+  \bibinfo{author}{Ferrigno, C.}, \bibinfo{author}{Di~Salvo, T.},
+  \bibinfo{author}{Iaria, R.}, \bibinfo{author}{Mazzola, S.M.},
+  \bibinfo{author}{D'Amico, N.}, \bibinfo{author}{Burderi, L.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{{XMM-Newton detection of the 2.1 ms coherent
+  pulsations from IGR J17379--3747}}.
+\newblock \bibinfo{journal}{A\&A} \bibinfo{volume}{616}, \bibinfo{pages}{L17}.
+\newblock \URLprefix \url{https://doi.org/10.1051/0004-6361/201833205},
+  \DOIprefix\doi{10.1051/0004-6361/201833205},
+  \href{http://arxiv.org/abs/1807.08574}{{\tt arXiv:1807.08574}}.
+%Type = Article
+\bibitem[{Vrtilek and Boroson(2013)}]{Vrtilek2013}
+\bibinfo{author}{Vrtilek, S.D.}, \bibinfo{author}{Boroson, B.S.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{{Model independent means of categorizing X-ray
+  binaries -- I. Colour--colour--intensity diagrams}}.
+\newblock \bibinfo{journal}{MNRAS} \bibinfo{volume}{428},
+  \bibinfo{pages}{3693--3714}.
+\newblock \URLprefix \url{https://doi.org/10.1093/mnras/sts312},
+  \DOIprefix\doi{10.1093/mnras/sts312},
+  \href{http://arxiv.org/abs/1210.6240}{{\tt arXiv:1210.6240}}.
+%Type = Article
+\bibitem[{Wright et~al.(2015)Wright, Smartt, Smith, Miller, Kotak, Rest,
+  Burgett, Chambers, Flewelling, Hodapp, Huber, Jedicke, Kaiser, Metcalfe,
+  Price, Tonry, Wainscoat and Waters}]{Wright2015}
+\bibinfo{author}{Wright, D.E.}, \bibinfo{author}{Smartt, S.J.},
+  \bibinfo{author}{Smith, K.W.}, \bibinfo{author}{Miller, P.},
+  \bibinfo{author}{Kotak, R.}, \bibinfo{author}{Rest, A.},
+  \bibinfo{author}{Burgett, W.S.}, \bibinfo{author}{Chambers, K.C.},
+  \bibinfo{author}{Flewelling, H.}, \bibinfo{author}{Hodapp, K.W.},
+  \bibinfo{author}{Huber, M.}, \bibinfo{author}{Jedicke, R.},
+  \bibinfo{author}{Kaiser, N.}, \bibinfo{author}{Metcalfe, N.},
+  \bibinfo{author}{Price, P.A.}, \bibinfo{author}{Tonry, J.L.},
+  \bibinfo{author}{Wainscoat, R.J.}, \bibinfo{author}{Waters, C.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{{Machine learning for transient discovery in
+  Pan-STARRS1 difference imaging}}.
+\newblock \bibinfo{journal}{MNRAS} \bibinfo{volume}{449},
+  \bibinfo{pages}{451--466}.
+\newblock \URLprefix \url{https://doi.org/10.1093/mnras/stv292},
+  \DOIprefix\doi{10.1093/mnras/stv292}.
+
+\end{thebibliography}

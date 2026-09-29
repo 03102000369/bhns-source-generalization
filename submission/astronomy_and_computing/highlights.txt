@@ -1,0 +1,5 @@
+- Physical-source-disjoint evaluation tests transfer to unseen X-ray binaries.
+- Observation-wise performance does not establish unseen-source generalization.
+- Randomized source labels reveal exploitable source-associated structure.
+- Ranking persists after independent HEASoft/CALDB processing.
+- Physical spectral-state independence remains unresolved.

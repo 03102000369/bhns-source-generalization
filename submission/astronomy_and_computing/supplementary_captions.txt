@@ -1,0 +1,3 @@
+supplement.pdf: Supplementary methods, source provenance, complete-result descriptions, state-evidence interpretation, reproducibility guidance, Table S1, and Figure S1 for the RXTE/PCA source-generalization study.
+
+supplementary_evidence.zip: Frozen evidence file sets S1-S6, comprising 78 source, observation, performance, validation, state-evidence, protocol, and environment files, plus the column dictionary and SHA-256 evidence index. Extract the archive to retain its tables/ directory. The data are unchanged from the scientific freeze.

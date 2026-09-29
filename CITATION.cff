@@ -1,7 +1,12 @@
 cff-version: 1.2.0
-message: "Author metadata is pending approval. This is a structural TODO record; do not use it as a publication citation. See manuscript/AUTHOR_TODOS.md."
-title: "Black-Hole and Neutron-Star Classification Beyond Known Sources"
+message: "If you use this software and its accompanying derived data, please cite this repository."
+title: "Black Hole and Neutron Star Classification Beyond Known Sources: An RXTE/PCA Evaluation"
 type: software
 authors:
-  - name: "TODO: author-approved author list required"
-abstract: "Frozen RXTE/PCA source-generalization study with a separate, unfinished RXTE–NuSTAR extension."
+  - family-names: "Wanigasuriya"
+    given-names: "Youhan"
+    affiliation: "Department of Chemistry, Faculty of Science, University of Colombo, Sri Lanka"
+    email: "youhanwanigasuriya@gmail.com"
+repository-code: "https://github.com/YouhanCW/bhns-source-generalization"
+url: "https://github.com/YouhanCW/bhns-source-generalization"
+abstract: "Frozen RXTE/PCA source-generalization study with a separate, unfinished RXTE-NuSTAR extension."
